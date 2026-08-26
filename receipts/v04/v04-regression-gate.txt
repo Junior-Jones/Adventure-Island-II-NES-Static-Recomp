@@ -1,0 +1,21 @@
+V04 REGRESSION GATE - STATIC CONSTRUCTION ONLY
+date=2026-08-18
+[V01 ROM validation]
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+[V02 mapper contract JSON]
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+[V02 mapper exhaustive C]
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration
+[V03 inventory]
+PASS: V03 inventory construction tests; checks=563; instructions=10; PRG bytes=131072; banks=16
+[V04 static closure]
+PASS: V04 static control-flow construction tests; checks=272518; instructions=16544; instruction_bytes=35423; indirect_targets=404; unresolved=0; gameplay_seeds=0
+[MesenCE pinned oracle self-test only - NO GAMEPLAY]
+1554b443d2486fd25f3dcfa41e43e8ce579f9d8927d93d8cdb37d0ac2c4a9276  /mnt/data/Adventure_Island_II_NES_Static_Recomp/Reference/Starter NES/Oracle/Linux/bin/mesen-nes-oracle
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_SELF_TEST schema=1 result=pass
+[V05 generator must refuse]
+ai2-static-generator 0.1.0-v01-pin: disabled; V05 has not been authorized/completed
+V05 refusal rc=2 PASS
+[ROM exclusion]
+PASS no target ROM images in project

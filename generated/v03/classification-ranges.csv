@@ -1,0 +1,26 @@
+physical_prg_bank,start_bank_offset,end_bank_offset_inclusive,length,primary_class,evidence
+0,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+1,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+2,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+3,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+4,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+5,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+6,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+7,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+8,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+9,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+10,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+11,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+12,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+13,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+14,0x0000,0x1FFF,8192,unclassified,rom-wide initial data classification
+15,0x0000,0x00CD,206,unclassified,rom-wide initial data classification
+15,0x00CE,0x00D9,12,code,vector-root straight-line instruction
+15,0x00DA,0x0151,120,unclassified,rom-wide initial data classification
+15,0x0152,0x0152,1,code,vector-root straight-line instruction
+15,0x0153,0x1FAD,7771,unclassified,rom-wide initial data classification
+15,0x1FAE,0x1FB0,3,code,vector-root straight-line instruction
+15,0x1FB1,0x1FDF,47,unclassified,rom-wide initial data classification
+15,0x1FE0,0x1FEF,16,text,unique embedded cartridge title signature
+15,0x1FF0,0x1FF9,10,unclassified,rom-wide initial data classification
+15,0x1FFA,0x1FFF,6,vector,6502 NMI/RESET/IRQ vector table

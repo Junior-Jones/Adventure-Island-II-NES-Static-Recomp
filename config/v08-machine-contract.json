@@ -1,0 +1,225 @@
+{
+  "accuracy_limits": [
+    "$4017 frame-counter block/reload edge cases are represented at CPU-cycle resolution; transistor/sub-half-cycle edge behavior is not claimed exact",
+    "DMC/OAM collision arbitration preserves stolen CPU cycles on the common scheduler but does not claim every transistor-level get/put alignment quirk",
+    "PCM uses deterministic fixed-rate resampling and fixed-integer nonlinear mixing; analog filtering, speaker response and host-device latency are outside V08 authority",
+    "controller model covers two standard serial pads; microphone, Four Score and expansion-port peripherals are not target-required",
+    "APU output is deterministic machine state, not yet oracle-differentially certified; that belongs to post-construction verification"
+  ],
+  "active_starter": "Starter NES(4).zip",
+  "apu": {
+    "channels": [
+      "pulse 1",
+      "pulse 2",
+      "triangle",
+      "noise",
+      "DMC"
+    ],
+    "dmc": "NTSC rate table, sample address/length, wrap, loop, IRQ, 4-cycle common-scheduler fetch",
+    "frame_counter": "NTSC 4-step/5-step, delayed $4017 apply, frame IRQ inhibit/clear",
+    "mixing": "fixed-integer NES nonlinear pulse + TND equations",
+    "pcm": {
+      "capacity_samples": 8192,
+      "cpu_rate_hz": 1789773,
+      "overflow": "drop newest and count; no unbounded allocation",
+      "sample_rate_hz": 44100
+    },
+    "status": "$4015 channel activity, frame IRQ, DMC IRQ; read clears frame IRQ; write controls channel enables and DMC start/stop"
+  },
+  "closure_claims": {
+    "cold_boot": "NOT CLOSED; native zero-input boot is trap-free for 206 frames, but Starter-required bounded oracle checkpoint agreement has not yet been performed",
+    "cpu_graph": "current V04 accepted graph remains closed; ROM-wide V10 fixed-point rescan/closure not yet claimed",
+    "machine": "V08 target-required CPU/mapper/PPU/APU/DMA/controller construction exists; V09 persistence/public API boundary and V10 full construction audit remain",
+    "qualification": "NOT AUTHORIZED before V10 STATIC_CORE_COMPLETE"
+  },
+  "cold_boot_endurance": {
+    "claim": "vertical machine/endurance evidence only; cold-boot closure remains open until bounded oracle checkpoints agree",
+    "completed_frames": 206,
+    "controller_latches": 398,
+    "controller_or_gameplay_input_used": false,
+    "controller_reads": 3184,
+    "cpu_cycles": 6150905,
+    "generated_steps": 2000000,
+    "mode": "v08-static-cold-boot-no-input",
+    "oam_dma_count": 199,
+    "trap_code": 0
+  },
+  "construction_policy": {
+    "controller_state_enters_machine": "only through emulated $4016 strobe/latch and $4016/$4017 serial reads",
+    "gameplay_used_for_static_construction": false,
+    "interpreter_or_emulator_fallback": false,
+    "oracle_used_for_static_discovery": false,
+    "runtime_opcode_decode": false,
+    "runtime_opcode_fetch": false
+  },
+  "dma": {
+    "collision": "DMC pending work is arbitrated inside OAM DMA and recorded",
+    "dmc": "4 scheduler cycles per sample fetch",
+    "oam": "$4014 page copy through CPU bus and PPU $2004; 513/514 stolen CPU cycles based on alignment"
+  },
+  "input": {
+    "button_shift_order": [
+      "A",
+      "B",
+      "Select",
+      "Start",
+      "Up",
+      "Down",
+      "Left",
+      "Right"
+    ],
+    "host_setter": "updates live host state only",
+    "latch": "$4016 emulated strobe snapshots live state into serial shift registers",
+    "ports": 2
+  },
+  "milestone": "V08",
+  "reference_source_hashes": {
+    "ApuEnvelope.h": "a58aa383d593374aeb17c4cd13aa4d68a655ed927e661cd84af29e15a2dae375",
+    "ApuFrameCounter.h": "98323059942ef0a3c683343b767edec96ac01ba86085dbe0ce885fd31d8055c1",
+    "ApuLengthCounter.h": "b6afd124298059b8b4fb39c3f9382fde0f749f3db1db4a49f0a25db890f8932f",
+    "DeltaModulationChannel.cpp": "0730938123c4885a74709eca2f5456ce30e034e65034da1bf6b374f60b654648",
+    "DeltaModulationChannel.h": "884fa678f840972e16ebf1b98894e12ef7c260ee9251151eb07f986cf61c17ee",
+    "NesApu.cpp": "8bda5aca60a6e1368519aaf55665653b3737dc8ddc5cfd6c5332b91e554ca1c7",
+    "NoiseChannel.h": "1b59e48b7cf672158feb940aadda034074d648ca4c670b8aebdf470d2b2112b8",
+    "SquareChannel.h": "1b5ae2fe53351823aee72eddf8486d353a68a146d6ca520a0f589c323852eba4",
+    "TriangleChannel.h": "e3ec0a36503e45202693cc2bf230aa385f2b8cf1a97f644a14a52c8aa8cc8175"
+  },
+  "schema": 1,
+  "source_hashes": {
+    "config/source-pins.json": "c48e5d6b6dda52571e9cb11832ebb52c27f73073342074fcefed0ac2d7920f8b",
+    "generated/v08/apu-dma-input-static-demand.json": "07cfd7d2c496730e2c740ac43ba854e04c152d55c33cafb4ae15176f1c6ffc6c",
+    "src/apu/ai2_v08_apu.c": "82aa15f8d11adeeb7b7e07076dbb5ab510324bb6bee0c40b6f13c77e773c0253",
+    "src/apu/ai2_v08_apu.h": "7899f46071bec181cc856a6974bb4b7440ac5aa7627fcc66c50f1b257a0f43e1",
+    "src/runtime/ai2_v06_runtime.c": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037",
+    "src/runtime/ai2_v06_runtime.h": "d6eb699c3b43c254b5d7da46691a1152009f4a57df163d7ca070cbf5f4bcf9dc",
+    "tests/construction/test_v08_apu_dma_input.c": "792aeceec5dc1ad99748a124aede4e5d45ad928dadebfae53a95bbaecd4ac5d4",
+    "tests/construction/test_v08_apu_dma_input_build.py": "7fb4391d0459dcfcbd63a4f779dfd7b67b5f73110f0a9293fecb583efd59b066",
+    "tests/construction/test_v08_cold_boot.py": "0dfad6204673dd1e4b61bde9dd94f3205ce260fe63668bc3c36ade896dbaa044",
+    "tests/construction/test_v08_static_demand.py": "e385b4599ed87194ab5456b474f54153a01825484abd0e87fd3b0a33fde7876e",
+    "tests/construction/test_v08_static_source.py": "c904f22c94d86a43eb5df16d5e93901fee8118ef3b9cf3203d59d1bb98520505",
+    "tools/v08_static_cold_boot.c": "74d48d1225de4ad3f696edfc0733363d43df8dd31a5ab78526f10862f146a112"
+  },
+  "static_demand": {
+    "base_register_counts": {
+      "0x4000": 5,
+      "0x4001": 3,
+      "0x4002": 1,
+      "0x4003": 1,
+      "0x4014": 1,
+      "0x4015": 1,
+      "0x4016": 3,
+      "0x4017": 2
+    },
+    "channels_implemented": [
+      "pulse1",
+      "pulse2",
+      "triangle",
+      "noise",
+      "DMC"
+    ],
+    "construction_basis": "V04 statically proved instruction ledger; no gameplay traces",
+    "controller_ports": [
+      1,
+      2
+    ],
+    "direct_or_indexed_io_contexts": 17,
+    "expansion_audio_reason": "NES-TLROM-03 / Sharp MMC3B has no expansion audio",
+    "expansion_audio_required": false,
+    "gameplay_seeds_used": 0,
+    "implemented_cpu_io_surface": "0x4000-0x4017 with $4014 OAM DMA separated by V06 bus arbitration",
+    "indexed_audio_contexts": [
+      {
+        "bank": 15,
+        "base_address": "0x4000",
+        "bytes": "9d0040",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEA8B"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4001",
+        "bytes": "9d0140",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEA91"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4000",
+        "bytes": "9d0040",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEAFD"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4001",
+        "bytes": "9d0140",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEB0B"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4001",
+        "bytes": "9d0140",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEB51"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4000",
+        "bytes": "9d0040",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEC00"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4000",
+        "bytes": "9d0040",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEC1F"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4002",
+        "bytes": "9d0240",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEC5F"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4003",
+        "bytes": "9d0340",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xEC98"
+      },
+      {
+        "bank": 15,
+        "base_address": "0x4000",
+        "bytes": "9d0040",
+        "mnemonic": "STA",
+        "mode": "AbsXW",
+        "pc": "0xED2A"
+      }
+    ],
+    "milestone": "V08",
+    "schema": 1,
+    "source": "generated/v04/instructions.csv"
+  },
+  "status": "complete",
+  "target": {
+    "board": "NES-TLROM-03",
+    "expansion_audio": false,
+    "game": "Adventure Island II (USA)",
+    "mapper": 4,
+    "mapper_chip": "Sharp MMC3B",
+    "region": "NTSC"
+  }
+}

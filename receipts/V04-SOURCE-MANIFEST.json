@@ -1,0 +1,556 @@
+{
+  "schema": 1,
+  "project": "Adventure Island II NES Static Recomp",
+  "milestone": "V04",
+  "file_count": 109,
+  "aggregate_method": "sha256 of UTF-8 lines: <file_sha256><two spaces><bytes><two spaces><path><newline>, path-sorted",
+  "aggregate_sha256": "fb8c9235bd5ab7098b271c368fb7e72d8720b43051be67a0b54ae1bb31d8a217",
+  "excluded_self": "receipts/V04-SOURCE-MANIFEST.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 737,
+      "sha256": "7549d1c07a4c1e236fe2b5028eb80288156c6ea88336c803615f1ee72df61116"
+    },
+    {
+      "path": "ROM-REQUIREMENTS.txt",
+      "bytes": 504,
+      "sha256": "08288e928eeaac7fc681a827fa0fe186293c83f94268c0876f48d48fc0aa1e58"
+    },
+    {
+      "path": "Rom/Readme.txt",
+      "bytes": 240,
+      "sha256": "24905baafaeaa271488b753ad6a75297e39cbebd56c1050e61c0a08780789b41"
+    },
+    {
+      "path": "VERSION.txt",
+      "bytes": 11,
+      "sha256": "deff9a0289c28ff406278486e268485b804f5f9e8799cdc86bb6dbac065f113e"
+    },
+    {
+      "path": "config/2a03-opcodes.json",
+      "bytes": 31780,
+      "sha256": "ab73d3f6efe8a7152a6a359bba67a18499c1e44928f9de6732771527a39cb87a"
+    },
+    {
+      "path": "config/board-evidence.json",
+      "bytes": 1237,
+      "sha256": "0cafc6462281491a14234f316660fbcd3240ce4ab11dcf28c5114ef30ac82d31"
+    },
+    {
+      "path": "config/expected-rom.json",
+      "bytes": 565,
+      "sha256": "24723fbfae7331c440b0b8b2fbdd63b6c2abf79a8f8a859293b83204798a8069"
+    },
+    {
+      "path": "config/mapper-contract.json",
+      "bytes": 7209,
+      "sha256": "e2435b18696a6451a2a5db65545f4f87decad0e6e838d126ad5eda522c394fcb"
+    },
+    {
+      "path": "config/source-pins.json",
+      "bytes": 4013,
+      "sha256": "8ab3527ade8121afeb35081b4b69e381c960bab3b8e7f3fa85e66d1edf010606"
+    },
+    {
+      "path": "config/target-profile.json",
+      "bytes": 2321,
+      "sha256": "6b9d978c86b0d9acef279e25cb1d59f87d79ba50278c528d4941c7afc20202bf"
+    },
+    {
+      "path": "config/v04-static-proofs.json",
+      "bytes": 5751,
+      "sha256": "ffec9fa0c97ae06e6affddc83fe25143457919d6fcc44eeeca76958b12562746"
+    },
+    {
+      "path": "docs/IDENTITY-UNRESOLVED.md",
+      "bytes": 1226,
+      "sha256": "e630217582c8248060af087583dac898ac61baaf17d8b2d085080797bf73cdc5"
+    },
+    {
+      "path": "docs/MAPPER-CONTRACT.md",
+      "bytes": 8162,
+      "sha256": "202f5cef07024127444dad365dbe175767944f18ea1c4b0a2e76b66ca68d38a6"
+    },
+    {
+      "path": "docs/STARTER-FILE-INVENTORY.md",
+      "bytes": 1705,
+      "sha256": "48e02977b0eca82837dba50fc89be2dd8055537c5de7e33b86014862653eb6d2"
+    },
+    {
+      "path": "docs/STATIC-CORE-STATUS.md",
+      "bytes": 2857,
+      "sha256": "1269c10fb02b42ad3d534d1dac2dfa96c39feadd022fbd6d55b5b085db20d882"
+    },
+    {
+      "path": "docs/UNRESOLVED-BOUNDARIES.csv",
+      "bytes": 828,
+      "sha256": "9911871e5491a6c6e60a9196c274431d38eb3922ed9a4953dde8664e99a42004"
+    },
+    {
+      "path": "docs/V01-REPORT.md",
+      "bytes": 1430,
+      "sha256": "042694ba06867686c884f32d0c3fcacf3d09182398e0ccdbc290282a5c771aab"
+    },
+    {
+      "path": "docs/V02-REPORT.md",
+      "bytes": 2133,
+      "sha256": "b9d1075bcdb296a27dcbb2b13c67788d192408d9a646fdebad0683bcd4005957"
+    },
+    {
+      "path": "docs/V03-DISASSEMBLY-INVENTORY.md",
+      "bytes": 3455,
+      "sha256": "b4b7568e31432a4dd902deedec1b7099ad1098db990866232d13ba96b3b19a62"
+    },
+    {
+      "path": "docs/V03-REPORT.md",
+      "bytes": 1924,
+      "sha256": "7f0c1e31a05b3a8cf45d1dad32f33355078d009cc59dcbe048d46f335888a452"
+    },
+    {
+      "path": "docs/V04-CONTROL-FLOW-AND-RAM-CLOSURE.md",
+      "bytes": 4561,
+      "sha256": "6c383bacaa760fbaded73eb37f3220140f183bdc853203fc6c3c95e9bbf00942"
+    },
+    {
+      "path": "docs/V04-REPORT.md",
+      "bytes": 1944,
+      "sha256": "38490015499e62f44384404bd1bfae38b7a413e7a752e971ebafe87cba78de32"
+    },
+    {
+      "path": "generated/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "generated/v03/classification-ranges.csv",
+      "bytes": 1828,
+      "sha256": "9f5792dc5c04551a11162f9a1276a31991c2af010f6ddfda05739bca67b85f81"
+    },
+    {
+      "path": "generated/v03/control-flow-seeds.csv",
+      "bytes": 602,
+      "sha256": "10f94dd90ac9bdd0399cc23935e93e21e6d25752d28b5813970606eeafe63607"
+    },
+    {
+      "path": "generated/v03/data-evidence.csv",
+      "bytes": 1059,
+      "sha256": "cf3e9daa33a5cca01f1e87b26ac3bdc4cc802b9e9dea704bde5899ce8c66ae26"
+    },
+    {
+      "path": "generated/v03/decode-conflicts.csv",
+      "bytes": 54,
+      "sha256": "8ee00e1ea0771966b1af71d0f0f103b8fe08052a3b2b221126bff3c6befe726b"
+    },
+    {
+      "path": "generated/v03/instruction-ledger.csv",
+      "bytes": 1462,
+      "sha256": "43a7311c0ed367edd8537b0fd0dcbcdbeb9adbade77b95422365b104dc19a572"
+    },
+    {
+      "path": "generated/v03/overlap-conflicts.csv",
+      "bytes": 74,
+      "sha256": "da67941955cff7ded7468b83afed9346bf8cd123c709eb8f9cd4df7e9ae6243e"
+    },
+    {
+      "path": "generated/v03/prg-bank-inventory.json",
+      "bytes": 6828,
+      "sha256": "0c18cd0e9d8f0b75e70dd6ac151924fe376d6bdf8f3a2837c2ba03a7045b2b91"
+    },
+    {
+      "path": "generated/v03/roots.csv",
+      "bytes": 401,
+      "sha256": "8f2a1d6d7f5dcd2d1883d10771356d318974456706292b1ad41b60effdc130e0"
+    },
+    {
+      "path": "generated/v03/summary.json",
+      "bytes": 2064,
+      "sha256": "40cab9014c4dea8d15433ecc0707302bcbe5e93b6c23d8f2ef84462e6f22c6fa"
+    },
+    {
+      "path": "generated/v04/closure-summary.json",
+      "bytes": 1192,
+      "sha256": "907ea77323db411235985fa8dc938308be48dca9f6dcdb05b24f52b4fd23a6ea"
+    },
+    {
+      "path": "generated/v04/edges.csv",
+      "bytes": 681552,
+      "sha256": "dfc52fa1770fe9d53129f7ede2d177828aeff7fad14ae731b5a2280f098340ac"
+    },
+    {
+      "path": "generated/v04/executable-ram-epochs.json",
+      "bytes": 412,
+      "sha256": "b409d07ab0f3e84a72c42f24bc7a702979085033b8dd4a6f50533ab941a9486a"
+    },
+    {
+      "path": "generated/v04/generated-manifest.json",
+      "bytes": 1357,
+      "sha256": "41f84f154ed95ec0b8e327ca6581e9e0b2598a7e90b033748980db9c2bb54f67"
+    },
+    {
+      "path": "generated/v04/indirect-targets.csv",
+      "bytes": 14621,
+      "sha256": "3359dff719230dc9282b3cab8d292ac74840ae857bea4eb8935413631fb3fe8a"
+    },
+    {
+      "path": "generated/v04/inline-data.csv",
+      "bytes": 486,
+      "sha256": "be1d59faa65cef2558ec9b6efa4a24b0a8c9de361464a2275122ffc707a794e8"
+    },
+    {
+      "path": "generated/v04/instructions.csv",
+      "bytes": 694610,
+      "sha256": "2fd63d88f7fd52509756e70d462c387b1faf8bbf9ecfb9f42369d1b77da04d80"
+    },
+    {
+      "path": "generated/v04/return-continuations.csv",
+      "bytes": 27236,
+      "sha256": "05e3f79b1e8811047f6454d290679766f00c254d4406493d0e2aa1664b86131f"
+    },
+    {
+      "path": "generated/v04/unresolved-edges.csv",
+      "bytes": 44,
+      "sha256": "ca8f8f77b9a450de3be4d25c6c44e638f1993df777b8393ce3e4e617e3bc23bf"
+    },
+    {
+      "path": "receipts/V01-SOURCE-MANIFEST-VERIFY.txt",
+      "bytes": 175,
+      "sha256": "35a9b95a09ec774c23cc8939b0019777195c3c9631305d291d38283e7b98e1dd"
+    },
+    {
+      "path": "receipts/V01-SOURCE-MANIFEST.json",
+      "bytes": 7115,
+      "sha256": "b16054aa3b1597c65d7cbff1c96ac101eaa2563c2a92d31acfa296ad44c35ee3"
+    },
+    {
+      "path": "receipts/V02-SOURCE-MANIFEST-VERIFY.txt",
+      "bytes": 276,
+      "sha256": "567b90dd02383e59fdfd26af581eed8c01b51764f5592e1363a717b515e5c405"
+    },
+    {
+      "path": "receipts/V02-SOURCE-MANIFEST.json",
+      "bytes": 11276,
+      "sha256": "0d92e4c8a4361cdef854778fc9d7752eff07324c57a36cf49bd55ffe186cca31"
+    },
+    {
+      "path": "receipts/V03-SOURCE-MANIFEST.json",
+      "bytes": 15573,
+      "sha256": "f4c470aed79994b036281fef115fbe39cee853ff5268855ec55771dd9c4613a3"
+    },
+    {
+      "path": "receipts/disassembly/v03-final-regression.txt",
+      "bytes": 799,
+      "sha256": "16a0766f5cf1858f7ce1439dd22d55d0cc697bf28319889838bd4bb73784a346"
+    },
+    {
+      "path": "receipts/disassembly/v03-generated-hashes.txt",
+      "bytes": 930,
+      "sha256": "78eaadbc0e5cae7810fa6baf6358711c4ef535f35ec2072c29aab9d02df3beba"
+    },
+    {
+      "path": "receipts/disassembly/v03-generation.txt",
+      "bytes": 162,
+      "sha256": "16b66586ff28fe71a0fd69cf8f99570e20890d5436a7e21849b130672ebd4afa"
+    },
+    {
+      "path": "receipts/disassembly/v03-generator-gate.txt",
+      "bytes": 134,
+      "sha256": "159514db31957dced0631ad164f233420897c92b945128b3dd29539152830a4f"
+    },
+    {
+      "path": "receipts/disassembly/v03-inventory-tests.txt",
+      "bytes": 143,
+      "sha256": "d22daf60ef70e39a9bffe74d55e855fe65b38e2c7712cf816bedc0e7e4d9348a"
+    },
+    {
+      "path": "receipts/disassembly/v03-no-rom-in-source.txt",
+      "bytes": 41,
+      "sha256": "5324be7ee3cc4fe06e9eee83b561148339557740cefd5cc9a021ea48eb6344b3"
+    },
+    {
+      "path": "receipts/disassembly/v03-opcode-source-verification.txt",
+      "bytes": 420,
+      "sha256": "bddbc6643c48ce8a1a28d522e5e44c7e1801e9b9f3dd1322f72c78befb0ed77a"
+    },
+    {
+      "path": "receipts/disassembly/v03-oracle-self-test.txt",
+      "bytes": 201,
+      "sha256": "e7d9c9aaa6315cf7595a0233e2b95db2db7c191a793dfaf17a27b8666cbb997b"
+    },
+    {
+      "path": "receipts/disassembly/v03-reproducibility.txt",
+      "bytes": 350,
+      "sha256": "11421badf5bf1cffb198feb198fb56e5f2d65db8904f8f84e991cea97a316ac0"
+    },
+    {
+      "path": "receipts/disassembly/v03-v01-v02-regression.txt",
+      "bytes": 284,
+      "sha256": "ea938b323c26c1fbb56f9a3230b911410f3243ce29354b54a1d4f35673ae587a"
+    },
+    {
+      "path": "receipts/mapper/v02-authority-hashes.txt",
+      "bytes": 1094,
+      "sha256": "5cf158b8da4991b72c99c1c24fe3f9eb8b803510a668ea336cf2d05e6c346d79"
+    },
+    {
+      "path": "receipts/mapper/v02-build-and-tests.txt",
+      "bytes": 243,
+      "sha256": "34878c70e4ff223f1b65ebe34b38be4565b33cf0ce99726b92757ecb31b0d832"
+    },
+    {
+      "path": "receipts/mapper/v02-contract-validation.txt",
+      "bytes": 122,
+      "sha256": "da235e8156720cf7ea8fe5c9502fa13fdb326658f52c170906f6582b2ed9f5d5"
+    },
+    {
+      "path": "receipts/mapper/v02-disassembler-gate.txt",
+      "bytes": 130,
+      "sha256": "69c11bb7964aaf4a4ab5e68e96d2ba6c73b886519f67089b3961e9ab6d7d8e28"
+    },
+    {
+      "path": "receipts/mapper/v02-exact-rom-integration.txt",
+      "bytes": 348,
+      "sha256": "587caa1438e84e11ef52dab1dc79a4a2a9a9896ab0bcffd30dc515b10a93d769"
+    },
+    {
+      "path": "receipts/mapper/v02-final-regression.txt",
+      "bytes": 202,
+      "sha256": "82ded246f665b7dc4adca4b98f6cfb66ff39df2a55e132adb262a25e7a371e6c"
+    },
+    {
+      "path": "receipts/mapper/v02-generator-gate.txt",
+      "bytes": 127,
+      "sha256": "bd5fcb34c5065b7d1f0545c4d37083ba4137b21f5527f2926f5aa05f48a068c9"
+    },
+    {
+      "path": "receipts/mapper/v02-no-rom-in-source.txt",
+      "bytes": 71,
+      "sha256": "39fe52fadf17bdc8ccdc2768323d8b22d6c7179bfdeaf3124098a6cefa7fe096"
+    },
+    {
+      "path": "receipts/mapper/v02-oracle-self-test.txt",
+      "bytes": 210,
+      "sha256": "448ed29add65123b22e6bf9c998398c5292c9a7dd151a6c03a840655f930aeb4"
+    },
+    {
+      "path": "receipts/mapper/v02-sanitizer.txt",
+      "bytes": 279,
+      "sha256": "2cf7d604d00764406289f4d8576565183e927072fc2159f848a0bdaf02790501"
+    },
+    {
+      "path": "receipts/mapper/v02-source-evidence.txt",
+      "bytes": 705,
+      "sha256": "1cea5bae48eadd1ca5c6e1b978dc9428ab72f911d847b888940f1cbca9e09883"
+    },
+    {
+      "path": "receipts/mapper/v02-v01-regression.txt",
+      "bytes": 173,
+      "sha256": "db927f44ac9aebca167048e4d47452cc86017ffeef350c377d9fe927639c624d"
+    },
+    {
+      "path": "receipts/milestones/V01-receipt.json",
+      "bytes": 4549,
+      "sha256": "ec19d563aecdb71bdb6ad33b6101b21f09e36e677554279717126cd2ab63b70e"
+    },
+    {
+      "path": "receipts/milestones/V02-receipt.json",
+      "bytes": 6157,
+      "sha256": "f053505f3f85d8c2e7ac7f1dea67f7ec449216ebc29b34b6bbade3ef1d47347a"
+    },
+    {
+      "path": "receipts/milestones/V03-receipt.json",
+      "bytes": 7172,
+      "sha256": "5d9a797987acb1476eb7aa116e996904d5c91b963e7cc7543bab6133d6fba996"
+    },
+    {
+      "path": "receipts/milestones/V04-receipt.json",
+      "bytes": 7431,
+      "sha256": "d5a0d8ab0c3892b8c798bbf080824106211782439c66649e7598dacd38b7c6f3"
+    },
+    {
+      "path": "receipts/oracle/mesen-self-test.txt",
+      "bytes": 133,
+      "sha256": "4364b28960ab892df963635a5a90117922e4fc00d29ecceaa012ecaa05e4cd8a"
+    },
+    {
+      "path": "receipts/rom/exact-validation.json",
+      "bytes": 590,
+      "sha256": "2f306c0ec02781bfc60ff7303e993bc62e7a92d1297073e9115f3dbb68e88cf3"
+    },
+    {
+      "path": "receipts/rom/independent-inspector.json",
+      "bytes": 534,
+      "sha256": "c9456e605db1d2c3cd026d5914b78234ff8adb37437c3e1e4727e153f4275704"
+    },
+    {
+      "path": "receipts/rom/no-rom-in-source.txt",
+      "bytes": 50,
+      "sha256": "6f8ba394c5710d8e423d54ac3b83cfb61939fff7c997d3aeee7097795a770fee"
+    },
+    {
+      "path": "receipts/rom/rom-inspection.json",
+      "bytes": 534,
+      "sha256": "c9456e605db1d2c3cd026d5914b78234ff8adb37437c3e1e4727e153f4275704"
+    },
+    {
+      "path": "receipts/rom/v01-negative-tests.txt",
+      "bytes": 74,
+      "sha256": "98451189f26e5f42535166130351bea04ab36d86213430a4d7c1e47e011a464e"
+    },
+    {
+      "path": "receipts/rom/vector-proof.txt",
+      "bytes": 153,
+      "sha256": "3cf8e3cfb8aab2f89751baa07eddddfdaf6db2fcabe72273b75b4c635128f9a7"
+    },
+    {
+      "path": "receipts/tools/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "receipts/tools/disassembler-v01-refusal.txt",
+      "bytes": 87,
+      "sha256": "3ab3b023c470c9e5ba59121b24f194e8a7a1c08b49064338da0e71a618929cd4"
+    },
+    {
+      "path": "receipts/tools/future-tool-gates.txt",
+      "bytes": 33,
+      "sha256": "7473b59ca22cea7964b5c28ac5253efea597bd25f0dc8bad5c9a6d431699b6ac"
+    },
+    {
+      "path": "receipts/tools/generator-v01-refusal.txt",
+      "bytes": 84,
+      "sha256": "e6ebf9eba268e58af8da7ea38f7bb782431c8f4d10d59740e7f0f47ab6912f43"
+    },
+    {
+      "path": "receipts/tools/host-toolchain.txt",
+      "bytes": 85,
+      "sha256": "9c50f77a2eef94795310a78609d7ea10f05919f3330c2d49a3497c8957f89d6f"
+    },
+    {
+      "path": "receipts/tools/reference-unpack-counts.txt",
+      "bytes": 129,
+      "sha256": "b551aaa25eae04a4e500c81e88068ea610296c9f2d123a26ea5b4410893d911d"
+    },
+    {
+      "path": "receipts/tools/starter-manifest-verification.txt",
+      "bytes": 31,
+      "sha256": "d9deba2e060c9608e6f8794442fb21dbdc89ed5a700d52fceea9fad80cb11e1e"
+    },
+    {
+      "path": "receipts/tools/starter-review-receipt.json",
+      "bytes": 15736,
+      "sha256": "ff9910cb209e0ae9aede5ba49bb3f7c335e6842bcacb8fb66aab44f7114a859d"
+    },
+    {
+      "path": "receipts/v04/v04-construction-test.txt",
+      "bytes": 163,
+      "sha256": "777d9b04315f4eef70cf34d6a17fb3d41e8d0952fb30e02b995a835f2fdd3624"
+    },
+    {
+      "path": "receipts/v04/v04-regression-gate.txt",
+      "bytes": 1222,
+      "sha256": "2234d0f0d246b87ef9e7a3909dd4f82b93cc4a662132969b38f632a58a282356"
+    },
+    {
+      "path": "src/common/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/gui/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/headless/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/mapper/ai2_mmc3_mapper.c",
+      "bytes": 10044,
+      "sha256": "898c7e4bebf5ec68b4af069beef0e4390e6497bf8deb4e204f32a86107d1cbd2"
+    },
+    {
+      "path": "src/mapper/ai2_mmc3_mapper.h",
+      "bytes": 4054,
+      "sha256": "9542d4d7489cbb0db2fb1d1123bbbd2f61f7bc809ad7bd7bc6e031f10e1b6b72"
+    },
+    {
+      "path": "src/runtime/internal/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/construction/test_v01_rom_validation.py",
+      "bytes": 1553,
+      "sha256": "79a528a1011401a9d7e3c62b369750142fb3ed2452af3b7b9817afe44a83cf2c"
+    },
+    {
+      "path": "tests/construction/test_v02_mapper.c",
+      "bytes": 18760,
+      "sha256": "38f9851d3f637d5f8b24b15a9c4e902b8cffab3fa9661091a0bc778b826e7433"
+    },
+    {
+      "path": "tests/construction/test_v02_mapper_contract.py",
+      "bytes": 1691,
+      "sha256": "596c064d13ed87f10bb6e6752e7e8b6f013094bd00d38cd88e1210aca50a0286"
+    },
+    {
+      "path": "tests/construction/test_v03_inventory.py",
+      "bytes": 8646,
+      "sha256": "cfd34f90d209f820a8e257b650ac9c3ff6f76391788a8a27bc7071fc6a59c3a5"
+    },
+    {
+      "path": "tests/construction/test_v04_control_flow.py",
+      "bytes": 8975,
+      "sha256": "505fb04afa443934135376cb264a3971d6048a01a36f96b9a67c5210fcf70302"
+    },
+    {
+      "path": "tests/post-core/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/.keep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/analyze_v04_control_flow.py",
+      "bytes": 13452,
+      "sha256": "2cb85e3f918edc7be89f523284b47de94da7f12a13d6045eafe6a9defa4c6277"
+    },
+    {
+      "path": "tools/disassemble_program_map.py",
+      "bytes": 23954,
+      "sha256": "8a9333720913e620ba35a234fe874d346a51d0efd4cfa8f53125c81ab3588a95"
+    },
+    {
+      "path": "tools/generate_static_core.py",
+      "bytes": 371,
+      "sha256": "717d160cec82a00345099d19ce4e19d7dd4017a79b8b314dd8dcc1ee81520273"
+    },
+    {
+      "path": "tools/inspect_nes_rom.py",
+      "bytes": 2747,
+      "sha256": "4669c93a5e8d2c81f61fc97b2f9ae9beed7f239cf981877b8724ef74348c287f"
+    },
+    {
+      "path": "tools/make_source_manifest.py",
+      "bytes": 2134,
+      "sha256": "750d556c914cb1f9acd0c31d56c167d0a1271f746ccbb5dfcf9ed16e6c97ce54"
+    },
+    {
+      "path": "tools/validate_target_rom.py",
+      "bytes": 3000,
+      "sha256": "5bce7273e755b8d0af0d7df35d4bf434c1286719c1b728e00d4d8ce7f9a63fba"
+    },
+    {
+      "path": "tools/verify_source_manifest.py",
+      "bytes": 1772,
+      "sha256": "fa9d7c6452a0a63b53dc256c66dc7076353467f70ab8e11210cee46833598baf"
+    }
+  ]
+}

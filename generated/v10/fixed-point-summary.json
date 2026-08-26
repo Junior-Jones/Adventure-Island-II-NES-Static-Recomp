@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "result": "PASS",
+  "rom_wide_fixed_point": true,
+  "construction_method": "offline static exact-ROM fixed point; no gameplay/emulator-observed targets",
+  "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+  "prg_sha256": "e021cedf0b7700b3eee7e5b76b2e23000075e06f4d7c13a4b556452952d3aec0",
+  "prg_bytes": 131072,
+  "accepted_instruction_contexts": 16544,
+  "accepted_instruction_bytes": 35423,
+  "inline_data_bytes": 244,
+  "metadata_bytes": 22,
+  "statically_excluded_immutable_data_bytes": 95383,
+  "unresolved_prg_bytes": 0,
+  "unresolved_current_graph_edges": 0,
+  "executable_ram_epochs": 0,
+  "self_modifying_code_epochs": 0,
+  "edge_records": 19833,
+  "executable_physical_banks": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "formally_excluded_physical_banks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "fixed_point_argument": [
+    "RESET/NMI/IRQ and all reviewed roots are contained in the accepted finite V04 graph.",
+    "Every finite V04 control edge lands on an accepted instruction and zero current-graph edges are unresolved.",
+    "All indirect, stack-dispatch, return-continuation and executable-RAM cases are finite and closed by V04 authority.",
+    "V10 proves all reachable MMC3 bank-select writes keep PRG mode D6=0; R7 execution is exactly banks 10-13.",
+    "There are zero executable transfers into the R6 $8000-$9FFF window, so R6 values cannot create code authority.",
+    "Fixed banks 14/15 plus R7 banks 10-13 therefore exhaust every executable PRG mapping reachable from roots.",
+    "With no unresolved edge, executable RAM epoch, or additional mapper execution domain, no unowned PRG byte can become a new executable root."
+  ]
+}

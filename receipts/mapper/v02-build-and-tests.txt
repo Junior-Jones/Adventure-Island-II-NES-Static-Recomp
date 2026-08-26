@@ -1,0 +1,5 @@
+V02 FINAL CLEAN BUILD + EXHAUSTIVE CONSTRUCTION TEST
+date=2026-08-18
+cc (Debian 14.2.0-19) 14.2.0
+flags=-std=c11 -Wall -Wextra -Werror -pedantic
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration

@@ -1,0 +1,9 @@
+Exact external ROM V02 integration
+file_sha256=10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc
+payload_crc32=771c8855
+prg_crc32=6fa0e650
+chr_crc32=1ddb1c0e
+fixed_physical_prg_bank=15
+vector_bytes=ce e0 ae ff 52 e1
+nmi=$E0CE reset=$FFAE irq=$E152
+PASS: exact ROM vectors resolve through V02 fixed-bank mapping and construction test

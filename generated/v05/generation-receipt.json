@@ -1,0 +1,72 @@
+{
+  "authority": {
+    "rom_wide_closure_claimed": false,
+    "v04_indirect_entries": 404,
+    "v04_instruction_contexts": 16544,
+    "v04_return_rows": 1133
+  },
+  "execution_policy": {
+    "dispatch_miss": "AI2_V05_STEP_MISSING_IDENTITY/MISSING_BANK",
+    "dynamic_target_miss": "AI2_V05_STEP_BAD_DYNAMIC_TARGET",
+    "emulator_fallback": false,
+    "interpreter": false,
+    "runtime_opcode_decode": false,
+    "runtime_opcode_fetch": false
+  },
+  "generated": {
+    "bank_files": 16,
+    "content_aggregate_sha256": "e708f22070d971e515dafa22d56cf4957e2f03380db5f760e3f0b56200414303",
+    "content_file_count": 24,
+    "instruction_contexts": 16544,
+    "opcode_forms": 99,
+    "per_bank": {
+      "0": 0,
+      "1": 0,
+      "10": 2072,
+      "11": 2691,
+      "12": 2925,
+      "13": 2935,
+      "14": 2609,
+      "15": 3312,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    }
+  },
+  "milestone": "V05",
+  "normalized_arguments": [
+    "--rom",
+    "<EXTERNAL_ROM>",
+    "--output",
+    "<OUTPUT>",
+    "--root",
+    "<PROJECT_ROOT>"
+  ],
+  "rom": {
+    "embedded_in_output": false,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+    "prg_sha256": "e021cedf0b7700b3eee7e5b76b2e23000075e06f4d7c13a4b556452952d3aec0"
+  },
+  "schema": 1,
+  "source_hashes": {
+    "config/2a03-opcodes.json": "ab73d3f6efe8a7152a6a359bba67a18499c1e44928f9de6732771527a39cb87a",
+    "config/v04-static-proofs.json": "ffec9fa0c97ae06e6affddc83fe25143457919d6fcc44eeeca76958b12562746",
+    "generated/v04/closure-summary.json": "907ea77323db411235985fa8dc938308be48dca9f6dcdb05b24f52b4fd23a6ea",
+    "generated/v04/edges.csv": "dfc52fa1770fe9d53129f7ede2d177828aeff7fad14ae731b5a2280f098340ac",
+    "generated/v04/indirect-targets.csv": "3359dff719230dc9282b3cab8d292ac74840ae857bea4eb8935413631fb3fe8a",
+    "generated/v04/instructions.csv": "2fd63d88f7fd52509756e70d462c387b1faf8bbf9ecfb9f42369d1b77da04d80",
+    "generated/v04/return-continuations.csv": "05e3f79b1e8811047f6454d290679766f00c254d4406493d0e2aa1664b86131f",
+    "generated/v04/unresolved-edges.csv": "ca8f8f77b9a450de3be4d25c6c44e638f1993df777b8393ce3e4e617e3bc23bf",
+    "tools/generate_static_core.py": "f94fcc0a3944099e05d86652796fb9273a2926b53e45b63efdb8d325b27b978c"
+  },
+  "tool": {
+    "name": "ai2-static-generator",
+    "version": "0.5.1-v05-compact"
+  }
+}

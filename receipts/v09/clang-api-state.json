@@ -1,0 +1,8 @@
+{
+  "compiler": "clang",
+  "frontend_equivalence": false,
+  "functional_pass": true,
+  "functional_stdout": "V09 opaque API/snapshot/hook construction: PASS (65 checks)",
+  "mode": "clang",
+  "schema": 1
+}

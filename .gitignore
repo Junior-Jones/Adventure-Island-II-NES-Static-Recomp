@@ -1,0 +1,52 @@
+# Local builds and IDE state
+/build/
+/build-*/
+/out/
+/.vs/
+/.vscode/
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+cmake_install.cmake
+CTestTestfile.cmake
+*.sln
+*.vcxproj*
+
+# Compiled output
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.a
+*.so
+
+# User-supplied commercial ROMs and runtime data
+*.nes
+*.sav
+*.state
+*.scsnap
+settings.ini
+frontend.log
+Screenshots/
+Snapshots/
+Logs/
+
+# Captures and temporary test output
+*.wav
+*.bmp
+*.png
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local credentials and environment files
+.env
+.env.*
+*.pem
+*.p12
+*.pfx

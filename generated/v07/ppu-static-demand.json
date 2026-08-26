@@ -1,0 +1,476 @@
+{
+  "construction_basis": "static accepted instruction graph only; no gameplay traces",
+  "ppu_direct_access_contexts": 56,
+  "ppu_direct_accesses": [
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xA7A8",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 10
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xA7AD",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 10
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xA7B2",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 10
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xA7CD",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 10
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xBB28",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0120",
+      "cpu_pc": "0xBB2D",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2001",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xBB32",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xBB37",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xBB48",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xBB57",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xBB64",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xBB69",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xBB7F",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xBB8C",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 11
+    },
+    {
+      "bytes": "8e0020",
+      "cpu_pc": "0xE014",
+      "mnemonic": "STX",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8e0120",
+      "cpu_pc": "0xE017",
+      "mnemonic": "STX",
+      "mode": "Abs",
+      "operand_address": "0x2001",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0220",
+      "cpu_pc": "0xE01A",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0220",
+      "cpu_pc": "0xE01F",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0220",
+      "cpu_pc": "0xE03E",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE044",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE047",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0220",
+      "cpu_pc": "0xE0D3",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE0E1",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0320",
+      "cpu_pc": "0xE0E4",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2003",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0120",
+      "cpu_pc": "0xE0F8",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2001",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0220",
+      "cpu_pc": "0xE11D",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE169",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE17C",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0120",
+      "cpu_pc": "0xE17F",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2001",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE18B",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE190",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE199",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0220",
+      "cpu_pc": "0xE19C",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8e0520",
+      "cpu_pc": "0xE19F",
+      "mnemonic": "STX",
+      "mode": "Abs",
+      "operand_address": "0x2005",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8c0520",
+      "cpu_pc": "0xE1A2",
+      "mnemonic": "STY",
+      "mode": "Abs",
+      "operand_address": "0x2005",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE4E9",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE4FF",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE505",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xE51B",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xE52D",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE584",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE58C",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE593",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE5AF",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE5C1",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE5C8",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0720",
+      "cpu_pc": "0xE5D4",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0220",
+      "cpu_pc": "0xE5E3",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0520",
+      "cpu_pc": "0xE5E8",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2005",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0520",
+      "cpu_pc": "0xE5ED",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2005",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0020",
+      "cpu_pc": "0xE5F2",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2000",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ae0220",
+      "cpu_pc": "0xE5F6",
+      "mnemonic": "LDX",
+      "mode": "Abs",
+      "operand_address": "0x2002",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE600",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "8d0620",
+      "cpu_pc": "0xE607",
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "operand_address": "0x2006",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0720",
+      "cpu_pc": "0xE60B",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 15
+    },
+    {
+      "bytes": "ad0720",
+      "cpu_pc": "0xE60E",
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "operand_address": "0x2007",
+      "physical_bank": 15
+    }
+  ],
+  "ppu_direct_register_counts": {
+    "0x2000": 11,
+    "0x2001": 4,
+    "0x2002": 8,
+    "0x2003": 1,
+    "0x2005": 4,
+    "0x2006": 18,
+    "0x2007": 10
+  },
+  "schema": 1,
+  "source": "generated/v04/instructions.csv",
+  "v08_direct_io_contexts": 17,
+  "v08_direct_io_registers": [
+    "0x4000",
+    "0x4001",
+    "0x4002",
+    "0x4003",
+    "0x4014",
+    "0x4015",
+    "0x4016",
+    "0x4017"
+  ]
+}

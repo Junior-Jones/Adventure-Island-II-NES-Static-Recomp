@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "result": "PASS_WITH_OPEN_FINAL_GATE",
+  "static_romwide_fixed_point": "PASS",
+  "deterministic_regeneration": "PASS",
+  "production_static_purity": "PASS",
+  "open_gate": "Cold-boot closure after the V10 PPU reset-phase source correction still requires a freshly built native core, repeated frame-zero run, and bounded native/oracle CPU/RAM/mapper/PPU/audio checkpoints.",
+  "reason_not_run": "Current project policy forbids compiling/building the static core unless the user explicitly asks.",
+  "static_core_complete_written": false,
+  "gameplay_authorized": false,
+  "qualification_note": "Post-core gameplay and broad differential testing remain prohibited until STATIC_CORE_COMPLETE is legitimately written."
+}

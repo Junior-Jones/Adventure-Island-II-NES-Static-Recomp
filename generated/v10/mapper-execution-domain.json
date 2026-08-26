@@ -1,0 +1,457 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "construction_authority": "exact ROM + sealed V04 graph/proofs + MMC3 architecture only",
+  "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "prg_sha256": "e021cedf0b7700b3eee7e5b76b2e23000075e06f4d7c13a4b556452952d3aec0",
+  "bank_select_d6_domain": [
+    0
+  ],
+  "generic_helper_selected_registers": [
+    6,
+    7
+  ],
+  "r7_executable_values": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r6_window_executable_targets": 0,
+  "prg_mode": "D6=0 for every accepted execution-relevant bank-select write",
+  "cpu_windows": {
+    "0x8000-0x9FFF": "R6; formally non-executable",
+    "0xA000-0xBFFF": "R7 in {10,11,12,13}",
+    "0xC000-0xDFFF": "fixed physical bank 14",
+    "0xE000-0xFFFF": "fixed physical bank 15"
+  },
+  "executable_physical_banks": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "formally_excluded_physical_banks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "direct_mapper_writes": [
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE038",
+      "mnemonic": "STY",
+      "address": "0x8000",
+      "bytes": "8c0080"
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE03B",
+      "mnemonic": "STY",
+      "address": "0xE000",
+      "bytes": "8c00e0"
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE051",
+      "mnemonic": "STA",
+      "address": "0xA000",
+      "bytes": "8d00a0"
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE1EA",
+      "mnemonic": "STX",
+      "address": "0x8000",
+      "bytes": "8e0080"
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE1ED",
+      "mnemonic": "STA",
+      "address": "0x8001",
+      "bytes": "8d0180"
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE1F4",
+      "mnemonic": "STX",
+      "address": "0x8000",
+      "bytes": "8e0080"
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE1F7",
+      "mnemonic": "STA",
+      "address": "0x8001",
+      "bytes": "8d0180"
+    }
+  ],
+  "generic_helper_calls": [
+    {
+      "physical_bank": 12,
+      "cpu_pc": "0xA13A",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 12,
+      "cpu_pc": "0xA4F1",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 12,
+      "cpu_pc": "0xA51A",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xCB90",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xCBC5",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xCBF9",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xCC23",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xCC50",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xD9E5",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xDB29",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xDB3A",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xDC0B",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xDC7C",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xDD3F",
+      "target": "0xFF6F",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 14,
+      "cpu_pc": "0xDFE8",
+      "target": "0xFF6F",
+      "selected_register": 7,
+      "r7_value": 12
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE0BF",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE110",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE13C",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE36B",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE3C7",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE53B",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE55D",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xEE68",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xEE75",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF2D6",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 10
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF2E1",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 11
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF374",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF386",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF3B3",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF4D6",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF4F8",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF517",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF529",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF533",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 11
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF5CE",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF5D8",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF5EC",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF5FE",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF6E9",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF6F3",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 11
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF8AF",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 13
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF8BC",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 11
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xF94E",
+      "target": "0xE1F4",
+      "selected_register": 7,
+      "r7_value": 11
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xFBB4",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xFBD6",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xFE51",
+      "target": "0xE1F4",
+      "selected_register": 6,
+      "r7_value": null
+    }
+  ],
+  "indirect_indexed_writes": [
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xE02F",
+      "proof": "CPU RAM only"
+    },
+    {
+      "physical_bank": 15,
+      "cpu_pc": "0xEE8F",
+      "proof": "CPU RAM only"
+    }
+  ],
+  "indexed_absolute_candidate": {
+    "physical_bank": 15,
+    "cpu_pc": "0xEDF7",
+    "syntactic_base": "0xFFFF",
+    "proved_y_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "effective_addresses": [
+      "0x0000",
+      "0x0001",
+      "0x0002",
+      "0x0003",
+      "0x0004",
+      "0x0005"
+    ]
+  },
+  "result": "PASS"
+}

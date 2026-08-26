@@ -1,0 +1,143 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2099,
+      "path": "config/target-profile.json",
+      "sha256": "cabfbe3290e84771840eff648624416c2a8d0e62ef5c1c21e5fb5540c3c39583"
+    },
+    {
+      "bytes": 565,
+      "path": "config/expected-rom.json",
+      "sha256": "24723fbfae7331c440b0b8b2fbdd63b6c2abf79a8f8a859293b83204798a8069"
+    },
+    {
+      "bytes": 2071,
+      "path": "config/source-pins.json",
+      "sha256": "e19701d2900769edd953ecd1dcd50c7310825278ad6dd4f6ea42c317e46b856b"
+    },
+    {
+      "bytes": 905,
+      "path": "config/board-evidence.json",
+      "sha256": "06f616c1dc80e4dd9a3581e3e405f4b7ad8691cd0466ca9f654b9bab5b4f0ce3"
+    },
+    {
+      "bytes": 1956,
+      "path": "docs/STATIC-CORE-STATUS.md",
+      "sha256": "c858402ccd6a433836d3c3476da5f9f374ba9300e1e1a6591920669515069a4d"
+    },
+    {
+      "bytes": 92,
+      "path": "docs/UNRESOLVED-BOUNDARIES.csv",
+      "sha256": "0b1b75ef814e96b21208d5db9a50c8be089c701464fb4368fbb69565665ecff9"
+    },
+    {
+      "bytes": 1430,
+      "path": "docs/V01-REPORT.md",
+      "sha256": "042694ba06867686c884f32d0c3fcacf3d09182398e0ccdbc290282a5c771aab"
+    },
+    {
+      "bytes": 1705,
+      "path": "docs/STARTER-FILE-INVENTORY.md",
+      "sha256": "48e02977b0eca82837dba50fc89be2dd8055537c5de7e33b86014862653eb6d2"
+    },
+    {
+      "bytes": 3000,
+      "path": "tools/validate_target_rom.py",
+      "sha256": "5bce7273e755b8d0af0d7df35d4bf434c1286719c1b728e00d4d8ce7f9a63fba"
+    },
+    {
+      "bytes": 377,
+      "path": "tools/disassemble_program_map.py",
+      "sha256": "d6f08117aafdf23b85c7798e2cd4ada9c34c66f5bdf0f76bceab70622bcad497"
+    },
+    {
+      "bytes": 371,
+      "path": "tools/generate_static_core.py",
+      "sha256": "717d160cec82a00345099d19ce4e19d7dd4017a79b8b314dd8dcc1ee81520273"
+    },
+    {
+      "bytes": 1553,
+      "path": "tests/construction/test_v01_rom_validation.py",
+      "sha256": "79a528a1011401a9d7e3c62b369750142fb3ed2452af3b7b9817afe44a83cf2c"
+    },
+    {
+      "bytes": 590,
+      "path": "receipts/rom/exact-validation.json",
+      "sha256": "2f306c0ec02781bfc60ff7303e993bc62e7a92d1297073e9115f3dbb68e88cf3"
+    },
+    {
+      "bytes": 74,
+      "path": "receipts/rom/v01-negative-tests.txt",
+      "sha256": "98451189f26e5f42535166130351bea04ab36d86213430a4d7c1e47e011a464e"
+    },
+    {
+      "bytes": 153,
+      "path": "receipts/rom/vector-proof.txt",
+      "sha256": "3cf8e3cfb8aab2f89751baa07eddddfdaf6db2fcabe72273b75b4c635128f9a7"
+    },
+    {
+      "bytes": 133,
+      "path": "receipts/oracle/mesen-self-test.txt",
+      "sha256": "4364b28960ab892df963635a5a90117922e4fc00d29ecceaa012ecaa05e4cd8a"
+    },
+    {
+      "bytes": 31,
+      "path": "receipts/tools/starter-manifest-verification.txt",
+      "sha256": "d9deba2e060c9608e6f8794442fb21dbdc89ed5a700d52fceea9fad80cb11e1e"
+    }
+  ],
+  "cartridge": {
+    "battery": false,
+    "chr_ram_bytes": 0,
+    "chr_rom_bytes": 131072,
+    "format": "iNES",
+    "hardware": "MMC3B",
+    "mapper": 4,
+    "pcb": "NES-TLROM-03",
+    "prg_ram_bytes": 0,
+    "prg_rom_bytes": 131072,
+    "region": "NTSC",
+    "submapper": null,
+    "submapper_status": "not encoded by legacy iNES",
+    "vectors": {
+      "irq": "0xE152",
+      "nmi": "0xE0CE",
+      "reset": "0xFFAE"
+    }
+  },
+  "completed_date": "2026-08-18",
+  "milestone": "V01",
+  "next_milestone": "V02 - board and mapper contract",
+  "project": "Adventure Island II NES Static Recomp",
+  "result": "complete",
+  "rom_external_only": true,
+  "rom_identity": {
+    "file_bytes": 262160,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_crc32": "771c8855",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39"
+  },
+  "schema": 1,
+  "unresolved": [
+    "NES 2.0 submapper is not encoded by this legacy iNES image; no value is guessed.",
+    "Complete MMC3B/TLROM mapper reset/bank/IRQ contract belongs to V02."
+  ],
+  "v01_exit_criteria": {
+    "altered_or_malformed_rejected": true,
+    "exact_cartridge_accepted": true,
+    "required_fields_recorded_or_explicitly_unresolved": true,
+    "rom_not_in_source_or_package": true
+  },
+  "validation": {
+    "altered_rom_rejected": "PASS",
+    "disassembler_v03_gate": "PASS refusal rc=2",
+    "exact_rom": "PASS",
+    "generator_v05_gate": "PASS refusal rc=2",
+    "malformed_header_rejected": "PASS",
+    "oracle_self_test": "PASS",
+    "rom_absent_from_source": "PASS",
+    "starter_manifest": "PASS",
+    "trailing_byte_rejected": "PASS",
+    "truncated_rom_rejected": "PASS"
+  }
+}

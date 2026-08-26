@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "project": "Adventure Island II NES Static Recomp",
+  "milestone": "V04",
+  "completed_date": "2026-08-18",
+  "result": "complete",
+  "authority": "Starter NES Revision 3 V04 control-flow and executable-RAM closure",
+  "construction_method": "offline static exact-ROM analysis only; no gameplay route, gameplay trace, observed runtime PC list, save state, screenshot, or controller input is an admission source",
+  "rom_external_only": true,
+  "rom_identity": {
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+    "prg_sha256": "e021cedf0b7700b3eee7e5b76b2e23000075e06f4d7c13a4b556452952d3aec0"
+  },
+  "closure": {
+    "schema": 1,
+    "milestone": "V04",
+    "construction_method": "offline static exact-ROM analysis only; no gameplay trace inputs",
+    "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+    "prg_sha256": "e021cedf0b7700b3eee7e5b76b2e23000075e06f4d7c13a4b556452952d3aec0",
+    "accepted_instruction_contexts": 16544,
+    "accepted_instruction_bytes": 35423,
+    "edge_records": 19833,
+    "return_continuations": 1133,
+    "proven_indirect_targets": 404,
+    "stack_dispatch_callsites": 12,
+    "stack_dispatch_entries": 119,
+    "executable_r7_values": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "unresolved_current_graph_edges": 0,
+    "decode_or_inline_overlaps": 0,
+    "current_graph_executable_ram_epochs": 0,
+    "current_graph_rom_to_ram_executable_copies": 0,
+    "current_graph_self_modifying_code": 0,
+    "rom_wide_closure_claimed": false,
+    "rom_wide_statement": "V04 closes every accepted current-graph edge. Bytes not admitted by the current static graph remain subject to later ROM-wide closure; V04 does not convert absence of current reachability into a whole-ROM impossibility claim."
+  },
+  "finite_indirect_dispatchers": {
+    "normal_word_table_entries": 285,
+    "stack_inline_entries": 119,
+    "total_entries": 404,
+    "normal_tables": [
+      13,
+      22,
+      26,
+      96,
+      128
+    ]
+  },
+  "stack_dispatch": {
+    "implementation": "$EDA3",
+    "trampoline": "$FF84",
+    "accepted_callsites": 12,
+    "inline_entries": 119
+  },
+  "return_adjuster": {
+    "implementation": "$EDC1/$EDE2",
+    "trampoline": "$FF9C",
+    "accepted_callsite": "physical bank 11:$B9E3",
+    "inline_parameter_bytes": 6,
+    "adjusted_continuation": "$B9EC"
+  },
+  "mapper_execution": {
+    "executable_r7_values": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "bank12_static_proof": "fixed bank 14 $DFE4-$DFED programs R7=$0C then JMP $A006"
+  },
+  "ram_execution": {
+    "current_graph_epochs": 0,
+    "current_graph_targets": 0,
+    "rom_to_ram_executable_copies": 0,
+    "self_modifying_current_graph": 0,
+    "rom_wide_exclusion_claimed": false
+  },
+  "validation": {
+    "v04_construction_checks": 272518,
+    "v04_construction": "PASS",
+    "v01_regression": "PASS",
+    "v02_mapper_checks": 1869243,
+    "v02_regression": "PASS",
+    "v03_inventory_checks": 563,
+    "v03_regression": "PASS",
+    "mesence_oracle_self_test": "PASS self-test only; no gameplay run",
+    "v05_generator_gate": "PASS refusal rc=2",
+    "rom_absent_from_project": true,
+    "gameplay_test": "NOT RUN - forbidden during static construction"
+  },
+  "v04_exit_criteria": {
+    "direct_branches_jsr_jmp_interrupts_returns_followed": true,
+    "finite_indirect_target_sets_proven": true,
+    "finite_mapper_bank_value_sets_proven": true,
+    "stack_dispatch_identified": true,
+    "self_modification_current_graph_inventory_complete": true,
+    "rom_to_ram_executable_copy_current_graph_inventory_complete": true,
+    "ram_code_epochs_defined": true,
+    "current_graph_and_rom_wide_statements_separate": true,
+    "every_accepted_target_bearing_edge_resolved_or_ledgered": true,
+    "trace_only_target_allowlist": false
+  },
+  "next_milestone": "V05 reproducible translation generator using only sealed V04 instruction/target authority; dispatch misses trap; no runtime opcode decode; two clean generations byte-identical",
+  "artifacts": [
+    {
+      "path": "config/v04-static-proofs.json",
+      "bytes": 5751,
+      "sha256": "ffec9fa0c97ae06e6affddc83fe25143457919d6fcc44eeeca76958b12562746"
+    },
+    {
+      "path": "config/source-pins.json",
+      "bytes": 4013,
+      "sha256": "8ab3527ade8121afeb35081b4b69e381c960bab3b8e7f3fa85e66d1edf010606"
+    },
+    {
+      "path": "tools/analyze_v04_control_flow.py",
+      "bytes": 13452,
+      "sha256": "2cb85e3f918edc7be89f523284b47de94da7f12a13d6045eafe6a9defa4c6277"
+    },
+    {
+      "path": "tests/construction/test_v04_control_flow.py",
+      "bytes": 8975,
+      "sha256": "505fb04afa443934135376cb264a3971d6048a01a36f96b9a67c5210fcf70302"
+    },
+    {
+      "path": "generated/v04/closure-summary.json",
+      "bytes": 1192,
+      "sha256": "907ea77323db411235985fa8dc938308be48dca9f6dcdb05b24f52b4fd23a6ea"
+    },
+    {
+      "path": "generated/v04/instructions.csv",
+      "bytes": 694610,
+      "sha256": "2fd63d88f7fd52509756e70d462c387b1faf8bbf9ecfb9f42369d1b77da04d80"
+    },
+    {
+      "path": "generated/v04/edges.csv",
+      "bytes": 681552,
+      "sha256": "dfc52fa1770fe9d53129f7ede2d177828aeff7fad14ae731b5a2280f098340ac"
+    },
+    {
+      "path": "generated/v04/indirect-targets.csv",
+      "bytes": 14621,
+      "sha256": "3359dff719230dc9282b3cab8d292ac74840ae857bea4eb8935413631fb3fe8a"
+    },
+    {
+      "path": "generated/v04/return-continuations.csv",
+      "bytes": 27236,
+      "sha256": "05e3f79b1e8811047f6454d290679766f00c254d4406493d0e2aa1664b86131f"
+    },
+    {
+      "path": "generated/v04/inline-data.csv",
+      "bytes": 486,
+      "sha256": "be1d59faa65cef2558ec9b6efa4a24b0a8c9de361464a2275122ffc707a794e8"
+    },
+    {
+      "path": "generated/v04/executable-ram-epochs.json",
+      "bytes": 412,
+      "sha256": "b409d07ab0f3e84a72c42f24bc7a702979085033b8dd4a6f50533ab941a9486a"
+    },
+    {
+      "path": "generated/v04/unresolved-edges.csv",
+      "bytes": 44,
+      "sha256": "ca8f8f77b9a450de3be4d25c6c44e638f1993df777b8393ce3e4e617e3bc23bf"
+    },
+    {
+      "path": "generated/v04/generated-manifest.json",
+      "bytes": 1357,
+      "sha256": "41f84f154ed95ec0b8e327ca6581e9e0b2598a7e90b033748980db9c2bb54f67"
+    },
+    {
+      "path": "docs/V04-CONTROL-FLOW-AND-RAM-CLOSURE.md",
+      "bytes": 4561,
+      "sha256": "6c383bacaa760fbaded73eb37f3220140f183bdc853203fc6c3c95e9bbf00942"
+    },
+    {
+      "path": "docs/V04-REPORT.md",
+      "bytes": 1944,
+      "sha256": "38490015499e62f44384404bd1bfae38b7a413e7a752e971ebafe87cba78de32"
+    },
+    {
+      "path": "docs/STATIC-CORE-STATUS.md",
+      "bytes": 2857,
+      "sha256": "1269c10fb02b42ad3d534d1dac2dfa96c39feadd022fbd6d55b5b085db20d882"
+    },
+    {
+      "path": "docs/UNRESOLVED-BOUNDARIES.csv",
+      "bytes": 828,
+      "sha256": "9911871e5491a6c6e60a9196c274431d38eb3922ed9a4953dde8664e99a42004"
+    },
+    {
+      "path": "receipts/v04/v04-construction-test.txt",
+      "bytes": 163,
+      "sha256": "777d9b04315f4eef70cf34d6a17fb3d41e8d0952fb30e02b995a835f2fdd3624"
+    },
+    {
+      "path": "receipts/v04/v04-regression-gate.txt",
+      "bytes": 1222,
+      "sha256": "2234d0f0d246b87ef9e7a3909dd4f82b93cc4a662132969b38f632a58a282356"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "project": "Adventure Island II NES Static Recomp",
+  "version": "V07",
+  "active_starter": "Starter NES(4).zip",
+  "result": "COMPLETE_FOR_DEFINED_V07_SCOPE",
+  "overall_static_core_complete": false,
+  "gameplay_qualification_authorized": false,
+  "construction": {
+    "gameplay_used": false,
+    "controller_input_used": false,
+    "trace_to_code_generation_used": false,
+    "screenshots_used_as_coverage_proof": false,
+    "runtime_opcode_fetch": false,
+    "runtime_opcode_decode": false,
+    "interpreter_or_emulator_fallback": false
+  },
+  "ppu_scope": {
+    "cpu_registers_and_latches": "complete",
+    "ciram_palette_oam": "complete",
+    "mmc3_chr_and_a12": "complete",
+    "ntsc_dot_scanline_vblank_nmi_odd_frame": "complete",
+    "scroll_background_sprite_pipeline": "complete",
+    "sprite_priority_zero_overflow": "complete with recorded accuracy limits",
+    "sprite_sizes": [
+      "8x8",
+      "8x16"
+    ],
+    "frame_api": "256x240 indexed and BGRA copy"
+  },
+  "static_reset_frontier": {
+    "mode": "v07-static-reset-frontier-no-input",
+    "successful_generated_steps": 22974,
+    "current_identity": "15:E15D",
+    "operation": "STA $4015",
+    "write_value": "0x0F",
+    "cpu_cycles": 80701,
+    "ppu_cycles": 242103,
+    "apu_cycles": 80701,
+    "frame_generation": 2,
+    "trap": "APU_IO_NOT_CONSTRUCTED"
+  },
+  "closure_claims": {
+    "cold_boot": "not closed; V08 APU $4015 is next frontier",
+    "cpu_graph": "current V04 accepted graph closed; ROM-wide fixed point not claimed",
+    "machine": "partial; V06 CPU/bus/scheduler/mapper and V07 PPU complete, V08 pending",
+    "qualification": "not authorized before V10"
+  },
+  "tests": {
+    "v07_ppu_checks_per_compiler": 357433,
+    "v07_compilers": [
+      "gcc",
+      "clang",
+      "clang-asan-ubsan"
+    ],
+    "v07_direct_ppu_contexts": 56,
+    "v07_direct_v08_io_contexts": 17,
+    "v02_mapper_checks": 1869243,
+    "v03_checks": 563,
+    "v04_checks": 272518,
+    "v04_gameplay_seeds": 0,
+    "v05_generator_checks": 35542,
+    "v05_dispatch_checks": 16,
+    "v06_runtime_checks_gcc": 4459662,
+    "v06_runtime_checks_clang": 4459662,
+    "starter_manifest": "pass",
+    "mesen_oracle_self_test": "pass"
+  },
+  "source_hashes": {
+    "ppu_c": "c7a3ce204ffa565ed2fcd70ba3e2ef4800ab461b28a2d421ea9dfc1b3ecd29d9",
+    "ppu_h": "ff496d1a898be15bcde90e6ba92f7adf84c99d1b301120538dcdcf0c48b14129",
+    "runtime_c": "3ec41f45b459f766d637283ac6b70db00c330550a1b57a85d479c434d3ffcdba",
+    "runtime_h": "1a489385652e489b1a42fce998fc5094deac9e88aa268dffb2895727f85f1145",
+    "ppu_contract": "d30df58707b70cc968048dc28a31148a84d161a7edecc4259518c45b4dfce47a",
+    "v07_report": "0d284f851220868a0f3a8faa60a603becace8b3a79a4ccabde1f39e924dab270",
+    "v07_construction_doc": "09244dc5307c6517a1194d4c89453c044263e9d2724679b9f3179c9909d36bbe",
+    "full_regression_receipt": "70eb838f4f378617705130d62b531bd9b50f397d58ed74052cc36a13b5dcf33f"
+  },
+  "rom": {
+    "external_only": true,
+    "included_in_project": false,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39"
+  },
+  "next_milestone": "V08 APU, OAM/DMC DMA and controller input from 15:E15D STA $4015",
+  "source_manifest_note": "sealed separately by receipts/V07-SOURCE-MANIFEST.json to avoid circular hashing"
+}

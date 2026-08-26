@@ -1,0 +1,68 @@
+{
+  "board": {
+    "battery": false,
+    "chr_nvram_bytes": 0,
+    "chr_ram_bytes": 0,
+    "irq_revision": "Sharp/new MMC3 IRQ behavior",
+    "mapper": 4,
+    "mapper_chip_date_code": "9126 1 T",
+    "mapper_chip_maker": "Sharp",
+    "mapper_hardware": "Sharp MMC3B",
+    "mirroring_capability": "mapper-controlled horizontal/vertical on TLROM",
+    "mirroring_header": "horizontal",
+    "pcb": "NES-TLROM-03",
+    "pcb_class": "NES-TLROM",
+    "prg_nvram_bytes": 0,
+    "prg_ram_bytes": 0,
+    "ram_evidence": "NES Cart Database profile 269 physical PCB/ROM-chip match",
+    "submapper": null,
+    "submapper_status": "not encoded by legacy iNES header; no NES 2.0 submapper claim is made"
+  },
+  "console": "NES/Famicom",
+  "oracle": {
+    "interpreter_fallback_forbidden": true,
+    "observation_only": true,
+    "version": "MesenCE 2.2.1 NES-only headless oracle"
+  },
+  "rom": {
+    "chr_crc32": "1ddb1c0e",
+    "chr_rom_bytes": 131072,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "format": "iNES",
+    "header_bytes": 16,
+    "header_hex": "4e45531a081040000000000000000000",
+    "payload_crc32": "771c8855",
+    "payload_sha1": "d30741f41f76b34c08032fc61579dc5963f1443d",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+    "prg_crc32": "6fa0e650",
+    "prg_rom_bytes": 131072,
+    "size_bytes": 262160,
+    "trainer": false,
+    "trainer_bytes": 0
+  },
+  "schema": 1,
+  "timing": {
+    "declared_region": "NTSC (legacy iNES header default)",
+    "observed_cartridge_region": "USA (NTSC)",
+    "ram_power_on": null,
+    "ram_power_on_status": "deferred; not an identity claim",
+    "random_cpu_ppu_alignment": null,
+    "random_cpu_ppu_alignment_status": "deferred to runtime construction",
+    "random_mapper_state": "explicit unknown-at-power state in V02 mapper contract",
+    "random_mapper_state_status": "implemented fail-closed; fixed $E000-$FFFF bank remains deterministic",
+    "selected_region": "ntsc"
+  },
+  "title": "Adventure Island II (USA)",
+  "vectors": {
+    "irq": "0xE152",
+    "nmi": "0xE0CE",
+    "physical_prg_bank_8k": 15,
+    "reset": "0xFFAE",
+    "vector_bytes": "ce e0 ae ff 52 e1",
+    "vector_file_offsets": {
+      "irq": "0x2000E",
+      "nmi": "0x2000A",
+      "reset": "0x2000C"
+    }
+  }
+}

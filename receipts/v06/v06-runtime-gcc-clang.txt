@@ -1,0 +1,9 @@
+===== V06 GCC runtime exhaustive =====
+V06 runtime construction: PASS (4459662 checks)
+===== V06 Clang runtime exhaustive =====
+V06 runtime construction: PASS (4459662 checks)
+===== V06 static source =====
+V06 static-source audit: PASS (99 fixed official forms; required unofficial forms=0; admitted BRK contexts=0; runtime opcode fetch/decode absent)
+===== V06 runtime contract =====
+V06 runtime contract: PASS (39 checks)
+===== V06 all 99 forms =====

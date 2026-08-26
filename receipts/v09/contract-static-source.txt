@@ -1,0 +1,1 @@
+V09 contract/static-source audit: PASS (17 pinned core inputs; opaque/shared/atomic/hook/ROM-exclusion checks)

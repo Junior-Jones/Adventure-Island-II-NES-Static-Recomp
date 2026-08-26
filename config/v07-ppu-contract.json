@@ -1,0 +1,148 @@
+{
+  "accuracy_limits": [
+    "sprite overflow models the ninth-in-range condition; the transistor-level diagonal overflow bug is not modeled",
+    "OAM analog decay and rendering-time OAM corruption edge cases are not modeled",
+    "sub-dot CPU/PPU timing glitches for PPUSCROLL/PPUADDR/PPUDATA are represented at the deterministic scheduler boundary rather than transistor-level phase detail",
+    "BGRA conversion is a deterministic host preview palette/emphasis transform, not an analog composite-color certificate; indexed frame state is authoritative"
+  ],
+  "active_starter": "Starter NES(4).zip",
+  "closure_claims": {
+    "cold_boot": "NOT CLOSED; V07 PPU no longer blocks cold boot, next explicit frontier is V08 APU at 15:E15D STA $4015",
+    "cpu_graph": "current V04 accepted graph remains statically closed; ROM-wide fixed point not claimed",
+    "machine": "PARTIAL; V06 CPU/bus/scheduler/mapper and V07 PPU constructed, V08 APU/DMA/input pending",
+    "qualification": "NOT AUTHORIZED before V10"
+  },
+  "construction_policy": {
+    "gameplay_used_for_static_construction": false,
+    "interpreter_or_emulator_fallback": false,
+    "runtime_opcode_decode": false,
+    "runtime_opcode_fetch": false,
+    "screenshots_used_as_coverage_proof": false,
+    "unknown_ppu_or_mapper_state": "fatal unless the uncertainty is proven unobservable while MMC3 IRQ output is definitely disabled"
+  },
+  "milestone": "V07",
+  "ppu": {
+    "background_fetch_pipeline": true,
+    "bgra_frame": "deterministic host preview conversion",
+    "chr_access": "through V02 MMC3 CHR bank mapping; CHR-ROM writes ignored",
+    "ciram_mirroring": "mapper-controlled horizontal/vertical",
+    "cpu_registers": [
+      "0x2000 PPUCTRL",
+      "0x2001 PPUMASK",
+      "0x2002 PPUSTATUS",
+      "0x2003 OAMADDR",
+      "0x2004 OAMDATA",
+      "0x2005 PPUSCROLL",
+      "0x2006 PPUADDR",
+      "0x2007 PPUDATA"
+    ],
+    "frame_generation_counter": true,
+    "indexed_frame_bits": "bits0-5 palette index; bits6-8 emphasis",
+    "mapper_a12_observation": "all PPU memory accesses pass through ai2_mmc3_observe_ppu_address",
+    "palette_aliases": "3F10/14/18/1C alias 3F00/04/08/0C",
+    "palette_read_immediate": true,
+    "palette_value_mask": "6 bits",
+    "ppudata_read_buffer": true,
+    "register_mirroring": "0x2000-0x2007 mirrored through 0x3FFF",
+    "scroll_horizontal_transfer_dot": 257,
+    "scroll_vertical_transfer": "pre-render dots 280-304",
+    "sprite_fetch_pipeline": true,
+    "sprite_limit_per_scanline": 8,
+    "sprite_overflow": true,
+    "sprite_priority": true,
+    "sprite_sizes": [
+      "8x8",
+      "8x16"
+    ],
+    "sprite_zero_hit": true,
+    "vram_addressing": "v/t/fine-x/write-toggle scroll state; PPUDATA increment 1 or 32 outside rendering with rendering-time scroll increments"
+  },
+  "reference_source_hashes": {
+    "MesenCE-2.2.1-NES-Oracle-Linux-Source/Core/NES/BaseNesPpu.cpp": "5cd3087e42615d5f0ca45c3b25eeea76cba3e58695b384a5a139a162878b019e",
+    "MesenCE-2.2.1-NES-Oracle-Linux-Source/Core/NES/BaseNesPpu.h": "1bf5bd44912ea05fd808193ef0044094b5215955046aadc564034158e61c5ed0",
+    "MesenCE-2.2.1-NES-Oracle-Linux-Source/Core/NES/NesPpu.cpp": "2d08c7992c319dcc5e14f0c493f96b7f29f7015aebf19aaa7d82bac51a6cfabc",
+    "MesenCE-2.2.1-NES-Oracle-Linux-Source/Core/NES/NesPpu.h": "23e8afa161a60faaf08318559906b4b21eb59c5c470b74c40328aa3be2ab8db4"
+  },
+  "schema": 1,
+  "source_hashes": {
+    "config/source-pins.json": "3a2888302937993d489b7280ed0b78ba186bcb613a17ecfb78919402d3270bbe",
+    "generated/v07/ppu-static-demand.json": "d983dd174f9e2f5fe5b275493b201250bac0d0266fe8f81abc0265b2e1d96178",
+    "src/ppu/ai2_v07_ppu.c": "c7a3ce204ffa565ed2fcd70ba3e2ef4800ab461b28a2d421ea9dfc1b3ecd29d9",
+    "src/ppu/ai2_v07_ppu.h": "ff496d1a898be15bcde90e6ba92f7adf84c99d1b301120538dcdcf0c48b14129",
+    "src/runtime/ai2_v06_runtime.c": "3ec41f45b459f766d637283ac6b70db00c330550a1b57a85d479c434d3ffcdba",
+    "src/runtime/ai2_v06_runtime.h": "1a489385652e489b1a42fce998fc5094deac9e88aa268dffb2895727f85f1145",
+    "tests/construction/test_v07_ppu.c": "7ff146b0bd5515880738aea49bd82615bc39e4fab3426ad408e2e5cab13dfba6",
+    "tests/construction/test_v07_ppu_build.py": "a00aec0ce39ea88c04317ffbc30bded8547dc857404920d76b2c9d51aa5a4c10",
+    "tests/construction/test_v07_reset_frontier.py": "8cdea9ae67c746731b8cfd14a3f6b141cdc28334296aba64032315ebb78db07c",
+    "tests/construction/test_v07_static_demand.py": "b6e104e4aecaaf921bfb5e5c66ccbcc43de1f3ba2d571de1402373faae0a33ad",
+    "tests/construction/test_v07_static_source.py": "d095cccbb2781426579e73cfda86bd545ce47b6570e3d2c56309b6bca9612f38",
+    "tools/v07_static_reset_frontier.c": "76cfc95300e49dd9e17f68937eaaaa67310b0b875c77cdcfce748566b3f86c6d"
+  },
+  "static_demand": {
+    "direct_ppu_contexts": 56,
+    "direct_v08_io_contexts": 17,
+    "register_counts": {
+      "0x2000": 11,
+      "0x2001": 4,
+      "0x2002": 8,
+      "0x2003": 1,
+      "0x2005": 4,
+      "0x2006": 18,
+      "0x2007": 10
+    },
+    "source": "generated/v04/instructions.csv",
+    "v08_registers": [
+      "0x4000",
+      "0x4001",
+      "0x4002",
+      "0x4003",
+      "0x4014",
+      "0x4015",
+      "0x4016",
+      "0x4017"
+    ]
+  },
+  "static_reset_frontier": {
+    "apu_cycles_at_trap": 80701,
+    "completed_frame_generations": 2,
+    "controller_or_gameplay_input_used": false,
+    "cpu_cycles_at_trap": 80701,
+    "current_identity": "15:E15D",
+    "first_unconstructed_machine_operation": "15:E15D STA $4015",
+    "mapper_a12_ambiguous_while_irq_disabled": 7,
+    "mode": "v07-static-reset-frontier-no-input",
+    "ppu_cycles_at_trap": 242103,
+    "ppu_dot_at_trap": 334,
+    "ppu_error": 0,
+    "ppu_scanline_at_trap": 184,
+    "successful_generated_steps": 22974,
+    "trap": "APU_IO_NOT_CONSTRUCTED",
+    "write_value": "0x0F"
+  },
+  "status": "complete",
+  "target": {
+    "board": "NES-TLROM-03",
+    "chr_rom_bytes": 131072,
+    "ciram_bytes": 2048,
+    "game": "Adventure Island II (USA)",
+    "mapper": 4,
+    "mapper_chip": "Sharp MMC3B",
+    "prg_rom_bytes": 131072,
+    "region": "NTSC"
+  },
+  "timing": {
+    "dots_per_scanline": 341,
+    "odd_frame_dot_skip_when_rendering": true,
+    "post_render_scanline": 240,
+    "ppu_ticks_per_cpu_cycle": 3,
+    "pre_render_scanline": 261,
+    "region": "NTSC",
+    "scanlines_per_frame": 262,
+    "status_clear": "pre-render scanline 261 dot 1",
+    "vblank_scanlines": "241-260",
+    "vblank_set": "scanline 241 dot 1",
+    "visible_height": 240,
+    "visible_scanlines": "0-239",
+    "visible_width": 256
+  }
+}

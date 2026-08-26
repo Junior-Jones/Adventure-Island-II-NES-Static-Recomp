@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "scope": "frontend integration and natural runtime qualification",
+  "static_core_authority": "Adventure Island II only",
+  "reference_policy": {
+    "mega_man_6": "architecture/core-to-frontend connection reference only; no game-specific core authority imported",
+    "battletech_c64": "frontend/application/headless organization reference only; no game-specific core authority imported"
+  },
+  "requested_runtime_ladder": ["300 frames", "15 seconds", "90 seconds", "phase-aligned Mesen screenshots", "90-second WAV"],
+  "formal_static_complete_marker_allowed": false,
+  "reason_static_complete_marker_deferred": "Starter NES full native/oracle CPU, RAM, mapper, PPU-event and audio-timing cold-boot differential has not yet been completed."
+}

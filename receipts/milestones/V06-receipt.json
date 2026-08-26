@@ -1,0 +1,82 @@
+{
+  "active_starter": "Starter NES(4).zip",
+  "closure_claims": {
+    "cold_boot": "not closed; first V07 PPU frontier established",
+    "cpu_graph": "current V04 accepted graph closed; ROM-wide fixed point not claimed",
+    "machine": "partial; V06 CPU/bus/scheduler/mapper complete, V07/V08 pending",
+    "qualification": "not authorized before V10"
+  },
+  "construction": {
+    "accepted_instruction_contexts": 16544,
+    "admitted_brk_contexts": 0,
+    "controller_input_used": false,
+    "fixed_semantic_forms": 99,
+    "gameplay_used": false,
+    "interpreter_or_emulator_fallback": false,
+    "required_unofficial_forms": 0,
+    "runtime_opcode_decode": false,
+    "runtime_opcode_fetch": false,
+    "trace_to_code_generation_used": false
+  },
+  "gameplay_qualification_authorized": false,
+  "next_milestone": "V07 PPU construction from static frontier 15:E014 STX $2000",
+  "overall_static_core_complete": false,
+  "project": "Adventure Island II NES Static Recomp",
+  "result": "COMPLETE_FOR_DEFINED_V06_SCOPE",
+  "rom": {
+    "external_only": true,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "included_in_project": false,
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39"
+  },
+  "runtime_scope": {
+    "2a03_target_required_semantics": "complete",
+    "apu_dma_input_device_semantics": "V08 pending; fail closed",
+    "common_scheduler": "complete",
+    "cpu_bus": "complete",
+    "internal_ram_mirrors": "complete",
+    "interrupt_priority_and_stack": "complete",
+    "open_bus_and_tlrom_no_prg_ram": "complete",
+    "ppu_device_semantics": "V07 pending; fail closed",
+    "sharp_mmc3b_shared_runtime": "complete"
+  },
+  "schema": 1,
+  "source_hashes": {
+    "full_regression_receipt": "180116a46e7df97aa4c874c5f9eeb991d845d287315374976e0a140ec9bfdc51",
+    "runtime_c": "5059d1081dc16e2cac45bb0d14be9260a4eb6e99159fa24020bcd5687de2cb1d",
+    "runtime_contract_json": "3a3951b3a567eb86433f68a00e1994deb102d7d9cec14864ee7cd4127dd2eb45",
+    "runtime_h": "82b68cea59931c76599cf1db9cf377d07d698456021d1bb030186cdae5fdf1b8",
+    "semantics_c": "d6cdbf0073a2c6d2417200e4830e0f8207e673cd31b2f52a9d8e9b8521b73842",
+    "v06_cpu_bus_scheduler_doc": "3f7c5cc2f32065dbc3a508618a47a62fe4309daa10aac552aa316692e772a254",
+    "v06_report": "4526be0f229c32160df95932e782215fff40498a31a6c2477b3f79076bf1feb3"
+  },
+  "source_manifest_note": "sealed separately by receipts/V06-SOURCE-MANIFEST.json to avoid circular hashing",
+  "static_reset_frontier": {
+    "apu_cycles": 19,
+    "cold_boot_closed": false,
+    "cpu_cycles": 19,
+    "current_identity": "15:E014",
+    "mode": "static-reset-frontier-no-input",
+    "operation": "STX $2000",
+    "ppu_cycles": 57,
+    "steps_completed": 4,
+    "trap": "PPU_NOT_CONSTRUCTED"
+  },
+  "tests": {
+    "all_form_checks_per_compiler": 297,
+    "all_form_count": 99,
+    "asan_ubsan_smoke_checks": 141,
+    "clang_runtime_checks": 4459662,
+    "gcc_runtime_checks": 4459662,
+    "mesen_oracle_self_test": "pass",
+    "runtime_contract_checks": 39,
+    "starter_manifest": "pass",
+    "v02_mapper_checks": 1869243,
+    "v03_checks": 563,
+    "v04_checks": 272518,
+    "v04_gameplay_seeds": 0,
+    "v05_dispatch_checks": 16,
+    "v05_generator_checks": 35542
+  },
+  "version": "V06"
+}

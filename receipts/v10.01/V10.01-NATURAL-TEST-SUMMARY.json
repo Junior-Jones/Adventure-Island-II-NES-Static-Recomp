@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "result": "PASS",
+  "build": "final warning-clean build",
+  "runs": [
+    {
+      "requested": "300 frames",
+      "receipt": "receipts/v10.01/final-clean/natural-300-frames.txt",
+      "line": "FINAL_STATUS mode=headless frames=300 frame_delta=300 cpu_cycles=8931650 cpu_delta=8931643 emulated_seconds=4.990377551 pc=E0CB bank=15 instructions=2905191 frame_hash=843573fe8f51726e pcm_total=220075 pcm_drained=220075 pcm_available=0 status=ok",
+      "fields": {
+        "frames": "300",
+        "frame_delta": "300",
+        "cpu_cycles": "8931650",
+        "cpu_delta": "8931643",
+        "emulated_seconds": "4.990377551",
+        "pc": "E0CB",
+        "bank": "15",
+        "instructions": "2905191",
+        "frame_hash": "843573fe8f51726e",
+        "pcm_total": "220075",
+        "pcm_drained": "220075",
+        "pcm_available": "0",
+        "status": "ok"
+      }
+    },
+    {
+      "requested": "15 seconds",
+      "receipt": "receipts/v10.01/final-clean/natural-15-seconds.txt",
+      "line": "FINAL_STATUS mode=headless frames=902 frame_delta=902 cpu_cycles=26859511 cpu_delta=26859504 emulated_seconds=15.007212647 pc=E0B7 bank=15 instructions=8706887 frame_hash=4bf6844efebe8083 pcm_total=661818 pcm_drained=661818 pcm_available=0 status=ok",
+      "fields": {
+        "frames": "902",
+        "frame_delta": "902",
+        "cpu_cycles": "26859511",
+        "cpu_delta": "26859504",
+        "emulated_seconds": "15.007212647",
+        "pc": "E0B7",
+        "bank": "15",
+        "instructions": "8706887",
+        "frame_hash": "4bf6844efebe8083",
+        "pcm_total": "661818",
+        "pcm_drained": "661818",
+        "pcm_available": "0",
+        "status": "ok"
+      }
+    },
+    {
+      "requested": "90 seconds + phase screenshots + WAV",
+      "receipt": "receipts/v10.01/final-clean/natural-90-seconds-screens-wav.txt",
+      "line": "FINAL_STATUS mode=headless frames=5409 frame_delta=5409 cpu_cycles=161080238 cpu_delta=161080231 emulated_seconds=90.000369321 pc=E0CB bank=15 instructions=52185796 frame_hash=8c59fe6765baf27f pcm_total=3969016 pcm_drained=3969016 pcm_available=0 status=ok",
+      "fields": {
+        "frames": "5409",
+        "frame_delta": "5409",
+        "cpu_cycles": "161080238",
+        "cpu_delta": "161080231",
+        "emulated_seconds": "90.000369321",
+        "pc": "E0CB",
+        "bank": "15",
+        "instructions": "52185796",
+        "frame_hash": "8c59fe6765baf27f",
+        "pcm_total": "3969016",
+        "pcm_drained": "3969016",
+        "pcm_available": "0",
+        "status": "ok"
+      }
+    }
+  ],
+  "static_authority_use": false,
+  "note": "Natural runs are qualification only; they do not discover or authorize static code."
+}

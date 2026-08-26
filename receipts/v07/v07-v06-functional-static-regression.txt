@@ -1,0 +1,9 @@
+===== V06 static source =====
+V06 static-source audit: PASS (99 fixed official forms; required unofficial forms=0; admitted BRK contexts=0; runtime opcode fetch/decode absent)
+===== V06 all fixed forms =====
+V06 all fixed opcode forms: PASS (297 checks, 99 forms)
+V06 all fixed opcode forms: PASS (297 checks, 99 forms)
+V06 all-forms source/compile gate: PASS (99 forms; compilers=gcc,clang)
+===== V06 reset frontier =====
+{"schema":1,"mode":"static-reset-frontier-no-input","steps_completed":4,"current_bank":15,"current_pc":57364,"cpu_cycles":19,"ppu_cycles":57,"apu_cycles":19,"trap_code":5,"trap_source_pc":57364,"trap_address":8192,"trap_is_write":1,"trap_value":0}
+V06 deterministic static-reset frontier: PASS (2 identical no-input runs; no gameplay)

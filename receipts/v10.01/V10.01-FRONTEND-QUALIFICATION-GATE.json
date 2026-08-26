@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "result": "PASS",
+  "checks_passed": 10,
+  "checks": [
+    {
+      "name": "frontend_sources_and_handoff_exist",
+      "result": "PASS"
+    },
+    {
+      "name": "static_inheritance_25_of_25",
+      "result": "PASS"
+    },
+    {
+      "name": "natural_ladder_present",
+      "result": "PASS"
+    },
+    {
+      "name": "natural_ladder_status_ok",
+      "result": "PASS"
+    },
+    {
+      "name": "natural_ladder_frames",
+      "result": "PASS"
+    },
+    {
+      "name": "mesen_comparison_and_core_unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "mesen_phase_aligned_pixels_ge_99_9_percent",
+      "result": "PASS"
+    },
+    {
+      "name": "wav_non_silent_unclipped",
+      "result": "PASS"
+    },
+    {
+      "name": "reference_core_not_imported",
+      "result": "PASS"
+    },
+    {
+      "name": "formal_static_complete_not_overclaimed",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+physical_bank,start_pc,byte_count,kind
+10,0xA7EF,14,stack-dispatch-table
+10,0xB1DB,40,stack-dispatch-table
+10,0xBC76,14,stack-dispatch-table
+10,0xBDBD,6,stack-dispatch-table
+11,0xABF1,20,stack-dispatch-table
+11,0xB01A,20,stack-dispatch-table
+11,0xB16D,18,stack-dispatch-table
+11,0xB264,18,stack-dispatch-table
+11,0xB420,30,stack-dispatch-table
+11,0xB830,28,stack-dispatch-table
+11,0xB92A,16,stack-dispatch-table
+15,0xFA4B,14,stack-dispatch-table
+11,0xB9E6,6,EDC1/EDE2 inline parameters

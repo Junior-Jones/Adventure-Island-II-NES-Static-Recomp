@@ -1,0 +1,2 @@
+V02 mapper contract machine-readable validation
+PASS: V02 mapper-contract.json required fields and exact-board assertions

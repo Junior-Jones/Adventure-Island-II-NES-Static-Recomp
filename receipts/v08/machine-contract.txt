@@ -1,0 +1,1 @@
+V08 machine contract: PASS (12 source pins; cold-boot claim kept separate)

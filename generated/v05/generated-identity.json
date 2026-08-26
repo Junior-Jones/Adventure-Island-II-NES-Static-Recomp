@@ -1,0 +1,33 @@
+{
+  "accepted_instruction_contexts": 16544,
+  "generator": {
+    "name": "ai2-static-generator",
+    "version": "0.5.1-v05-compact"
+  },
+  "milestone": "V05",
+  "opcode_form_count": 99,
+  "per_physical_prg_bank": {
+    "0": 0,
+    "1": 0,
+    "10": 2072,
+    "11": 2691,
+    "12": 2925,
+    "13": 2935,
+    "14": 2609,
+    "15": 3312,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "policy": "fixed physical-bank/PC dispatch; fixed opcode-form calls; no runtime opcode fetch/decode/interpreter/fallback",
+  "proven_indirect_entries": 404,
+  "return_continuation_rows": 1133,
+  "rom_wide_closure_claimed": false,
+  "schema": 1,
+  "unique_return_identities": 1133
+}

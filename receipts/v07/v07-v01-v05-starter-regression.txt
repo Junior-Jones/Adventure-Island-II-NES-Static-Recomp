@@ -1,0 +1,18 @@
+===== Active Starter NES(4) =====
+PASS: package matches manifest
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_SELF_TEST schema=1 result=pass
+===== V01 =====
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+===== V02 contract =====
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+===== V02 mapper =====
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration
+===== V03 =====
+PASS: V03 inventory construction tests; checks=563; instructions=10; PRG bytes=131072; banks=16
+===== V04 =====
+PASS: V04 static control-flow construction tests; checks=272518; instructions=16544; instruction_bytes=35423; indirect_targets=404; unresolved=0; gameplay_seeds=0
+===== V05 =====
+V05_GENERATOR_TEST PASS checks=35542
+===== V05 dispatch standalone =====
+V05_DISPATCH_CONTRACT PASS checks=16

@@ -1,0 +1,3 @@
+MesenCE NES-only oracle self-test during V02 closure (observation tool only)
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_SELF_TEST schema=1 result=pass

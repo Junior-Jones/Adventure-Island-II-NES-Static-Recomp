@@ -1,0 +1,7 @@
+header=4e45531a081040000000000000000000
+last_prg_8k_bank=15
+vector_file_offset=0x2000A
+vector_bytes=ce e0 ae ff 52 e1
+NMI=0xE0CE
+RESET=0xFFAE
+IRQ=0xE152

@@ -1,0 +1,1259 @@
+{
+  "form_count": 99,
+  "forms": [
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "ORA",
+      "mode": "Zero",
+      "opcode_form": "05",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_05_ORA_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "ASL",
+      "mode": "Zero",
+      "opcode_form": "06",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_06_ASL_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "stack-write"
+      ],
+      "mnemonic": "PHP",
+      "mode": "Imp",
+      "opcode_form": "08",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_08_PHP_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "ORA",
+      "mode": "Imm",
+      "opcode_form": "09",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_09_ORA_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "ASL",
+      "mode": "Acc",
+      "opcode_form": "0A",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_0A_ASL_Acc"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BPL",
+      "mode": "Rel",
+      "opcode_form": "10",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_10_BPL_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "CLC",
+      "mode": "Imp",
+      "opcode_form": "18",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_18_CLC_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "ORA",
+      "mode": "AbsX",
+      "opcode_form": "1D",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_1D_ORA_AbsX"
+    },
+    {
+      "bus_sequence_contract": [
+        "operand-low",
+        "stack-dummy-read",
+        "stack-write-pch",
+        "stack-write-pcl",
+        "operand-high"
+      ],
+      "mnemonic": "JSR",
+      "mode": "Abs",
+      "opcode_form": "20",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_20_JSR_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "BIT",
+      "mode": "Zero",
+      "opcode_form": "24",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_24_BIT_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "AND",
+      "mode": "Zero",
+      "opcode_form": "25",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_25_AND_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "ROL",
+      "mode": "Zero",
+      "opcode_form": "26",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_26_ROL_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "stack-dummy-read",
+        "stack-read"
+      ],
+      "mnemonic": "PLP",
+      "mode": "Imp",
+      "opcode_form": "28",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_28_PLP_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "AND",
+      "mode": "Imm",
+      "opcode_form": "29",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_29_AND_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "ROL",
+      "mode": "Acc",
+      "opcode_form": "2A",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_2A_ROL_Acc"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BMI",
+      "mode": "Rel",
+      "opcode_form": "30",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_30_BMI_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "AND",
+      "mode": "ZeroX",
+      "opcode_form": "35",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_35_AND_ZeroX"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "SEC",
+      "mode": "Imp",
+      "opcode_form": "38",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_38_SEC_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "dummy-read",
+        "stack-dummy-read",
+        "stack-read-p",
+        "stack-read-pcl",
+        "stack-read-pch"
+      ],
+      "mnemonic": "RTI",
+      "mode": "Imp",
+      "opcode_form": "40",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_40_RTI_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "LSR",
+      "mode": "Zero",
+      "opcode_form": "46",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_46_LSR_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "stack-write"
+      ],
+      "mnemonic": "PHA",
+      "mode": "Imp",
+      "opcode_form": "48",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_48_PHA_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "EOR",
+      "mode": "Imm",
+      "opcode_form": "49",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_49_EOR_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "LSR",
+      "mode": "Acc",
+      "opcode_form": "4A",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_4A_LSR_Acc"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "JMP",
+      "mode": "Abs",
+      "opcode_form": "4C",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_4C_JMP_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BVC",
+      "mode": "Rel",
+      "opcode_form": "50",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_50_BVC_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "EOR",
+      "mode": "ZeroX",
+      "opcode_form": "55",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_55_EOR_ZeroX"
+    },
+    {
+      "bus_sequence_contract": [
+        "dummy-read",
+        "stack-dummy-read",
+        "stack-read-pcl",
+        "stack-read-pch",
+        "return-increment"
+      ],
+      "mnemonic": "RTS",
+      "mode": "Imp",
+      "opcode_form": "60",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_60_RTS_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "ADC",
+      "mode": "Zero",
+      "opcode_form": "65",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_65_ADC_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "ROR",
+      "mode": "Zero",
+      "opcode_form": "66",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_66_ROR_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "stack-dummy-read",
+        "stack-read"
+      ],
+      "mnemonic": "PLA",
+      "mode": "Imp",
+      "opcode_form": "68",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_68_PLA_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "ADC",
+      "mode": "Imm",
+      "opcode_form": "69",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_69_ADC_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "ROR",
+      "mode": "Acc",
+      "opcode_form": "6A",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_6A_ROR_Acc"
+    },
+    {
+      "bus_sequence_contract": [
+        "pointer-low-read",
+        "pointer-high-read-with-6502-page-wrap"
+      ],
+      "mnemonic": "JMP",
+      "mode": "Ind",
+      "opcode_form": "6C",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_6C_JMP_Ind"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "ADC",
+      "mode": "Abs",
+      "opcode_form": "6D",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_6D_ADC_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BVS",
+      "mode": "Rel",
+      "opcode_form": "70",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_70_BVS_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "SEI",
+      "mode": "Imp",
+      "opcode_form": "78",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_78_SEI_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "ADC",
+      "mode": "AbsY",
+      "opcode_form": "79",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_79_ADC_AbsY"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "ADC",
+      "mode": "AbsX",
+      "opcode_form": "7D",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_7D_ADC_AbsX"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STY",
+      "mode": "Zero",
+      "opcode_form": "84",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_84_STY_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STA",
+      "mode": "Zero",
+      "opcode_form": "85",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_85_STA_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STX",
+      "mode": "Zero",
+      "opcode_form": "86",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_86_STX_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "DEY",
+      "mode": "Imp",
+      "opcode_form": "88",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_88_DEY_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "TXA",
+      "mode": "Imp",
+      "opcode_form": "8A",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_8A_TXA_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STY",
+      "mode": "Abs",
+      "opcode_form": "8C",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_8C_STY_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "opcode_form": "8D",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_8D_STA_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STX",
+      "mode": "Abs",
+      "opcode_form": "8E",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_8E_STX_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BCC",
+      "mode": "Rel",
+      "opcode_form": "90",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_90_BCC_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "indexed-dummy-read",
+        "data-write"
+      ],
+      "mnemonic": "STA",
+      "mode": "IndYW",
+      "opcode_form": "91",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_91_STA_IndYW"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STY",
+      "mode": "ZeroX",
+      "opcode_form": "94",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_94_STY_ZeroX"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-write"
+      ],
+      "mnemonic": "STA",
+      "mode": "ZeroX",
+      "opcode_form": "95",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_95_STA_ZeroX"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "TYA",
+      "mode": "Imp",
+      "opcode_form": "98",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_98_TYA_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "indexed-dummy-read",
+        "data-write"
+      ],
+      "mnemonic": "STA",
+      "mode": "AbsYW",
+      "opcode_form": "99",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_99_STA_AbsYW"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "TXS",
+      "mode": "Imp",
+      "opcode_form": "9A",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_9A_TXS_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "indexed-dummy-read",
+        "data-write"
+      ],
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "opcode_form": "9D",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_9D_STA_AbsXW"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDY",
+      "mode": "Imm",
+      "opcode_form": "A0",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_A0_LDY_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDX",
+      "mode": "Imm",
+      "opcode_form": "A2",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_A2_LDX_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDY",
+      "mode": "Zero",
+      "opcode_form": "A4",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_A4_LDY_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDA",
+      "mode": "Zero",
+      "opcode_form": "A5",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_A5_LDA_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDX",
+      "mode": "Zero",
+      "opcode_form": "A6",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_A6_LDX_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "TAY",
+      "mode": "Imp",
+      "opcode_form": "A8",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_A8_TAY_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDA",
+      "mode": "Imm",
+      "opcode_form": "A9",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_A9_LDA_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "TAX",
+      "mode": "Imp",
+      "opcode_form": "AA",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_AA_TAX_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDY",
+      "mode": "Abs",
+      "opcode_form": "AC",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_AC_LDY_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "opcode_form": "AD",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_AD_LDA_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDX",
+      "mode": "Abs",
+      "opcode_form": "AE",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_AE_LDX_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BCS",
+      "mode": "Rel",
+      "opcode_form": "B0",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_B0_BCS_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDA",
+      "mode": "IndY",
+      "opcode_form": "B1",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_B1_LDA_IndY"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDA",
+      "mode": "ZeroX",
+      "opcode_form": "B5",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_B5_LDA_ZeroX"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDA",
+      "mode": "AbsY",
+      "opcode_form": "B9",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_B9_LDA_AbsY"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "TSX",
+      "mode": "Imp",
+      "opcode_form": "BA",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_BA_TSX_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDY",
+      "mode": "AbsX",
+      "opcode_form": "BC",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_BC_LDY_AbsX"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "LDA",
+      "mode": "AbsX",
+      "opcode_form": "BD",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_BD_LDA_AbsX"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "CPY",
+      "mode": "Imm",
+      "opcode_form": "C0",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_C0_CPY_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "CPY",
+      "mode": "Zero",
+      "opcode_form": "C4",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_C4_CPY_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "CMP",
+      "mode": "Zero",
+      "opcode_form": "C5",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_C5_CMP_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "DEC",
+      "mode": "Zero",
+      "opcode_form": "C6",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_C6_DEC_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "INY",
+      "mode": "Imp",
+      "opcode_form": "C8",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_C8_INY_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "CMP",
+      "mode": "Imm",
+      "opcode_form": "C9",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_C9_CMP_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "DEX",
+      "mode": "Imp",
+      "opcode_form": "CA",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_CA_DEX_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "DEC",
+      "mode": "Abs",
+      "opcode_form": "CE",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_CE_DEC_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BNE",
+      "mode": "Rel",
+      "opcode_form": "D0",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_D0_BNE_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "CMP",
+      "mode": "IndY",
+      "opcode_form": "D1",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_D1_CMP_IndY"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "DEC",
+      "mode": "ZeroX",
+      "opcode_form": "D6",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_D6_DEC_ZeroX"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "CLD",
+      "mode": "Imp",
+      "opcode_form": "D8",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_D8_CLD_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "CMP",
+      "mode": "AbsX",
+      "opcode_form": "DD",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_DD_CMP_AbsX"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "DEC",
+      "mode": "AbsXW",
+      "opcode_form": "DE",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_DE_DEC_AbsXW"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "CPX",
+      "mode": "Imm",
+      "opcode_form": "E0",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_E0_CPX_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "CPX",
+      "mode": "Zero",
+      "opcode_form": "E4",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_E4_CPX_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "alu-register-update"
+      ],
+      "mnemonic": "SBC",
+      "mode": "Zero",
+      "opcode_form": "E5",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_E5_SBC_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "INC",
+      "mode": "Zero",
+      "opcode_form": "E6",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_E6_INC_Zero"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "INX",
+      "mode": "Imp",
+      "opcode_form": "E8",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_E8_INX_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "literal-operand",
+        "alu-register-update"
+      ],
+      "mnemonic": "SBC",
+      "mode": "Imm",
+      "opcode_form": "E9",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_E9_SBC_Imm"
+    },
+    {
+      "bus_sequence_contract": [
+        "internal-register-operation"
+      ],
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "opcode_form": "EA",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_EA_NOP_Imp"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "INC",
+      "mode": "Abs",
+      "opcode_form": "EE",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_EE_INC_Abs"
+    },
+    {
+      "bus_sequence_contract": [
+        "test-flag",
+        "taken-dummy-read",
+        "page-cross-fixup-read-if-needed"
+      ],
+      "mnemonic": "BEQ",
+      "mode": "Rel",
+      "opcode_form": "F0",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_F0_BEQ_Rel"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "INC",
+      "mode": "ZeroX",
+      "opcode_form": "F6",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_F6_INC_ZeroX"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "SBC",
+      "mode": "AbsY",
+      "opcode_form": "F9",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_F9_SBC_AbsY"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "page-cross-fixup-read-if-needed",
+        "alu-register-update"
+      ],
+      "mnemonic": "SBC",
+      "mode": "AbsX",
+      "opcode_form": "FD",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_FD_SBC_AbsX"
+    },
+    {
+      "bus_sequence_contract": [
+        "effective-address",
+        "data-read",
+        "write-old",
+        "write-new"
+      ],
+      "mnemonic": "INC",
+      "mode": "AbsXW",
+      "opcode_form": "FE",
+      "runtime_opcode_decode": false,
+      "runtime_opcode_fetch": false,
+      "symbol": "ai2_v05_op_FE_INC_AbsXW"
+    }
+  ],
+  "generator": "ai2-static-generator 0.5.1-v05-compact",
+  "schema": 1
+}

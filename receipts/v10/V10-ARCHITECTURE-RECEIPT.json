@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "result": "PASS",
+  "modules": [
+    {
+      "path": "generated/v05/bank_dispatch.c",
+      "sha256": "74bee5a16734956484f3bac60da0b083699a3f86a75e300449a7f11c6e35f405"
+    },
+    {
+      "path": "src/runtime/ai2_v06_runtime.c",
+      "sha256": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037"
+    },
+    {
+      "path": "src/mapper/ai2_mmc3_mapper.c",
+      "sha256": "898c7e4bebf5ec68b4af069beef0e4390e6497bf8deb4e204f32a86107d1cbd2"
+    },
+    {
+      "path": "src/ppu/ai2_v07_ppu.c",
+      "sha256": "1b9f8eadcf3840ddd444a1f06a8150b99bfbd00d9b704b2a2c95798c059dc264"
+    },
+    {
+      "path": "src/apu/ai2_v08_apu.c",
+      "sha256": "82aa15f8d11adeeb7b7e07076dbb5ab510324bb6bee0c40b6f13c77e773c0253"
+    },
+    {
+      "path": "src/api/ai2_v09_core.c",
+      "sha256": "9aa112a287670ecaaab05cf3ab7db0e54aebbba7f75194f86a5103f92f831606"
+    },
+    {
+      "path": "include/ai2_static_core.h",
+      "sha256": "e7a96f4dae3e0539cd53fed57aa2799574c24ccdcee97d0fd1c79d28673a539e"
+    }
+  ],
+  "execution": "generated fixed physical-bank/PC dispatch -> handwritten CPU/bus/scheduler -> mapper/PPU/APU/DMA/controller -> opaque public API",
+  "unknown_execution": "fail closed as missing identity/missing bank/runtime trap",
+  "oracle_linked_into_production": false
+}

@@ -1,0 +1,274 @@
+physical_bank,start_bank_offset,end_bank_offset_inclusive,length,class,reason
+0,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+1,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+2,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+3,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+4,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+5,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+6,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+7,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+8,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+9,0x0000,0x1FFF,8192,excluded_immutable_data,outside closed executable fixed point
+10,0x0000,0x0005,6,excluded_immutable_data,outside closed executable fixed point
+10,0x0006,0x000B,6,code,accepted V04 instruction bytes
+10,0x000C,0x000E,3,excluded_immutable_data,outside closed executable fixed point
+10,0x000F,0x0014,6,code,accepted V04 instruction bytes
+10,0x0015,0x07A5,1937,excluded_immutable_data,outside closed executable fixed point
+10,0x07A6,0x07EE,73,code,accepted V04 instruction bytes
+10,0x07EF,0x07FC,14,inline_data,stack-dispatch-table
+10,0x07FD,0x08F2,246,code,accepted V04 instruction bytes
+10,0x08F3,0x08FA,8,excluded_immutable_data,outside closed executable fixed point
+10,0x08FB,0x099C,162,code,accepted V04 instruction bytes
+10,0x099D,0x09DB,63,excluded_immutable_data,outside closed executable fixed point
+10,0x09DC,0x0A12,55,code,accepted V04 instruction bytes
+10,0x0A13,0x0A1B,9,excluded_immutable_data,outside closed executable fixed point
+10,0x0A1C,0x0A6B,80,code,accepted V04 instruction bytes
+10,0x0A6C,0x0A7D,18,excluded_immutable_data,outside closed executable fixed point
+10,0x0A7E,0x0BFD,384,code,accepted V04 instruction bytes
+10,0x0BFE,0x0C31,52,excluded_immutable_data,outside closed executable fixed point
+10,0x0C32,0x0D9D,364,code,accepted V04 instruction bytes
+10,0x0D9E,0x0D9F,2,excluded_immutable_data,outside closed executable fixed point
+10,0x0DA0,0x0DEB,76,code,accepted V04 instruction bytes
+10,0x0DEC,0x0DEE,3,excluded_immutable_data,outside closed executable fixed point
+10,0x0DEF,0x0E78,138,code,accepted V04 instruction bytes
+10,0x0E79,0x1194,796,excluded_immutable_data,outside closed executable fixed point
+10,0x1195,0x11D1,61,code,accepted V04 instruction bytes
+10,0x11D2,0x11D5,4,excluded_immutable_data,outside closed executable fixed point
+10,0x11D6,0x11DA,5,code,accepted V04 instruction bytes
+10,0x11DB,0x1202,40,inline_data,stack-dispatch-table
+10,0x1203,0x122B,41,code,accepted V04 instruction bytes
+10,0x122C,0x122E,3,excluded_immutable_data,outside closed executable fixed point
+10,0x122F,0x13F5,455,code,accepted V04 instruction bytes
+10,0x13F6,0x13F7,2,excluded_immutable_data,outside closed executable fixed point
+10,0x13F8,0x1610,537,code,accepted V04 instruction bytes
+10,0x1611,0x1614,4,excluded_immutable_data,outside closed executable fixed point
+10,0x1615,0x1645,49,code,accepted V04 instruction bytes
+10,0x1646,0x1647,2,excluded_immutable_data,outside closed executable fixed point
+10,0x1648,0x1673,44,code,accepted V04 instruction bytes
+10,0x1674,0x1675,2,excluded_immutable_data,outside closed executable fixed point
+10,0x1676,0x1720,171,code,accepted V04 instruction bytes
+10,0x1721,0x1760,64,excluded_immutable_data,outside closed executable fixed point
+10,0x1761,0x1B81,1057,code,accepted V04 instruction bytes
+10,0x1B82,0x1C70,239,excluded_immutable_data,outside closed executable fixed point
+10,0x1C71,0x1C75,5,code,accepted V04 instruction bytes
+10,0x1C76,0x1C83,14,inline_data,stack-dispatch-table
+10,0x1C84,0x1DBC,313,code,accepted V04 instruction bytes
+10,0x1DBD,0x1DC2,6,inline_data,stack-dispatch-table
+10,0x1DC3,0x1E14,82,code,accepted V04 instruction bytes
+10,0x1E15,0x1FFF,491,excluded_immutable_data,outside closed executable fixed point
+11,0x0000,0x0005,6,excluded_immutable_data,outside closed executable fixed point
+11,0x0006,0x0008,3,code,accepted V04 instruction bytes
+11,0x0009,0x0014,12,excluded_immutable_data,outside closed executable fixed point
+11,0x0015,0x001D,9,code,accepted V04 instruction bytes
+11,0x001E,0x0026,9,excluded_immutable_data,outside closed executable fixed point
+11,0x0027,0x002C,6,code,accepted V04 instruction bytes
+11,0x002D,0x03D7,939,excluded_immutable_data,outside closed executable fixed point
+11,0x03D8,0x03E8,17,code,accepted V04 instruction bytes
+11,0x03E9,0x04A8,192,excluded_immutable_data,outside closed executable fixed point
+11,0x04A9,0x07F6,846,code,accepted V04 instruction bytes
+11,0x07F7,0x0876,128,excluded_immutable_data,outside closed executable fixed point
+11,0x0877,0x0963,237,code,accepted V04 instruction bytes
+11,0x0964,0x09A3,64,excluded_immutable_data,outside closed executable fixed point
+11,0x09A4,0x0A87,228,code,accepted V04 instruction bytes
+11,0x0A88,0x0A92,11,excluded_immutable_data,outside closed executable fixed point
+11,0x0A93,0x0A9D,11,code,accepted V04 instruction bytes
+11,0x0A9E,0x0AB3,22,excluded_immutable_data,outside closed executable fixed point
+11,0x0AB4,0x0BD1,286,code,accepted V04 instruction bytes
+11,0x0BD2,0x0BEB,26,excluded_immutable_data,outside closed executable fixed point
+11,0x0BEC,0x0BF0,5,code,accepted V04 instruction bytes
+11,0x0BF1,0x0C04,20,inline_data,stack-dispatch-table
+11,0x0C05,0x0E5F,603,code,accepted V04 instruction bytes
+11,0x0E60,0x0E61,2,excluded_immutable_data,outside closed executable fixed point
+11,0x0E62,0x0EAF,78,code,accepted V04 instruction bytes
+11,0x0EB0,0x0EF5,70,excluded_immutable_data,outside closed executable fixed point
+11,0x0EF6,0x0F2A,53,code,accepted V04 instruction bytes
+11,0x0F2B,0x1014,234,excluded_immutable_data,outside closed executable fixed point
+11,0x1015,0x1019,5,code,accepted V04 instruction bytes
+11,0x101A,0x102D,20,inline_data,stack-dispatch-table
+11,0x102E,0x115B,302,code,accepted V04 instruction bytes
+11,0x115C,0x1167,12,excluded_immutable_data,outside closed executable fixed point
+11,0x1168,0x116C,5,code,accepted V04 instruction bytes
+11,0x116D,0x117E,18,inline_data,stack-dispatch-table
+11,0x117F,0x1263,229,code,accepted V04 instruction bytes
+11,0x1264,0x1275,18,inline_data,stack-dispatch-table
+11,0x1276,0x1385,272,code,accepted V04 instruction bytes
+11,0x1386,0x1387,2,excluded_immutable_data,outside closed executable fixed point
+11,0x1388,0x1406,127,code,accepted V04 instruction bytes
+11,0x1407,0x141A,20,excluded_immutable_data,outside closed executable fixed point
+11,0x141B,0x141F,5,code,accepted V04 instruction bytes
+11,0x1420,0x143D,30,inline_data,stack-dispatch-table
+11,0x143E,0x175A,797,code,accepted V04 instruction bytes
+11,0x175B,0x176E,20,excluded_immutable_data,outside closed executable fixed point
+11,0x176F,0x180B,157,code,accepted V04 instruction bytes
+11,0x180C,0x1813,8,excluded_immutable_data,outside closed executable fixed point
+11,0x1814,0x182F,28,code,accepted V04 instruction bytes
+11,0x1830,0x184B,28,inline_data,stack-dispatch-table
+11,0x184C,0x18BD,114,code,accepted V04 instruction bytes
+11,0x18BE,0x18D0,19,excluded_immutable_data,outside closed executable fixed point
+11,0x18D1,0x1929,89,code,accepted V04 instruction bytes
+11,0x192A,0x1939,16,inline_data,stack-dispatch-table
+11,0x193A,0x19D8,159,code,accepted V04 instruction bytes
+11,0x19D9,0x19E2,10,excluded_immutable_data,outside closed executable fixed point
+11,0x19E3,0x19E5,3,code,accepted V04 instruction bytes
+11,0x19E6,0x19EB,6,inline_data,EDC1/EDE2 inline parameters
+11,0x19EC,0x1A02,23,code,accepted V04 instruction bytes
+11,0x1A03,0x1A0A,8,excluded_immutable_data,outside closed executable fixed point
+11,0x1A0B,0x1BC6,444,code,accepted V04 instruction bytes
+11,0x1BC7,0x1BE6,32,excluded_immutable_data,outside closed executable fixed point
+11,0x1BE7,0x1C52,108,code,accepted V04 instruction bytes
+11,0x1C53,0x1D52,256,excluded_immutable_data,outside closed executable fixed point
+11,0x1D53,0x1F90,574,code,accepted V04 instruction bytes
+11,0x1F91,0x1FFF,111,excluded_immutable_data,outside closed executable fixed point
+12,0x0000,0x0005,6,excluded_immutable_data,outside closed executable fixed point
+12,0x0006,0x0008,3,code,accepted V04 instruction bytes
+12,0x0009,0x012D,293,excluded_immutable_data,outside closed executable fixed point
+12,0x012E,0x043B,782,code,accepted V04 instruction bytes
+12,0x043C,0x0445,10,excluded_immutable_data,outside closed executable fixed point
+12,0x0446,0x055B,278,code,accepted V04 instruction bytes
+12,0x055C,0x0590,53,excluded_immutable_data,outside closed executable fixed point
+12,0x0591,0x0731,417,code,accepted V04 instruction bytes
+12,0x0732,0x0736,5,excluded_immutable_data,outside closed executable fixed point
+12,0x0737,0x0BBB,1157,code,accepted V04 instruction bytes
+12,0x0BBC,0x0C01,70,excluded_immutable_data,outside closed executable fixed point
+12,0x0C02,0x0C55,84,code,accepted V04 instruction bytes
+12,0x0C56,0x0C75,32,excluded_immutable_data,outside closed executable fixed point
+12,0x0C76,0x0E14,415,code,accepted V04 instruction bytes
+12,0x0E15,0x0E24,16,excluded_immutable_data,outside closed executable fixed point
+12,0x0E25,0x1023,511,code,accepted V04 instruction bytes
+12,0x1024,0x102A,7,excluded_immutable_data,outside closed executable fixed point
+12,0x102B,0x109B,113,code,accepted V04 instruction bytes
+12,0x109C,0x10A3,8,excluded_immutable_data,outside closed executable fixed point
+12,0x10A4,0x1A17,2420,code,accepted V04 instruction bytes
+12,0x1A18,0x1A3B,36,excluded_immutable_data,outside closed executable fixed point
+12,0x1A3C,0x1C73,568,code,accepted V04 instruction bytes
+12,0x1C74,0x1FFF,908,excluded_immutable_data,outside closed executable fixed point
+13,0x0000,0x0005,6,excluded_immutable_data,outside closed executable fixed point
+13,0x0006,0x0017,18,code,accepted V04 instruction bytes
+13,0x0018,0x002D,22,excluded_immutable_data,outside closed executable fixed point
+13,0x002E,0x070F,1762,code,accepted V04 instruction bytes
+13,0x0710,0x078F,128,excluded_immutable_data,outside closed executable fixed point
+13,0x0790,0x08C1,306,code,accepted V04 instruction bytes
+13,0x08C2,0x0945,132,excluded_immutable_data,outside closed executable fixed point
+13,0x0946,0x0CA7,866,code,accepted V04 instruction bytes
+13,0x0CA8,0x0CB9,18,excluded_immutable_data,outside closed executable fixed point
+13,0x0CBA,0x0D71,184,code,accepted V04 instruction bytes
+13,0x0D72,0x0DAC,59,excluded_immutable_data,outside closed executable fixed point
+13,0x0DAD,0x0E66,186,code,accepted V04 instruction bytes
+13,0x0E67,0x0F1B,181,excluded_immutable_data,outside closed executable fixed point
+13,0x0F1C,0x1040,293,code,accepted V04 instruction bytes
+13,0x1041,0x1110,208,excluded_immutable_data,outside closed executable fixed point
+13,0x1111,0x1428,792,code,accepted V04 instruction bytes
+13,0x1429,0x154B,291,excluded_immutable_data,outside closed executable fixed point
+13,0x154C,0x15FF,180,code,accepted V04 instruction bytes
+13,0x1600,0x1650,81,excluded_immutable_data,outside closed executable fixed point
+13,0x1651,0x16E9,153,code,accepted V04 instruction bytes
+13,0x16EA,0x16EF,6,excluded_immutable_data,outside closed executable fixed point
+13,0x16F0,0x177D,142,code,accepted V04 instruction bytes
+13,0x177E,0x1786,9,excluded_immutable_data,outside closed executable fixed point
+13,0x1787,0x180D,135,code,accepted V04 instruction bytes
+13,0x180E,0x180F,2,excluded_immutable_data,outside closed executable fixed point
+13,0x1810,0x1898,137,code,accepted V04 instruction bytes
+13,0x1899,0x189C,4,excluded_immutable_data,outside closed executable fixed point
+13,0x189D,0x1A23,391,code,accepted V04 instruction bytes
+13,0x1A24,0x1AC3,160,excluded_immutable_data,outside closed executable fixed point
+13,0x1AC4,0x1B1F,92,code,accepted V04 instruction bytes
+13,0x1B20,0x1B21,2,excluded_immutable_data,outside closed executable fixed point
+13,0x1B22,0x1B7C,91,code,accepted V04 instruction bytes
+13,0x1B7D,0x1B80,4,excluded_immutable_data,outside closed executable fixed point
+13,0x1B81,0x1C20,160,code,accepted V04 instruction bytes
+13,0x1C21,0x1C90,112,excluded_immutable_data,outside closed executable fixed point
+13,0x1C91,0x1DCC,316,code,accepted V04 instruction bytes
+13,0x1DCD,0x1FFF,563,excluded_immutable_data,outside closed executable fixed point
+14,0x0000,0x0005,6,excluded_immutable_data,outside closed executable fixed point
+14,0x0006,0x000B,6,code,accepted V04 instruction bytes
+14,0x000C,0x0011,6,excluded_immutable_data,outside closed executable fixed point
+14,0x0012,0x0014,3,code,accepted V04 instruction bytes
+14,0x0015,0x0017,3,excluded_immutable_data,outside closed executable fixed point
+14,0x0018,0x001A,3,code,accepted V04 instruction bytes
+14,0x001B,0x001D,3,excluded_immutable_data,outside closed executable fixed point
+14,0x001E,0x0032,21,code,accepted V04 instruction bytes
+14,0x0033,0x0A3D,2571,excluded_immutable_data,outside closed executable fixed point
+14,0x0A3E,0x0E51,1044,code,accepted V04 instruction bytes
+14,0x0E52,0x0E63,18,excluded_immutable_data,outside closed executable fixed point
+14,0x0E64,0x0F25,194,code,accepted V04 instruction bytes
+14,0x0F26,0x0F2B,6,excluded_immutable_data,outside closed executable fixed point
+14,0x0F2C,0x10FC,465,code,accepted V04 instruction bytes
+14,0x10FD,0x1106,10,excluded_immutable_data,outside closed executable fixed point
+14,0x1107,0x11C7,193,code,accepted V04 instruction bytes
+14,0x11C8,0x120F,72,excluded_immutable_data,outside closed executable fixed point
+14,0x1210,0x1368,345,code,accepted V04 instruction bytes
+14,0x1369,0x136B,3,excluded_immutable_data,outside closed executable fixed point
+14,0x136C,0x17DC,1137,code,accepted V04 instruction bytes
+14,0x17DD,0x185C,128,excluded_immutable_data,outside closed executable fixed point
+14,0x185D,0x1FEF,1939,code,accepted V04 instruction bytes
+14,0x1FF0,0x1FFF,16,excluded_immutable_data,outside closed executable fixed point
+15,0x0000,0x000F,16,excluded_immutable_data,outside closed executable fixed point
+15,0x0010,0x01E0,465,code,accepted V04 instruction bytes
+15,0x01E1,0x01E4,4,excluded_immutable_data,outside closed executable fixed point
+15,0x01E5,0x022A,70,code,accepted V04 instruction bytes
+15,0x022B,0x02AA,128,excluded_immutable_data,outside closed executable fixed point
+15,0x02AB,0x03E4,314,code,accepted V04 instruction bytes
+15,0x03E5,0x03F9,21,excluded_immutable_data,outside closed executable fixed point
+15,0x03FA,0x04BE,197,code,accepted V04 instruction bytes
+15,0x04BF,0x04D6,24,excluded_immutable_data,outside closed executable fixed point
+15,0x04D7,0x0886,944,code,accepted V04 instruction bytes
+15,0x0887,0x088B,5,excluded_immutable_data,outside closed executable fixed point
+15,0x088C,0x0C22,919,code,accepted V04 instruction bytes
+15,0x0C23,0x0C29,7,excluded_immutable_data,outside closed executable fixed point
+15,0x0C2A,0x0C9B,114,code,accepted V04 instruction bytes
+15,0x0C9C,0x0CB3,24,excluded_immutable_data,outside closed executable fixed point
+15,0x0CB4,0x0D39,134,code,accepted V04 instruction bytes
+15,0x0D3A,0x0D76,61,excluded_immutable_data,outside closed executable fixed point
+15,0x0D77,0x0DB8,66,code,accepted V04 instruction bytes
+15,0x0DB9,0x0DC0,8,excluded_immutable_data,outside closed executable fixed point
+15,0x0DC1,0x0E16,86,code,accepted V04 instruction bytes
+15,0x0E17,0x0E1D,7,excluded_immutable_data,outside closed executable fixed point
+15,0x0E1E,0x0EE4,199,code,accepted V04 instruction bytes
+15,0x0EE5,0x0F09,37,excluded_immutable_data,outside closed executable fixed point
+15,0x0F0A,0x0F6F,102,code,accepted V04 instruction bytes
+15,0x0F70,0x0F8B,28,excluded_immutable_data,outside closed executable fixed point
+15,0x0F8C,0x1023,152,code,accepted V04 instruction bytes
+15,0x1024,0x10AE,139,excluded_immutable_data,outside closed executable fixed point
+15,0x10AF,0x1157,169,code,accepted V04 instruction bytes
+15,0x1158,0x126B,276,excluded_immutable_data,outside closed executable fixed point
+15,0x126C,0x127E,19,code,accepted V04 instruction bytes
+15,0x127F,0x1298,26,excluded_immutable_data,outside closed executable fixed point
+15,0x1299,0x12F5,93,code,accepted V04 instruction bytes
+15,0x12F6,0x1321,44,excluded_immutable_data,outside closed executable fixed point
+15,0x1322,0x1793,1138,code,accepted V04 instruction bytes
+15,0x1794,0x1799,6,excluded_immutable_data,outside closed executable fixed point
+15,0x179A,0x1847,174,code,accepted V04 instruction bytes
+15,0x1848,0x1853,12,excluded_immutable_data,outside closed executable fixed point
+15,0x1854,0x1870,29,code,accepted V04 instruction bytes
+15,0x1871,0x1878,8,excluded_immutable_data,outside closed executable fixed point
+15,0x1879,0x19BD,325,code,accepted V04 instruction bytes
+15,0x19BE,0x19CD,16,excluded_immutable_data,outside closed executable fixed point
+15,0x19CE,0x1A2C,95,code,accepted V04 instruction bytes
+15,0x1A2D,0x1A38,12,excluded_immutable_data,outside closed executable fixed point
+15,0x1A39,0x1A4A,18,code,accepted V04 instruction bytes
+15,0x1A4B,0x1A58,14,inline_data,stack-dispatch-table
+15,0x1A59,0x1BDA,386,code,accepted V04 instruction bytes
+15,0x1BDB,0x1BDC,2,excluded_immutable_data,outside closed executable fixed point
+15,0x1BDD,0x1C98,188,code,accepted V04 instruction bytes
+15,0x1C99,0x1CF0,88,excluded_immutable_data,outside closed executable fixed point
+15,0x1CF1,0x1E8B,411,code,accepted V04 instruction bytes
+15,0x1E8C,0x1F62,215,excluded_immutable_data,outside closed executable fixed point
+15,0x1F63,0x1F68,6,code,accepted V04 instruction bytes
+15,0x1F69,0x1F6B,3,excluded_immutable_data,outside closed executable fixed point
+15,0x1F6C,0x1F86,27,code,accepted V04 instruction bytes
+15,0x1F87,0x1F8C,6,excluded_immutable_data,outside closed executable fixed point
+15,0x1F8D,0x1F92,6,code,accepted V04 instruction bytes
+15,0x1F93,0x1F98,6,excluded_immutable_data,outside closed executable fixed point
+15,0x1F99,0x1F9E,6,code,accepted V04 instruction bytes
+15,0x1F9F,0x1FA4,6,excluded_immutable_data,outside closed executable fixed point
+15,0x1FA5,0x1FB0,12,code,accepted V04 instruction bytes
+15,0x1FB1,0x1FB3,3,excluded_immutable_data,outside closed executable fixed point
+15,0x1FB4,0x1FB9,6,code,accepted V04 instruction bytes
+15,0x1FBA,0x1FBC,3,excluded_immutable_data,outside closed executable fixed point
+15,0x1FBD,0x1FC5,9,code,accepted V04 instruction bytes
+15,0x1FC6,0x1FCB,6,excluded_immutable_data,outside closed executable fixed point
+15,0x1FCC,0x1FD4,9,code,accepted V04 instruction bytes
+15,0x1FD5,0x1FDF,11,excluded_immutable_data,outside closed executable fixed point
+15,0x1FE0,0x1FEF,16,metadata,embedded title identity signature
+15,0x1FF0,0x1FF9,10,excluded_immutable_data,outside closed executable fixed point
+15,0x1FFA,0x1FFF,6,metadata,architectural interrupt vectors

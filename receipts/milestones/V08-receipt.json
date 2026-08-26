@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "project": "Adventure Island II NES Static Recomp",
+  "version": "V08",
+  "active_starter": "Starter NES(4).zip",
+  "result": "COMPLETE_FOR_DEFINED_V08_SCOPE",
+  "overall_static_core_complete": false,
+  "gameplay_qualification_authorized": false,
+  "construction": {
+    "gameplay_used": false,
+    "controller_input_used_for_static_construction": false,
+    "trace_to_code_generation_used": false,
+    "screenshots_used_as_coverage_proof": false,
+    "runtime_opcode_fetch": false,
+    "runtime_opcode_decode": false,
+    "interpreter_or_emulator_fallback": false,
+    "oracle_used_for_static_discovery": false
+  },
+  "machine_scope": {
+    "apu_channels": [
+      "pulse 1",
+      "pulse 2",
+      "triangle",
+      "noise",
+      "DMC"
+    ],
+    "apu_frame_counter_irq": "complete for defined target scope with recorded cycle-level accuracy limits",
+    "oam_dma": "complete for defined target scope",
+    "dmc_dma": "complete for defined target scope",
+    "dma_arbitration": "complete for defined target scope with recorded fine-alignment limits",
+    "controllers": "two standard serial NES pads via emulated $4016/$4017 latching",
+    "mixing": "deterministic integer NES nonlinear pulse/TND equations",
+    "pcm": "bounded deterministic 44.1 kHz output ring",
+    "expansion_audio": "not present on NES-TLROM-03 / Sharp MMC3B"
+  },
+  "static_demand": {
+    "direct_or_indexed_io_contexts": 17,
+    "indexed_audio_contexts": 10,
+    "gameplay_seeds_used": 0
+  },
+  "cold_boot_endurance": {
+    "mode": "v08-static-cold-boot-no-input",
+    "generated_steps": 2000000,
+    "completed_frames": 206,
+    "cpu_cycles": 6150905,
+    "ppu_cycles": 18452715,
+    "apu_cycles": 6150905,
+    "controller_reads": 3184,
+    "controller_latches": 398,
+    "oam_dma_count": 199,
+    "trap_code": 0,
+    "two_runs_identical": true,
+    "gameplay_or_controller_input_used": false,
+    "claim": "vertical machine/endurance evidence only; cold-boot closure remains open until bounded oracle checkpoints agree"
+  },
+  "closure_claims": {
+    "cold_boot": "not closed; native no-input boot is trap-free for 206 frames, but Starter-required bounded oracle checkpoint agreement remains open",
+    "cpu_graph": "current V04 accepted graph closed; ROM-wide V10 fixed-point construction not yet claimed",
+    "machine": "V08 target-required CPU/mapper/PPU/APU/DMA/controller construction exists; V09 persistence/public API boundary remains",
+    "qualification": "not authorized before V10 STATIC_CORE_COMPLETE"
+  },
+  "tests": {
+    "v08_checks_per_compiler": 8573,
+    "v08_compilers": [
+      "gcc",
+      "clang",
+      "clang-asan-ubsan"
+    ],
+    "v06_runtime_checks_gcc": 4459662,
+    "v06_runtime_checks_clang": 4459662,
+    "v07_ppu_checks_per_compiler": 357433,
+    "v07_ppu_compilers": [
+      "gcc",
+      "clang",
+      "clang-asan-ubsan"
+    ],
+    "v02_mapper_checks": 1869243,
+    "v03_checks": 563,
+    "v04_checks": 272518,
+    "v04_gameplay_seeds": 0,
+    "v05_generator_checks": 35542,
+    "v05_dispatch_checks": 16,
+    "starter_manifest": "pass",
+    "mesen_oracle_self_test": "pass"
+  },
+  "source_hashes": {
+    "apu_c": "82aa15f8d11adeeb7b7e07076dbb5ab510324bb6bee0c40b6f13c77e773c0253",
+    "apu_h": "7899f46071bec181cc856a6974bb4b7440ac5aa7627fcc66c50f1b257a0f43e1",
+    "runtime_c": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037",
+    "runtime_h": "d6eb699c3b43c254b5d7da46691a1152009f4a57df163d7ca070cbf5f4bcf9dc",
+    "ppu_c": "c7a3ce204ffa565ed2fcd70ba3e2ef4800ab461b28a2d421ea9dfc1b3ecd29d9",
+    "ppu_h": "ff496d1a898be15bcde90e6ba92f7adf84c99d1b301120538dcdcf0c48b14129",
+    "machine_contract": "a58686687ddda2b4f56196c0a64d598fba3dc308fe0d6a93b76d206f215bb8e3",
+    "v08_report": "a982a57d67035863ad14e0ebc4c0b12d348acb61e6249e47de1d924a77e8a2c9",
+    "v08_construction_doc": "51e954c64dbe31507b95bceffea96facd40e1c322182e2c509249eb5925c49e9",
+    "static_demand": "07cfd7d2c496730e2c740ac43ba854e04c152d55c33cafb4ae15176f1c6ffc6c",
+    "full_regression_receipt": "e878b4954e53d5f8ed711967d2379dc2e2943410b18b35256b2a228c06124f75"
+  },
+  "rom": {
+    "external_only": true,
+    "included_in_project": false,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39"
+  },
+  "next_milestone": "V09 public API, snapshots, hooks and headed/headless frontend boundary; continue static construction without gameplay",
+  "source_manifest_note": "sealed separately by receipts/V08-SOURCE-MANIFEST.json to avoid circular hashing"
+}

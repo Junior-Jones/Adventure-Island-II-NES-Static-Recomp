@@ -1,0 +1,500 @@
+{
+  "active_starter": "Starter NES(4).zip",
+  "construction_flow_update": "2026-08-18",
+  "files": [
+    {
+      "bytes": 4284,
+      "line_count": 90,
+      "path": "CHATGPT-START-HERE.md",
+      "sha256": "596f875747f1dc8dd817406ad16a75a23638197f5ceba60b2b758f17bb110e0d",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 11759,
+      "line_count": 249,
+      "path": "Docs/General NES Static Recomp Guide.md",
+      "sha256": "a19724b6f19d177510847a68da8a2ac593b5aa4c1e8b1179491afb4e866e8fcb",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2130,
+      "line_count": 45,
+      "path": "Docs/NES Audit Checklist.txt",
+      "sha256": "fe23418e191ec627dde08558e2354a0b5070fba0d1915a433c34ac10d49565cc",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2269,
+      "line_count": 51,
+      "path": "Docs/NES Hardware Reference/CPU PPU APU DMA Notes.md",
+      "sha256": "a4ee219aa7d40279d5f8ad89c4456e7a790eada0604133916f93229233d2fef8",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 4521,
+      "line_count": 71,
+      "path": "Docs/NES Hardware Reference/Cartridge and Mapper Guide.md",
+      "sha256": "b1ce4df112d2fda71a4e24110a82d42192e06a0474bbbdf3f6bff5f711ae0cbc",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1579,
+      "line_count": 38,
+      "path": "Docs/NES Hardware Reference/README.md",
+      "sha256": "7f4ce3479149b5939069c5c6a6aba443385b0f6922b81520cedafd5bebd3e175",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1090,
+      "line_count": 28,
+      "path": "Docs/ORACLE BUILD AND TEST RESULTS.txt",
+      "sha256": "3d3db1993dbfe7a26bfdff8effff09b688c97f9306188604bfa36a07c2018b65",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 787,
+      "line_count": 20,
+      "path": "Docs/ORACLE SOURCE PRUNING.txt",
+      "sha256": "07c19b7ff40ff18d5a6985a0ffc94114848bb949d4eccd4090bafb6ada98f8ba",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 6201,
+      "line_count": 115,
+      "path": "Docs/ROM TO COLD BOOT AND STATIC CLOSURE.md",
+      "sha256": "2fbcafdc3ea6c3b88a16a31cd9197d33f7995936f3c1001a8eea52efea6a4959",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 6570,
+      "line_count": 152,
+      "path": "Docs/STATIC CORE MILESTONES V01-V10.md",
+      "sha256": "32891a552b3e16971bd0eb9e17b71e4ff1214405eced26ed1055cd2c46099276",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 4292,
+      "line_count": 75,
+      "path": "Existing-Project-Upgrade/01-UPGRADE-METHOD.md",
+      "sha256": "95d9abe3a3c4cd98a095f81dc3855258fd2a5e06762289744df31bc0a787e5f3",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 6758,
+      "line_count": 148,
+      "path": "Existing-Project-Upgrade/02-UPGRADE-MILESTONES-U00-U15.md",
+      "sha256": "6a60cb4d28c7ba3d1daf232dee90770869e916391f9c0e4839e84e5fe94a4cd5",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 3502,
+      "line_count": 81,
+      "path": "Existing-Project-Upgrade/03-STATIC-CORE-MODERNIZATION.md",
+      "sha256": "a60e09aef908440e1557ac01361106c3f850f47c0810915f4bae173cd07c3c34",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 4144,
+      "line_count": 79,
+      "path": "Existing-Project-Upgrade/04-FRONTEND-MIGRATION.md",
+      "sha256": "dc61ac0de92161b039b9bded3e57cf01abc078570853663f4bbc5e7267537d75",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2907,
+      "line_count": 72,
+      "path": "Existing-Project-Upgrade/05-VERIFICATION-AND-RELEASE.md",
+      "sha256": "523bc71d617a0ac16645f0b4941dccc6674c239920ea07d469459d41d6caa798",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2307,
+      "line_count": 42,
+      "path": "Existing-Project-Upgrade/CHATGPT-UPGRADE-INSTRUCTIONS.md",
+      "sha256": "6939cf9fa467b88718ce0f87f95eb99b243460fe0ae4540e828e0d8fece71842",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1781,
+      "line_count": 44,
+      "path": "Existing-Project-Upgrade/README-FIRST.md",
+      "sha256": "fe8422514f613ad6479dc9ce7d5b349f9550be97bdbd8e34cd5ec28217e0a191",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 506,
+      "line_count": 15,
+      "path": "Existing-Project-Upgrade/Templates/core-api-mapping.template.csv",
+      "sha256": "5291848bb4fdbf4f7d643e0c8e72d409c1044d36ecc95dd186b13efd228181f9",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 707,
+      "line_count": 19,
+      "path": "Existing-Project-Upgrade/Templates/frontend-feature-matrix.template.csv",
+      "sha256": "4d178f51455c91621b2027f35c862e1338fb0d5e13ca2ab19f15606f29ce01ee",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 343,
+      "line_count": 9,
+      "path": "Existing-Project-Upgrade/Templates/old-project-inventory.template.csv",
+      "sha256": "0bd8735ab37a951a0d492baa30c18150e03e8382fe41ed57e884ea1bd4af66ad",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 170,
+      "line_count": 3,
+      "path": "Existing-Project-Upgrade/Templates/regression-lock.template.csv",
+      "sha256": "c971e912c0bf434062a82e0285a08d3c552a624bfcae241c8e99128da5062d11",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 868,
+      "line_count": 31,
+      "path": "Existing-Project-Upgrade/Templates/upgrade-status.template.md",
+      "sha256": "89c84eeecbbd4aa23c6e5a9f39c2d1d6b9729d16380b1cda49db00bebc37c5da",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 35147,
+      "line_count": 675,
+      "path": "Oracle/Linux/MESEN-GPL-LICENSE.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 411,
+      "line_count": 11,
+      "path": "Oracle/Linux/README.txt",
+      "sha256": "66d9e8f7aa426e59a028bd3d2ad7dcba08c028ac403bd149eb14e9d1a1ef619a",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 5553696,
+      "line_count": null,
+      "path": "Oracle/Linux/bin/MesenNesOracleCore.so",
+      "sha256": "060c4a4111d0770a65f88aaecbca7faa8c9ea8edcc081dd141d2fe9b8792a0e7",
+      "text_reviewable": false
+    },
+    {
+      "bytes": 43816,
+      "line_count": null,
+      "path": "Oracle/Linux/bin/mesen-nes-oracle",
+      "sha256": "1554b443d2486fd25f3dcfa41e43e8ce579f9d8927d93d8cdb37d0ac2c4a9276",
+      "text_reviewable": false
+    },
+    {
+      "bytes": 1683012,
+      "line_count": null,
+      "path": "Oracle/Linux/source/MesenCE-2.2.1-NES-Oracle-Linux-Source.zip",
+      "sha256": "a56c132931f5195aea87b2af00c87bc55896f2551836d3fd9cd0df029bc898f4",
+      "text_reviewable": false
+    },
+    {
+      "bytes": 597,
+      "line_count": 15,
+      "path": "Oracle/README.txt",
+      "sha256": "7638c71dc47f15a0a8d3c8fb39581115a4d27f6478a1cde46fde279af1ea619e",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 35147,
+      "line_count": 675,
+      "path": "Oracle/Windows/MESEN-GPL-LICENSE.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 288,
+      "line_count": 9,
+      "path": "Oracle/Windows/README.txt",
+      "sha256": "87f032c1aed0eb6a4ae311ad6414760100e4bb24544825acb07d482fe971c041",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 3957248,
+      "line_count": null,
+      "path": "Oracle/Windows/bin/MesenNesOracleCore.dll",
+      "sha256": "ca4693baee61b0caba9a8e816b5dddae0f5e7476d8bcfe9d23b12cd2f7eee30e",
+      "text_reviewable": false
+    },
+    {
+      "bytes": 299520,
+      "line_count": null,
+      "path": "Oracle/Windows/bin/mesen-nes-oracle.exe",
+      "sha256": "cf93cf10d6f8b5fe850f8a698fff24124104e32a4f6b39ed41130ba1ef07f1e4",
+      "text_reviewable": false
+    },
+    {
+      "bytes": 1686671,
+      "line_count": null,
+      "path": "Oracle/Windows/source/MesenCE-2.2.1-NES-Oracle-Windows-Source.zip",
+      "sha256": "7e449629edb2c331cf4c51de320363ac617b9e674c8c3fc1f5da48565b789dc9",
+      "text_reviewable": false
+    },
+    {
+      "bytes": 12264,
+      "line_count": 339,
+      "path": "PACKAGE-MANIFEST.json",
+      "sha256": "16eaa8bc8f398a7cb50464b069fa51af41b02a967ff1077795d2ddb6c0309112",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2983,
+      "line_count": 63,
+      "path": "README-FIRST.txt",
+      "sha256": "8c6897cb81e75d9d770ded4d25968e1a5c60b09beb1fea14ce75fd9b96f1667d",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1622,
+      "line_count": 33,
+      "path": "REVISION-3-NOTES.md",
+      "sha256": "e558a8c756b78f8f6b6c50c2b5998309a1d1199beced35fad57340854a6159a3",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1243,
+      "line_count": 30,
+      "path": "Templates/Frontend/CMakeLists.frontend-example.txt",
+      "sha256": "175c601318c425efea498af66a493ac6223b6d266482a6c409ce1b927f8dab28",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 4444,
+      "line_count": 91,
+      "path": "Templates/Frontend/FRONTEND-PORTING-GUIDE.md",
+      "sha256": "4e938f894c1a8e2f220889344d878b62cb02a4c114ae1a2bf0306f13fa04ed92",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1584,
+      "line_count": 23,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/SOURCE-RECEIPT.txt",
+      "sha256": "a2b0f1de641762ca2a1420151ed306352f3d3d682f366a3418c0107a891983f1",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 9056,
+      "line_count": 235,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/include/mm2_direct_core.h",
+      "sha256": "bd8de22d58e449e6b98db893d62ffef1c089035884a0373809d3378741b95ce2",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 823,
+      "line_count": 36,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/include/mm2_rom.h",
+      "sha256": "af60032e88be020ad88fd7f2c80ec41f3dade94117896ea093e4e1c6ce6f0e1b",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2748,
+      "line_count": 38,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/src/gui/mm2_audio_output_sdl3.cpp",
+      "sha256": "0d324e65df73a087eebbb1dba934bbd77c99635205c3d8800fa8b43ca9432f21",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 817,
+      "line_count": 27,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/src/gui/mm2_audio_output_sdl3.h",
+      "sha256": "0b10de9e74b3efb324dbc518e78c40778be57a441ddc3b4ebe40370631fd4b05",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 4670,
+      "line_count": 81,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/src/gui/mm2_video_output_sdl3.cpp",
+      "sha256": "970343aea622a93844f932dbdde4e9d8ffe6dd2402e6ffd7cfc4e4f2ff329e91",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 899,
+      "line_count": 31,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/src/gui/mm2_video_output_sdl3.h",
+      "sha256": "087369b12f9d73b1b7cb513889da36f4f265fda2d2e5801ca37d15ea3643a14d",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 35334,
+      "line_count": 206,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/src/gui/mm2_windows_launcher.cpp",
+      "sha256": "cb51db11335a75908c41b2ab570c78c17bd19eb30f5b086cdb47b33acdde647f",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 13503,
+      "line_count": 173,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/src/gui/mm2_windows_live.cpp",
+      "sha256": "2fef6cce1f19a398b067bf075ff1d4bd7651dd1dafeedbc2836c92622f94e2af",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1570,
+      "line_count": 52,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/src/gui/mm2_windows_live.h",
+      "sha256": "573dfd5104f403567a76866cb901830ac42708c75fbb718ba0982da183181fd2",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 884,
+      "line_count": 19,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/third_party/SDL-LICENSE.txt",
+      "sha256": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 602815,
+      "line_count": 2268,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/third_party/gamecontrollerdb.txt",
+      "sha256": "6bb4cab168b7e2fa38c3978ae03fde05bdbc051a28953d50534b235f8103151a",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 14774,
+      "line_count": 345,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/third_party/gamepad/mm2_gamepad_input_win32.c",
+      "sha256": "3b577cddeac317f9fb192ae2b207edde71507a44481d8177117f092c100cb801",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2491,
+      "line_count": 80,
+      "path": "Templates/Frontend/Mega-Man-2-Reference/third_party/gamepad/mm2_gamepad_input_win32.h",
+      "sha256": "54196071df2a754632d15029873c3555f35ca194d4162b214f0b55578e9f6cb2",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1011,
+      "line_count": 19,
+      "path": "Templates/Frontend/README.md",
+      "sha256": "5f4d9fea276594cca09bd0665ff8b6001ba171cf14df2d46cb67052ecbc072b5",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2531,
+      "line_count": 77,
+      "path": "Templates/Frontend/nes_static_core_api.h",
+      "sha256": "262b6997542e02a214ca97fc29a1fb9be0ce5c5d5de97871ef5852a97dd642d6",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 738,
+      "line_count": 22,
+      "path": "Templates/Static-Core-Architecture/CMakeLists.core-example.txt",
+      "sha256": "ca3ee64829fd48f4dd59a41f8eb6a6dae299da24e3f011d9bcfa063092ca6a70",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1532,
+      "line_count": 65,
+      "path": "Templates/Static-Core-Architecture/PROJECT-TREE.txt",
+      "sha256": "1aef08f55eaea65627b6e2249f5bfee6a53289f1501b807c09a6c3b0dd48d032",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2948,
+      "line_count": 70,
+      "path": "Templates/Static-Core-Architecture/README.md",
+      "sha256": "720f414e33db7763191affa8ccb44017ffd45544735a1f52cb0171833247fc34",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 285,
+      "line_count": 11,
+      "path": "Templates/Static-Core-Architecture/include/nes_static_core.h",
+      "sha256": "e6e67fc92ddde7dc6505d0069fca22b44c6e77896573748d8ab724eaad1291be",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 399,
+      "line_count": 9,
+      "path": "Templates/audio-inventory.template.lua",
+      "sha256": "ca08b61abab93032c0adf86cad97fae62d293f8ddf08eb294fac40c5e1f3340f",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 380,
+      "line_count": 12,
+      "path": "Templates/frame-checkpoint.template.lua",
+      "sha256": "1e239c4babe3e801485e8a418765da315819da2eebf84482ea74448bb9633c4b",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 399,
+      "line_count": 9,
+      "path": "Templates/mmio-inventory.template.lua",
+      "sha256": "d6b85462bfc8676a39bd1c278525e4592a1520b1e38b0a74ed4de69ee2ce712d",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 602,
+      "line_count": 30,
+      "path": "Templates/static-core-status.template.md",
+      "sha256": "e34a249dd369d208d1f7bf00e6d8e2e8a6517d7262e0f556f270e56f147f9f05",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 795,
+      "line_count": 32,
+      "path": "Templates/target-profile.template.json",
+      "sha256": "333bbede2ee9034586c3dbc7e0aa35a7ad4ef8a932291ee15cc480bd45e1bb17",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 2747,
+      "line_count": 93,
+      "path": "Tools/inspect_nes_rom.py",
+      "sha256": "4669c93a5e8d2c81f61fc97b2f9ae9beed7f239cf981877b8724ef74348c287f",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1836,
+      "line_count": 54,
+      "path": "Tools/make_package_manifest.py",
+      "sha256": "6f6af3976b516a408bbc2fa6f15df1f6903acce91cae7b74c066d5259ac6ea7d",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1561,
+      "line_count": 47,
+      "path": "Tools/run_nes_oracle.py",
+      "sha256": "e00a0c4c7d5713cf8cefd1496bf7d64b3dffbbc2bb9d05a19e370807f1b17f6e",
+      "text_reviewable": true
+    },
+    {
+      "bytes": 1733,
+      "line_count": 49,
+      "path": "Tools/verify_package_manifest.py",
+      "sha256": "c4e1aa028a53ad3f8afe5eb6fd41d9759bf8ccb741cefe4fc5b57b1bcb45b318",
+      "text_reviewable": true
+    }
+  ],
+  "installed_package_bytes": 14099049,
+  "installed_package_files_including_manifest": 67,
+  "internal_revision": 3,
+  "interpretation": {
+    "cold_boot_cpu_graph_machine_qualification_claims": "separate",
+    "existing_project_upgrade": "reference only",
+    "gameplay_static_discovery": "forbidden",
+    "project_track": "new-core V01-V10",
+    "rom_wide_fixed_point_required_before_v10_complete": true
+  },
+  "manifest_controlled_files": 66,
+  "nested_oracle_source_unpacked": {
+    "changed_common_files": [
+      "README-NES-ORACLE.txt"
+    ],
+    "common_relative_paths": 900,
+    "identical_common_files": 899,
+    "linux_files": 900,
+    "windows_files": 900
+  },
+  "old_starter_active_workspace_matches": 0,
+  "oracle_linux_self_test": "PASS",
+  "package_manifest_verified": true,
+  "package_zip_sha256": "a895ce1d21ce41d10ef9393b47bdb2f315db42e1a6af2477f9b79a03a1923703",
+  "schema": 2
+}

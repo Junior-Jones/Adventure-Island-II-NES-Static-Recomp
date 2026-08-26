@@ -1,0 +1,40 @@
+{
+  "primary": {
+    "battery": false,
+    "catalog_id": "NES-V7-USA",
+    "chr_bytes": 131072,
+    "chr_crc32": "1DDB1C0E",
+    "chr_label": "NES-V7-0",
+    "combined_crc32": "771C8855",
+    "hardware": "Sharp MMC3B",
+    "ines_mapper": 4,
+    "irq_revision_evidence": "Sharp MMC3B selects the Sharp/new zero-latch IRQ behavior documented by NESdev",
+    "mmc3_date_code": "9126 1 T",
+    "mmc3_maker": "Sharp",
+    "mmc3_package": "TQFP-44",
+    "mmc3_part": "MMC3B",
+    "mmc3_standard_date": "9126",
+    "pcb": "NES-TLROM-03",
+    "pcb_class": "NES-TLROM",
+    "prg_bytes": 131072,
+    "prg_crc32": "6FA0E650",
+    "prg_label": "NES-V7-0",
+    "profile_id": 269,
+    "region": "USA (NTSC)",
+    "source": "NES Cart Database",
+    "url": "https://nescartdb.com/profile/view/269/adventure-island-ii",
+    "vram_kib": 0,
+    "wram_kib": 0
+  },
+  "retrieved_utc_date": "2026-08-18",
+  "schema": 1,
+  "secondary": {
+    "purpose": "V02 mapper-contract reference; not used as a replacement for exact cartridge identity",
+    "source": "NESdev MMC3/TxROM reference",
+    "urls": [
+      "https://www.nesdev.org/wiki/MMC3",
+      "https://www.nesdev.org/wiki/MMC3_pinout",
+      "https://www.nesdev.org/wiki/Cartridge_connector"
+    ]
+  }
+}

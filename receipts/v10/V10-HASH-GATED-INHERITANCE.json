@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "result": "PASS",
+  "baseline": "sealed V09 source manifest",
+  "v09_manifest_aggregate_sha256": "c73131b6115748f4c85a864c8394d7c42e05344981eae969e15a5b5471655454",
+  "v09_file_count": 237,
+  "changed_files": [
+    {
+      "path": "README.md",
+      "v09_sha256": "247824a91742ae87b259d527bbe46982fb9c6a9c9a7a6e99881a140d0daaf639",
+      "v10_current_sha256": "5155ed49d42c50401e9b3b760632a6fbda11d30818e66f44adb343eb7e66bdd8"
+    },
+    {
+      "path": "VERSION.txt",
+      "v09_sha256": "4edf7924c034abdfaf62fd49e7b000bedc3065e058dd93581f20fd0bfcb502f1",
+      "v10_current_sha256": "c791939345052e25a16636acdabfa1ce4c13f7c79f0d081e67a60716b40c1067"
+    },
+    {
+      "path": "src/ppu/ai2_v07_ppu.c",
+      "v09_sha256": "c7a3ce204ffa565ed2fcd70ba3e2ef4800ab461b28a2d421ea9dfc1b3ecd29d9",
+      "v10_current_sha256": "1b9f8eadcf3840ddd444a1f06a8150b99bfbd00d9b704b2a2c95798c059dc264"
+    },
+    {
+      "path": "config/v09-core-contract.json",
+      "v09_sha256": "fbab2cf6e2733a6b20a411887ecb513fe6235f3df95e375b59edbdb18e0e568d",
+      "v10_current_sha256": "d472e133fda7ab8934de96fa7a38076e45454220f121c4852beedc9b27d5142b"
+    },
+    {
+      "path": "generated/v09/ai2_v09_identity.h",
+      "v09_sha256": "b2dc2c96024ba8704cffe51438298244d7c619d18115c803662deeb9d1d1edb9",
+      "v10_current_sha256": "968139e6bc13ad2c0a5dabc367b9e64fe1ad8d72146aefb27264f2bb030f74a3"
+    },
+    {
+      "path": "docs/STATIC-CORE-STATUS.md",
+      "v09_sha256": "1ae087cd61bbd6c908cc64461aabab0e3cffe2db397d2664b70a63664d0cbe0f",
+      "v10_current_sha256": "308e2f68135437518b432ef56b88ed0ce31c9266b895be74ef3ca1f07f6a1c54"
+    },
+    {
+      "path": "docs/UNRESOLVED-BOUNDARIES.csv",
+      "v09_sha256": "06e9b8440deddf5a8434faeeded73c906fb1ec0d5e35f8580b335d049e9b0c6a",
+      "v10_current_sha256": "726844029721c86b4ba13e074f4c54b94ffe5d936586eef64b3d644ad1800f43"
+    }
+  ],
+  "unchanged_inherited_files": 230,
+  "compile_reuse_policy": "Prior V09 compiler/runtime evidence is reused only for files whose V09 hashes remain exact. V10 does not claim compiled certification for the three changed timing/identity files.",
+  "compile_invoked": false
+}

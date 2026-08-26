@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "milestone": "V04",
+  "construction_rule": "Static ROM/control-flow proof only; no gameplay trace or observed runtime PC is an admission source.",
+  "roots": [
+    {"physical_bank": 15, "cpu_pc": "0xFFAE", "kind": "RESET"},
+    {"physical_bank": 15, "cpu_pc": "0xE0CE", "kind": "NMI"},
+    {"physical_bank": 15, "cpu_pc": "0xE152", "kind": "IRQ"}
+  ],
+  "indirect_dispatchers": [
+    {"physical_bank": 15, "cpu_pc": "0xF27C", "table_start": "0xF27F", "entry_count": 13, "index_source": "$70", "proof": "Finite main-state selector; all accepted $70 producers are constants 0..12 or copies of the statically bounded $8C state byte."},
+    {"physical_bank": 15, "cpu_pc": "0xF2F3", "table_start": "0xF2F6", "entry_count": 22, "index_source": "$71", "proof": "Finite substate selector; all accepted $71 producers are constants/transitions within 0..21 or copies of statically bounded $8D."},
+    {"physical_bank": 10, "cpu_pc": "0xABFB", "table_start": "0xABFE", "entry_count": 26, "index_source": "immutable object-command record", "proof": "Reviewed immutable record-command domain for this dispatcher is 0..25; table entries are read directly from exact ROM."},
+    {"physical_bank": 11, "cpu_pc": "0xA3E6", "table_start": "0xA3E9", "entry_count": 96, "index_source": "$D2", "proof": "Reviewed finite object/type domain 0..95 for this dispatcher; the 96 immutable word entries are read directly from exact ROM."},
+    {"physical_bank": 12, "cpu_pc": "0xA1BB", "table_start": "0xA02E", "entry_count": 128, "index_source": "record byte after ASL", "proof": "ASL on an 8-bit selector produces only the 128 even byte offsets 0..254, so this 128-word table is exhaustive for every possible input byte."}
+  ],
+  "stack_dispatch": {
+    "implementation_pc": "0xEDA3",
+    "trampoline_pc": "0xFF84",
+    "proof": "Dispatcher pops the JSR return address, indexes the inline word table immediately after each call, and JMPs through $0000. Each table size is derived from table start to its first handler pointer.",
+    "expected_callsites": 12,
+    "expected_entries": 119
+  },
+  "return_adjuster": {
+    "implementation_pc": "0xEDC1",
+    "worker_pc": "0xEDE2",
+    "trampoline_pc": "0xFF9C",
+    "callsite": {"physical_bank": 11, "cpu_pc": "0xB9E3"},
+    "inline_parameter_bytes": 6,
+    "adjusted_continuation": "0xB9EC"
+  },
+  "cross_window_transfers": [
+    {"source_bank":15,"source_pc":"0xF29C","target_pc":"0xA006","target_bank":10,"proof":"F2CF programs MMC3 R7=$0A"},
+    {"source_bank":15,"source_pc":"0xF2A2","target_pc":"0xA009","target_bank":10,"proof":"F2CF programs MMC3 R7=$0A"},
+    {"source_bank":15,"source_pc":"0xF2A8","target_pc":"0xA00F","target_bank":10,"proof":"F2CF programs MMC3 R7=$0A"},
+    {"source_bank":15,"source_pc":"0xF2AE","target_pc":"0xA012","target_bank":10,"proof":"F2CF programs MMC3 R7=$0A"},
+    {"source_bank":15,"source_pc":"0xF2B4","target_pc":"0xA015","target_bank":11,"proof":"F2DA programs MMC3 R7=$0B"},
+    {"source_bank":15,"source_pc":"0xF2BA","target_pc":"0xA018","target_bank":11,"proof":"F2DA programs MMC3 R7=$0B"},
+    {"source_bank":15,"source_pc":"0xF2C0","target_pc":"0xA01B","target_bank":11,"proof":"F2DA programs MMC3 R7=$0B"},
+    {"source_bank":15,"source_pc":"0xF2C6","target_pc":"0xA027","target_bank":11,"proof":"F2DA programs MMC3 R7=$0B"},
+    {"source_bank":15,"source_pc":"0xF2CC","target_pc":"0xA02A","target_bank":11,"proof":"F2DA programs MMC3 R7=$0B"},
+    {"source_bank":15,"source_pc":"0xF951","target_pc":"0xA006","target_bank":11,"proof":"F947 path programs MMC3 R7=$0B before transfer"},
+    {"source_bank":15,"source_pc":"0xF6EC","target_pc":"0xA012","target_bank":13,"proof":"F6E5 path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF6F6","target_pc":"0xA006","target_bank":11,"proof":"F6EF path programs MMC3 R7=$0B before transfer"},
+    {"source_bank":15,"source_pc":"0xF8B2","target_pc":"0xA012","target_bank":13,"proof":"F8AB path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF8B5","target_pc":"0xA015","target_bank":13,"proof":"same R7=$0D epoch"},
+    {"source_bank":15,"source_pc":"0xF5DB","target_pc":"0xA009","target_bank":13,"proof":"F5D4 path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF5D1","target_pc":"0xA00C","target_bank":13,"proof":"F5CA path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":14,"source_pc":"0xDFED","target_pc":"0xA006","target_bank":12,"proof":"DFE4: LDX #$07; LDA #$0C; JSR $FF6F; then JMP $A006"},
+    {"source_bank":15,"source_pc":"0xF8BF","target_pc":"0xA006","target_bank":11,"proof":"F8B8 path programs MMC3 R7=$0B before transfer"},
+    {"source_bank":15,"source_pc":"0xF389","target_pc":"0xA012","target_bank":13,"proof":"F382 path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF601","target_pc":"0xA012","target_bank":13,"proof":"F5FA path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF4FB","target_pc":"0xA006","target_bank":13,"proof":"F4F4 path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF4D9","target_pc":"0xA00F","target_bank":13,"proof":"F4D2 path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF52C","target_pc":"0xA012","target_bank":13,"proof":"F525 path programs MMC3 R7=$0D before transfer"},
+    {"source_bank":15,"source_pc":"0xF536","target_pc":"0xA006","target_bank":11,"proof":"F52F path programs MMC3 R7=$0B before transfer"}
+  ],
+  "expected_executable_r7_values": [10, 11, 12, 13],
+  "ram_execution_policy": "No current-graph target below $8000 is admitted. Any later RAM execution requires an explicit epoch/signature/invalidation proof and otherwise traps."
+}

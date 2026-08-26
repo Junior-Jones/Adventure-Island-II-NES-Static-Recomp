@@ -1,0 +1,19 @@
+{
+  "actual": {
+    "battery": false,
+    "chr_rom_bytes": 131072,
+    "file_bytes": 262160,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "format": "iNES",
+    "header_hex": "4e45531a081040000000000000000000",
+    "mapper": 4,
+    "mirroring_header": "horizontal",
+    "payload_crc32": "771c8855",
+    "payload_sha1": "d30741f41f76b34c08032fc61579dc5963f1443d",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+    "prg_rom_bytes": 131072,
+    "trainer": false
+  },
+  "errors": [],
+  "result": "pass"
+}

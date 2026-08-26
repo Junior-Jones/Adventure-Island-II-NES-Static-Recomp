@@ -1,0 +1,3 @@
+V03 GENERATION
+utc=2026-08-18T05:10:11Z
+PASS: ai2-static-disassembler 0.3.0-v03; banks=16 bytes=131072 instructions=10 flow_seeds=4 decode_conflicts=0 overlaps=0

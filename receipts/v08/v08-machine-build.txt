@@ -1,0 +1,4 @@
+gcc: V08 APU/DMA/input construction: PASS (8573 checks)
+clang: V08 APU/DMA/input construction: PASS (8573 checks)
+clang-asan-ubsan: V08 APU/DMA/input construction: PASS (8573 checks)
+V08 APU/DMA/input compiler/sanitizer gate: PASS

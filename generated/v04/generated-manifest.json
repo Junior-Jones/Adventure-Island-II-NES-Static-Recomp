@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "closure-summary.json",
+      "bytes": 1192,
+      "sha256": "907ea77323db411235985fa8dc938308be48dca9f6dcdb05b24f52b4fd23a6ea"
+    },
+    {
+      "path": "edges.csv",
+      "bytes": 681552,
+      "sha256": "dfc52fa1770fe9d53129f7ede2d177828aeff7fad14ae731b5a2280f098340ac"
+    },
+    {
+      "path": "executable-ram-epochs.json",
+      "bytes": 412,
+      "sha256": "b409d07ab0f3e84a72c42f24bc7a702979085033b8dd4a6f50533ab941a9486a"
+    },
+    {
+      "path": "indirect-targets.csv",
+      "bytes": 14621,
+      "sha256": "3359dff719230dc9282b3cab8d292ac74840ae857bea4eb8935413631fb3fe8a"
+    },
+    {
+      "path": "inline-data.csv",
+      "bytes": 486,
+      "sha256": "be1d59faa65cef2558ec9b6efa4a24b0a8c9de361464a2275122ffc707a794e8"
+    },
+    {
+      "path": "instructions.csv",
+      "bytes": 694610,
+      "sha256": "2fd63d88f7fd52509756e70d462c387b1faf8bbf9ecfb9f42369d1b77da04d80"
+    },
+    {
+      "path": "return-continuations.csv",
+      "bytes": 27236,
+      "sha256": "05e3f79b1e8811047f6454d290679766f00c254d4406493d0e2aa1664b86131f"
+    },
+    {
+      "path": "unresolved-edges.csv",
+      "bytes": 44,
+      "sha256": "ca8f8f77b9a450de3be4d25c6c44e638f1993df777b8393ce3e4e617e3bc23bf"
+    }
+  ],
+  "aggregate_sha256": "6f7d12380fdb9aacd126c4137e436b7099ff337c7d8ac5e3c6ad522c2315fd35"
+}

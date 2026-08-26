@@ -1,0 +1,1801 @@
+{
+  "schema": 1,
+  "cpu": "Ricoh 2A03/2A07 6502-family opcode metadata",
+  "source": "MesenCE 2.2.1 Starter oracle source Core/NES/Debugger/NesDisUtils.cpp",
+  "source_sha256": "6b4a4897e3f834667d8f7dcd5e51bba20afc69d9528ac0e3a9f12d90b20bff24",
+  "entry_count": 256,
+  "entries": [
+    {
+      "opcode": 0,
+      "mnemonic": "BRK",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 1,
+      "mnemonic": "ORA",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 2,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 3,
+      "mnemonic": "SLO",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 4,
+      "mnemonic": "NOP",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 5,
+      "mnemonic": "ORA",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 6,
+      "mnemonic": "ASL",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 7,
+      "mnemonic": "SLO",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 8,
+      "mnemonic": "PHP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 9,
+      "mnemonic": "ORA",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 10,
+      "mnemonic": "ASL",
+      "mode": "Acc",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 11,
+      "mnemonic": "ANC",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 12,
+      "mnemonic": "NOP",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 13,
+      "mnemonic": "ORA",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 14,
+      "mnemonic": "ASL",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 15,
+      "mnemonic": "SLO",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 16,
+      "mnemonic": "BPL",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 17,
+      "mnemonic": "ORA",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 18,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 19,
+      "mnemonic": "SLO",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 20,
+      "mnemonic": "NOP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 21,
+      "mnemonic": "ORA",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 22,
+      "mnemonic": "ASL",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 23,
+      "mnemonic": "SLO",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 24,
+      "mnemonic": "CLC",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 25,
+      "mnemonic": "ORA",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 26,
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 27,
+      "mnemonic": "SLO",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 28,
+      "mnemonic": "NOP",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 29,
+      "mnemonic": "ORA",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 30,
+      "mnemonic": "ASL",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 31,
+      "mnemonic": "SLO",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 32,
+      "mnemonic": "JSR",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 33,
+      "mnemonic": "AND",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 34,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 35,
+      "mnemonic": "RLA",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 36,
+      "mnemonic": "BIT",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 37,
+      "mnemonic": "AND",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 38,
+      "mnemonic": "ROL",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 39,
+      "mnemonic": "RLA",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 40,
+      "mnemonic": "PLP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 41,
+      "mnemonic": "AND",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 42,
+      "mnemonic": "ROL",
+      "mode": "Acc",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 43,
+      "mnemonic": "ANC",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 44,
+      "mnemonic": "BIT",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 45,
+      "mnemonic": "AND",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 46,
+      "mnemonic": "ROL",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 47,
+      "mnemonic": "RLA",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 48,
+      "mnemonic": "BMI",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 49,
+      "mnemonic": "AND",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 50,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 51,
+      "mnemonic": "RLA",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 52,
+      "mnemonic": "NOP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 53,
+      "mnemonic": "AND",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 54,
+      "mnemonic": "ROL",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 55,
+      "mnemonic": "RLA",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 56,
+      "mnemonic": "SEC",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 57,
+      "mnemonic": "AND",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 58,
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 59,
+      "mnemonic": "RLA",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 60,
+      "mnemonic": "NOP",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 61,
+      "mnemonic": "AND",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 62,
+      "mnemonic": "ROL",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 63,
+      "mnemonic": "RLA",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 64,
+      "mnemonic": "RTI",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 65,
+      "mnemonic": "EOR",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 66,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 67,
+      "mnemonic": "SRE",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 68,
+      "mnemonic": "NOP",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 69,
+      "mnemonic": "EOR",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 70,
+      "mnemonic": "LSR",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 71,
+      "mnemonic": "SRE",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 72,
+      "mnemonic": "PHA",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 73,
+      "mnemonic": "EOR",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 74,
+      "mnemonic": "LSR",
+      "mode": "Acc",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 75,
+      "mnemonic": "ALR",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 76,
+      "mnemonic": "JMP",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 77,
+      "mnemonic": "EOR",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 78,
+      "mnemonic": "LSR",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 79,
+      "mnemonic": "SRE",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 80,
+      "mnemonic": "BVC",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 81,
+      "mnemonic": "EOR",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 82,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 83,
+      "mnemonic": "SRE",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 84,
+      "mnemonic": "NOP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 85,
+      "mnemonic": "EOR",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 86,
+      "mnemonic": "LSR",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 87,
+      "mnemonic": "SRE",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 88,
+      "mnemonic": "CLI",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 89,
+      "mnemonic": "EOR",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 90,
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 91,
+      "mnemonic": "SRE",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 92,
+      "mnemonic": "NOP",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 93,
+      "mnemonic": "EOR",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 94,
+      "mnemonic": "LSR",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 95,
+      "mnemonic": "SRE",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 96,
+      "mnemonic": "RTS",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 97,
+      "mnemonic": "ADC",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 98,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 99,
+      "mnemonic": "RRA",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 100,
+      "mnemonic": "NOP",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 101,
+      "mnemonic": "ADC",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 102,
+      "mnemonic": "ROR",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 103,
+      "mnemonic": "RRA",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 104,
+      "mnemonic": "PLA",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 105,
+      "mnemonic": "ADC",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 106,
+      "mnemonic": "ROR",
+      "mode": "Acc",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 107,
+      "mnemonic": "ARR",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 108,
+      "mnemonic": "JMP",
+      "mode": "Ind",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 109,
+      "mnemonic": "ADC",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 110,
+      "mnemonic": "ROR",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 111,
+      "mnemonic": "RRA",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 112,
+      "mnemonic": "BVS",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 113,
+      "mnemonic": "ADC",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 114,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 115,
+      "mnemonic": "RRA",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 116,
+      "mnemonic": "NOP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 117,
+      "mnemonic": "ADC",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 118,
+      "mnemonic": "ROR",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 119,
+      "mnemonic": "RRA",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 120,
+      "mnemonic": "SEI",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 121,
+      "mnemonic": "ADC",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 122,
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 123,
+      "mnemonic": "RRA",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 124,
+      "mnemonic": "NOP",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 125,
+      "mnemonic": "ADC",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 126,
+      "mnemonic": "ROR",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 127,
+      "mnemonic": "RRA",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 128,
+      "mnemonic": "NOP",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 129,
+      "mnemonic": "STA",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 130,
+      "mnemonic": "NOP",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 131,
+      "mnemonic": "SAX",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 132,
+      "mnemonic": "STY",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 133,
+      "mnemonic": "STA",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 134,
+      "mnemonic": "STX",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 135,
+      "mnemonic": "SAX",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 136,
+      "mnemonic": "DEY",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 137,
+      "mnemonic": "NOP",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 138,
+      "mnemonic": "TXA",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 139,
+      "mnemonic": "ANE",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 140,
+      "mnemonic": "STY",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 141,
+      "mnemonic": "STA",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 142,
+      "mnemonic": "STX",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 143,
+      "mnemonic": "SAX",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 144,
+      "mnemonic": "BCC",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 145,
+      "mnemonic": "STA",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 146,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 147,
+      "mnemonic": "SHA",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 148,
+      "mnemonic": "STY",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 149,
+      "mnemonic": "STA",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 150,
+      "mnemonic": "STX",
+      "mode": "ZeroY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 151,
+      "mnemonic": "SAX",
+      "mode": "ZeroY",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 152,
+      "mnemonic": "TYA",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 153,
+      "mnemonic": "STA",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 154,
+      "mnemonic": "TXS",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 155,
+      "mnemonic": "TAS",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 156,
+      "mnemonic": "SHY",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 157,
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 158,
+      "mnemonic": "SHX",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 159,
+      "mnemonic": "SHA",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 160,
+      "mnemonic": "LDY",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 161,
+      "mnemonic": "LDA",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 162,
+      "mnemonic": "LDX",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 163,
+      "mnemonic": "LAX",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 164,
+      "mnemonic": "LDY",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 165,
+      "mnemonic": "LDA",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 166,
+      "mnemonic": "LDX",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 167,
+      "mnemonic": "LAX",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 168,
+      "mnemonic": "TAY",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 169,
+      "mnemonic": "LDA",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 170,
+      "mnemonic": "TAX",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 171,
+      "mnemonic": "LAX",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 172,
+      "mnemonic": "LDY",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 173,
+      "mnemonic": "LDA",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 174,
+      "mnemonic": "LDX",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 175,
+      "mnemonic": "LAX",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 176,
+      "mnemonic": "BCS",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 177,
+      "mnemonic": "LDA",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 178,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 179,
+      "mnemonic": "LAX",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 180,
+      "mnemonic": "LDY",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 181,
+      "mnemonic": "LDA",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 182,
+      "mnemonic": "LDX",
+      "mode": "ZeroY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 183,
+      "mnemonic": "LAX",
+      "mode": "ZeroY",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 184,
+      "mnemonic": "CLV",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 185,
+      "mnemonic": "LDA",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 186,
+      "mnemonic": "TSX",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 187,
+      "mnemonic": "LAS",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 188,
+      "mnemonic": "LDY",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 189,
+      "mnemonic": "LDA",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 190,
+      "mnemonic": "LDX",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 191,
+      "mnemonic": "LAX",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 192,
+      "mnemonic": "CPY",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 193,
+      "mnemonic": "CMP",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 194,
+      "mnemonic": "NOP",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 195,
+      "mnemonic": "DCP",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 196,
+      "mnemonic": "CPY",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 197,
+      "mnemonic": "CMP",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 198,
+      "mnemonic": "DEC",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 199,
+      "mnemonic": "DCP",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 200,
+      "mnemonic": "INY",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 201,
+      "mnemonic": "CMP",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 202,
+      "mnemonic": "DEX",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 203,
+      "mnemonic": "SBX",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 204,
+      "mnemonic": "CPY",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 205,
+      "mnemonic": "CMP",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 206,
+      "mnemonic": "DEC",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 207,
+      "mnemonic": "DCP",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 208,
+      "mnemonic": "BNE",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 209,
+      "mnemonic": "CMP",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 210,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 211,
+      "mnemonic": "DCP",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 212,
+      "mnemonic": "NOP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 213,
+      "mnemonic": "CMP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 214,
+      "mnemonic": "DEC",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 215,
+      "mnemonic": "DCP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 216,
+      "mnemonic": "CLD",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 217,
+      "mnemonic": "CMP",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 218,
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 219,
+      "mnemonic": "DCP",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 220,
+      "mnemonic": "NOP",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 221,
+      "mnemonic": "CMP",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 222,
+      "mnemonic": "DEC",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 223,
+      "mnemonic": "DCP",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 224,
+      "mnemonic": "CPX",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 225,
+      "mnemonic": "SBC",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 226,
+      "mnemonic": "NOP",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 227,
+      "mnemonic": "ISC",
+      "mode": "IndX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 228,
+      "mnemonic": "CPX",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 229,
+      "mnemonic": "SBC",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 230,
+      "mnemonic": "INC",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 231,
+      "mnemonic": "ISC",
+      "mode": "Zero",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 232,
+      "mnemonic": "INX",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 233,
+      "mnemonic": "SBC",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 234,
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 235,
+      "mnemonic": "SBC",
+      "mode": "Imm",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 236,
+      "mnemonic": "CPX",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 237,
+      "mnemonic": "SBC",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 238,
+      "mnemonic": "INC",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 239,
+      "mnemonic": "ISC",
+      "mode": "Abs",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 240,
+      "mnemonic": "BEQ",
+      "mode": "Rel",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 241,
+      "mnemonic": "SBC",
+      "mode": "IndY",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 242,
+      "mnemonic": "STP",
+      "mode": "None",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 243,
+      "mnemonic": "ISC",
+      "mode": "IndYW",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 244,
+      "mnemonic": "NOP",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 245,
+      "mnemonic": "SBC",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 246,
+      "mnemonic": "INC",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": false
+    },
+    {
+      "opcode": 247,
+      "mnemonic": "ISC",
+      "mode": "ZeroX",
+      "size": 2,
+      "unofficial": true
+    },
+    {
+      "opcode": 248,
+      "mnemonic": "SED",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": false
+    },
+    {
+      "opcode": 249,
+      "mnemonic": "SBC",
+      "mode": "AbsY",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 250,
+      "mnemonic": "NOP",
+      "mode": "Imp",
+      "size": 1,
+      "unofficial": true
+    },
+    {
+      "opcode": 251,
+      "mnemonic": "ISC",
+      "mode": "AbsYW",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 252,
+      "mnemonic": "NOP",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": true
+    },
+    {
+      "opcode": 253,
+      "mnemonic": "SBC",
+      "mode": "AbsX",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 254,
+      "mnemonic": "INC",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": false
+    },
+    {
+      "opcode": 255,
+      "mnemonic": "ISC",
+      "mode": "AbsXW",
+      "size": 3,
+      "unofficial": true
+    }
+  ]
+}

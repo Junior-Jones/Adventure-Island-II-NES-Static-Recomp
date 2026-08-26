@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "milestone": "V10.01-static-inheritance",
+  "result": "PASS",
+  "compile_invoked": false,
+  "runtime_executed": false,
+  "gameplay_used_as_static_authority": false,
+  "oracle_used_as_static_authority": false,
+  "checks_passed": 25,
+  "checks": [
+    {
+      "name": "exact_rom",
+      "result": "PASS",
+      "detail": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc"
+    },
+    {
+      "name": "v09_manifest_pin",
+      "result": "PASS",
+      "detail": "c73131b6115748f4c85a864c8394d7c42e05344981eae969e15a5b5471655454"
+    },
+    {
+      "name": "v09_inherited_files_present",
+      "result": "PASS",
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "name": "v09_change_allowlist",
+      "result": "PASS",
+      "detail": {
+        "changed": [
+          "README.md",
+          "VERSION.txt",
+          "config/v09-core-contract.json",
+          "docs/STATIC-CORE-STATUS.md",
+          "docs/UNRESOLVED-BOUNDARIES.csv",
+          "frontend/headless/ai2_headless.c",
+          "generated/v09/ai2_v09_identity.h",
+          "src/ppu/ai2_v07_ppu.c"
+        ],
+        "allowed": [
+          "README.md",
+          "VERSION.txt",
+          "config/v09-core-contract.json",
+          "docs/STATIC-CORE-STATUS.md",
+          "docs/UNRESOLVED-BOUNDARIES.csv",
+          "frontend/headless/ai2_headless.c",
+          "generated/v09/ai2_v09_identity.h",
+          "src/ppu/ai2_v07_ppu.c"
+        ]
+      }
+    },
+    {
+      "name": "v04_clean_regeneration",
+      "result": "PASS",
+      "detail": {
+        "files": 9
+      }
+    },
+    {
+      "name": "v05_clean_regeneration",
+      "result": "PASS",
+      "detail": {
+        "files": 26
+      }
+    },
+    {
+      "name": "v10_clean_regeneration",
+      "result": "PASS",
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "rom_wide_fixed_point",
+      "result": "PASS",
+      "detail": true
+    },
+    {
+      "name": "context_count",
+      "result": "PASS",
+      "detail": 16544
+    },
+    {
+      "name": "byte_ownership_counts",
+      "result": "PASS",
+      "detail": {
+        "code": 35423,
+        "inline": 244,
+        "metadata": 22,
+        "excluded": 95383
+      }
+    },
+    {
+      "name": "zero_unresolved",
+      "result": "PASS",
+      "detail": 0
+    },
+    {
+      "name": "mapper_prg_mode_d6",
+      "result": "PASS",
+      "detail": [
+        0
+      ]
+    },
+    {
+      "name": "r7_domain",
+      "result": "PASS",
+      "detail": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "name": "r6_nonexecutability",
+      "result": "PASS",
+      "detail": 0
+    },
+    {
+      "name": "opcode_form_contracts_static",
+      "result": "PASS",
+      "detail": {
+        "bad": []
+      }
+    },
+    {
+      "name": "generated_no_runtime_decode_or_fetch",
+      "result": "PASS",
+      "detail": {
+        "hits": []
+      }
+    },
+    {
+      "name": "all_bank_defaults_fail_closed",
+      "result": "PASS",
+      "detail": {
+        "banks": 16
+      }
+    },
+    {
+      "name": "unknown_bank_fails_closed",
+      "result": "PASS",
+      "detail": true
+    },
+    {
+      "name": "runtime_prg_read_single_bus_site",
+      "result": "PASS",
+      "detail": 1
+    },
+    {
+      "name": "runtime_no_opcode_switch",
+      "result": "PASS",
+      "detail": true
+    },
+    {
+      "name": "ppu_power_on_phase_source",
+      "result": "PASS",
+      "detail": {
+        "scanline": 0,
+        "dot": 4
+      }
+    },
+    {
+      "name": "reset_seven_cpu_cycles_source",
+      "result": "PASS",
+      "detail": "5 internal + 2 vector reads"
+    },
+    {
+      "name": "cpu_to_ppu_ratio_source",
+      "result": "PASS",
+      "detail": "3 PPU dots per CPU cycle"
+    },
+    {
+      "name": "required_runtime_modules_exist",
+      "result": "PASS",
+      "detail": [
+        "src/mapper/ai2_mmc3_mapper.c",
+        "src/runtime/ai2_v06_runtime.c",
+        "src/ppu/ai2_v07_ppu.c",
+        "src/apu/ai2_v08_apu.c",
+        "src/api/ai2_v09_core.c",
+        "include/ai2_static_core.h",
+        "generated/v05/bank_dispatch.c"
+      ]
+    },
+    {
+      "name": "production_has_no_oracle_dependency",
+      "result": "PASS",
+      "detail": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+root,cpu_pc,physical_prg_bank,bank_offset,accepted_straight_line_instruction_count,policy
+reset,0xFFAE,15,0x1FAE,1,decode through first control-transfer instruction; do not follow edge until V04
+nmi,0xE0CE,15,0x00CE,8,decode through first control-transfer instruction; do not follow edge until V04
+irq,0xE152,15,0x0152,1,decode through first control-transfer instruction; do not follow edge until V04

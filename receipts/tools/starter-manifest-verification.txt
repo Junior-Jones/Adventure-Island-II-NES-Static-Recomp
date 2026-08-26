@@ -1,0 +1,5 @@
+PASS: active Starter NES(4) package matches PACKAGE-MANIFEST.json
+manifest_controlled_files=66
+aggregate_sha256=c0153945da4fda6a19e16556c97dd77c07f5d5ddb8bc034fc0cb967dd5b41a46
+package_zip_sha256=a895ce1d21ce41d10ef9393b47bdb2f315db42e1a6af2477f9b79a03a1923703
+old_active_starter_removed=true

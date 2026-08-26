@@ -1,0 +1,11 @@
+physical_prg_bank,bank_offset,cpu_pc,length,mnemonic,addressing_mode,unofficial_opcode,flow_kind,instruction_sha256,root_origins,mapping_authority
+15,0x00CE,0xE0CE,1,PHA,Imp,no,fallthrough,44bd7ae60f478fae1061e11a7739f4b94d1daf917982d33b6fc8a01a63f89c21,nmi,fixed-last-bank-15
+15,0x00CF,0xE0CF,1,TXA,Imp,no,fallthrough,2d3193691934124461809fb9bc7e671215099fc7d961bfbe31943d40d477c890,nmi,fixed-last-bank-15
+15,0x00D0,0xE0D0,1,PHA,Imp,no,fallthrough,44bd7ae60f478fae1061e11a7739f4b94d1daf917982d33b6fc8a01a63f89c21,nmi,fixed-last-bank-15
+15,0x00D1,0xE0D1,1,TYA,Imp,no,fallthrough,79bec7ff3e69d1b470eb8684f2005a867a7980222474cbc1afd26a9a4f206d4a,nmi,fixed-last-bank-15
+15,0x00D2,0xE0D2,1,PHA,Imp,no,fallthrough,44bd7ae60f478fae1061e11a7739f4b94d1daf917982d33b6fc8a01a63f89c21,nmi,fixed-last-bank-15
+15,0x00D3,0xE0D3,3,LDA,Abs,no,fallthrough,9336089a0e187f835929e2f97154539d153bcd0dd57d93b19794e693fac447c0,nmi,fixed-last-bank-15
+15,0x00D6,0xE0D6,2,LDA,Zero,no,fallthrough,1c4cfc02121e30a0a2d437be79af6f6f8a943d87d8e90617ff94c0ff795ff822,nmi,fixed-last-bank-15
+15,0x00D8,0xE0D8,2,BEQ,Rel,no,conditional_branch,d4be2e2426d783fba0bd08fa2beb696c61bff5bd8ac27a5e6f30b8c181bfb5dc,nmi,fixed-last-bank-15
+15,0x0152,0xE152,1,RTI,Imp,no,interrupt_return,c3641f8544d7c02f3580b07c0f9887f0c6a27ff5ab1d4a3e29caf197cfc299ae,irq,fixed-last-bank-15
+15,0x1FAE,0xFFAE,3,JMP,Abs,no,direct_jump,86a75c0121a5213c83c24167f720907385d9f79e2cbbd68f156efaba61c060a4,reset,fixed-last-bank-15

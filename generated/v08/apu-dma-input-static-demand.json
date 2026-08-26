@@ -1,0 +1,114 @@
+{
+  "base_register_counts": {
+    "0x4000": 5,
+    "0x4001": 3,
+    "0x4002": 1,
+    "0x4003": 1,
+    "0x4014": 1,
+    "0x4015": 1,
+    "0x4016": 3,
+    "0x4017": 2
+  },
+  "channels_implemented": [
+    "pulse1",
+    "pulse2",
+    "triangle",
+    "noise",
+    "DMC"
+  ],
+  "construction_basis": "V04 statically proved instruction ledger; no gameplay traces",
+  "controller_ports": [
+    1,
+    2
+  ],
+  "direct_or_indexed_io_contexts": 17,
+  "expansion_audio_reason": "NES-TLROM-03 / Sharp MMC3B has no expansion audio",
+  "expansion_audio_required": false,
+  "gameplay_seeds_used": 0,
+  "implemented_cpu_io_surface": "0x4000-0x4017 with $4014 OAM DMA separated by V06 bus arbitration",
+  "indexed_audio_contexts": [
+    {
+      "bank": 15,
+      "base_address": "0x4000",
+      "bytes": "9d0040",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEA8B"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4001",
+      "bytes": "9d0140",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEA91"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4000",
+      "bytes": "9d0040",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEAFD"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4001",
+      "bytes": "9d0140",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEB0B"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4001",
+      "bytes": "9d0140",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEB51"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4000",
+      "bytes": "9d0040",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEC00"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4000",
+      "bytes": "9d0040",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEC1F"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4002",
+      "bytes": "9d0240",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEC5F"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4003",
+      "bytes": "9d0340",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xEC98"
+    },
+    {
+      "bank": 15,
+      "base_address": "0x4000",
+      "bytes": "9d0040",
+      "mnemonic": "STA",
+      "mode": "AbsXW",
+      "pc": "0xED2A"
+    }
+  ],
+  "milestone": "V08",
+  "schema": 1,
+  "source": "generated/v04/instructions.csv"
+}

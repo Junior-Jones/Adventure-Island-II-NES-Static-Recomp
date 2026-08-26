@@ -1,0 +1,138 @@
+{
+  "oracle": {
+    "base_version": "2.2.1",
+    "linux_core_sha256": "060c4a4111d0770a65f88aaecbca7faa8c9ea8edcc081dd141d2fe9b8792a0e7",
+    "linux_executable_sha256": "1554b443d2486fd25f3dcfa41e43e8ce579f9d8927d93d8cdb37d0ac2c4a9276",
+    "linux_source_zip_sha256": "a56c132931f5195aea87b2af00c87bc55896f2551836d3fd9cd0df029bc898f4",
+    "name": "MesenCE NES-only headless oracle",
+    "windows_core_sha256": "ca4693baee61b0caba9a8e816b5dddae0f5e7476d8bcfe9d23b12cd2f7eee30e",
+    "windows_executable_sha256": "cf93cf10d6f8b5fe850f8a698fff24124104e32a4f6b39ed41130ba1ef07f1e4",
+    "windows_source_zip_sha256": "7e449629edb2c331cf4c51de320363ac617b9e674c8c3fc1f5da48565b789dc9"
+  },
+  "project_tools": {
+    "disassembler_entry": {
+      "sha256": "8a9333720913e620ba35a234fe874d346a51d0efd4cfa8f53125c81ab3588a95",
+      "status": "V03 active: deterministic ROM-wide inventory plus conservative vector-root straight-line decoding; V04 control-flow traversal intentionally excluded",
+      "version": "0.3.0-v03"
+    },
+    "generator_entry": {
+      "sha256": "f94fcc0a3944099e05d86652796fb9273a2926b53e45b63efdb8d325b27b978c",
+      "status": "V05 active deterministic compact generator: exact-ROM verification, sealed V04 authority only, 16 physical-bank descriptor shards, shared opcode-form execution, 404 finite indirect entries, 1133 return continuations, fail-closed bank/PC/dynamic-target dispatch; no gameplay/trace input",
+      "version": "0.5.1-v05-compact"
+    },
+    "rom_validator": {
+      "sha256": "5bce7273e755b8d0af0d7df35d4bf434c1286719c1b728e00d4d8ce7f9a63fba",
+      "version": "1.0-v01"
+    },
+    "v04_control_flow_analyzer": {
+      "sha256": "2cb85e3f918edc7be89f523284b47de94da7f12a13d6045eafe6a9defa4c6277",
+      "status": "V04 active: exact-ROM offline static control-flow/indirect/mapper/stack/return/RAM-epoch closure; accepts no gameplay trace inputs",
+      "version": "0.4.0-v04"
+    },
+    "v06_runtime": {
+      "runtime_c_sha256": "5059d1081dc16e2cac45bb0d14be9260a4eb6e99159fa24020bcd5687de2cb1d",
+      "runtime_h_sha256": "82b68cea59931c76599cf1db9cf377d07d698456021d1bb030186cdae5fdf1b8",
+      "semantics_c_sha256": "d6cdbf0073a2c6d2417200e4830e0f8207e673cd31b2f52a9d8e9b8521b73842",
+      "static_frontier_tool_sha256": "dced7c6e5986c92517f51fd0d588dc351bf9e295a495ac9f7ce4468fcbcf4f4a",
+      "status": "V06 complete target-specific 2A03 CPU/bus/common-scheduler/Sharp-MMC3B runtime; 99 sealed V05 forms; PPU/APU/DMA device semantics remain fail-closed V07/V08 boundaries; no gameplay-derived authority",
+      "version": "0.6.0-v06"
+    },
+    "v07_ppu": {
+      "current_v06_runtime_c_sha256": "3ec41f45b459f766d637283ac6b70db00c330550a1b57a85d479c434d3ffcdba",
+      "current_v06_runtime_h_sha256": "1a489385652e489b1a42fce998fc5094deac9e88aa268dffb2895727f85f1145",
+      "ppu_c_sha256": "c7a3ce204ffa565ed2fcd70ba3e2ef4800ab461b28a2d421ea9dfc1b3ecd29d9",
+      "ppu_h_sha256": "ff496d1a898be15bcde90e6ba92f7adf84c99d1b301120538dcdcf0c48b14129",
+      "status": "V07 complete target-specific NTSC PPU construction; static exact-ROM/V04-demand authority only; no gameplay/screenshot coverage authority; V08 APU/DMA/input remains fail-closed",
+      "v07_demand_sha256": "d983dd174f9e2f5fe5b275493b201250bac0d0266fe8f81abc0265b2e1d96178",
+      "v07_frontier_tool_sha256": "76cfc95300e49dd9e17f68937eaaaa67310b0b875c77cdcfce748566b3f86c6d",
+      "version": "0.7.0-v07"
+    },
+    "v08_apu_dma_input": {
+      "apu_c_sha256": "82aa15f8d11adeeb7b7e07076dbb5ab510324bb6bee0c40b6f13c77e773c0253",
+      "apu_h_sha256": "7899f46071bec181cc856a6974bb4b7440ac5aa7627fcc66c50f1b257a0f43e1",
+      "cold_boot_tool_sha256": "74d48d1225de4ad3f696edfc0733363d43df8dd31a5ab78526f10862f146a112",
+      "current_runtime_c_sha256": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037",
+      "current_runtime_h_sha256": "d6eb699c3b43c254b5d7da46691a1152009f4a57df163d7ca070cbf5f4bcf9dc",
+      "machine_build_test_sha256": "7fb4391d0459dcfcbd63a4f779dfd7b67b5f73110f0a9293fecb583efd59b066",
+      "machine_test_sha256": "792aeceec5dc1ad99748a124aede4e5d45ad928dadebfae53a95bbaecd4ac5d4",
+      "static_demand_sha256": "07cfd7d2c496730e2c740ac43ba854e04c152d55c33cafb4ae15176f1c6ffc6c",
+      "status": "V08 complete target-specific NTSC APU/OAM-DMC-DMA/controller construction; static V04 I/O demand plus pinned hardware sources only; zero gameplay-derived authority; V09 public API/snapshot/frontend boundary pending",
+      "version": "0.8.0-v08"
+    },
+    "v09_public_api": {
+      "version": "0.9.0-v09",
+      "status": "V09 complete opaque public core API, canonical atomic snapshots, filtered non-reentrant hooks and shared headed/headless frame boundary; no gameplay-derived authority",
+      "compatibility_sha256": "68d14e75a0e70bf5439a755cf8ccb02617c5c2d8e3a37bba984a4e7f5842c7e2",
+      "public_header_sha256": "e7a96f4dae3e0539cd53fed57aa2799574c24ccdcee97d0fd1c79d28673a539e",
+      "core_c_sha256": "e5d0bce08d8d23c853fc9a07f4c04abcba7bab76f75cd2a6491cf298727bb87c",
+      "sha256_c_sha256": "f99eda2ada88d4691bb0c7adc0ff66f29fca86b88d62d81ac3320bbe28718427",
+      "identity_generator_sha256": "a6ea714d962b9059e8ffd80b9fc786754cbc41ad2d62f792b62896812a1c8af4",
+      "core_contract_sha256": "1c52065043ad45b1467a13c23ac6547cce1192f1ffecfdfa198ea3e1f4c42c78",
+      "generated_identity_header_sha256": "69459764b51a5c2d5baa548e2698a9b4d405920c494e95d2520bf8b161bca02f",
+      "common_frontend_c_sha256": "6811b8096e5329c48b579f48cb8097afebddfea1c8209c39d98d4460b40d2cc4",
+      "headless_frontend_sha256": "7fe50ea9da868ab6badc698b141f4e734995b9010800889d6f7335dd2ffae40c",
+      "headed_boundary_sha256": "92254e1d0e1ea89a6c7b4d920e25436243a992fda6ace651a277b43f0dbe860c",
+      "api_test_c_sha256": "917bf065847e1ce6d0d1152edb4cddbe93b5444315590c0e22be24956e56010d",
+      "api_test_driver_sha256": "b77634ab8e382eb87b4242469df7a0dcf59f3fee1a6eee9b0d42a7566fa49de8",
+      "contract_test_sha256": "134318012d1d7f8fd4b05f4a53264c0923d96cb30e89fd0ab07f1a0b5153f8ca"
+    }
+  },
+  "reference_frontend": {
+    "name": "Mega Man 2 static recomp frontend reference",
+    "source_receipt_sha256": "a2b0f1de641762ca2a1420151ed306352f3d3d682f366a3418c0107a891983f1",
+    "use": "architecture/frontend behavior only",
+    "version": "1.1.0"
+  },
+  "schema": 1,
+  "starter_nes": {
+    "active_uploaded_package": "Starter NES(4).zip",
+    "authority": "sole active Starter; supersedes prior active package; V01-V10 new-core track plus mandatory cold-boot/ROM-wide fixed-point chapter",
+    "chatgpt_start_here_sha256": "596f875747f1dc8dd817406ad16a75a23638197f5ceba60b2b758f17bb110e0d",
+    "cold_boot_static_closure_guide_sha256": "2fbcafdc3ea6c3b88a16a31cd9197d33f7995936f3c1001a8eea52efea6a4959",
+    "construction_flow_update": "2026-08-18",
+    "general_guide_sha256": "a19724b6f19d177510847a68da8a2ac593b5aa4c1e8b1179491afb4e866e8fcb",
+    "hardware_mapper_guide_sha256": "b1ce4df112d2fda71a4e24110a82d42192e06a0474bbbdf3f6bff5f711ae0cbc",
+    "inspect_nes_rom_sha256": "4669c93a5e8d2c81f61fc97b2f9ae9beed7f239cf981877b8724ef74348c287f",
+    "internal_revision": 3,
+    "milestone_guide_sha256": "32891a552b3e16971bd0eb9e17b71e4ff1214405eced26ed1055cd2c46099276",
+    "package_aggregate_sha256": "c0153945da4fda6a19e16556c97dd77c07f5d5ddb8bc034fc0cb967dd5b41a46",
+    "package_manifest_file_count": 66,
+    "package_zip_sha256": "a895ce1d21ce41d10ef9393b47bdb2f315db42e1a6af2477f9b79a03a1923703",
+    "readme_first_sha256": "8c6897cb81e75d9d770ded4d25968e1a5c60b09beb1fea14ce75fd9b96f1667d",
+    "revision_notes_sha256": "e558a8c756b78f8f6b6c50c2b5998309a1d1199beced35fad57340854a6159a3",
+    "run_nes_oracle_sha256": "e00a0c4c7d5713cf8cefd1496bf7d64b3dffbbc2bb9d05a19e370807f1b17f6e"
+  },
+  "v02_mapper_reference": {
+    "exact_board_profile": {
+      "identity": "NES-V7-USA / NES-TLROM-03 / Sharp MMC3B",
+      "matching_crc32": {
+        "chr": "1DDB1C0E",
+        "combined": "771C8855",
+        "prg": "6FA0E650"
+      },
+      "url": "https://nescartdb.com/profile/view/269/adventure-island-ii"
+    },
+    "mesence": {
+      "path": "Core/NES/Mappers/Nintendo/MMC3.h",
+      "sha256": "1d4bec75f3d30d6c5fe1f400e33750619551418f9034cf8dbbf02ea85a3f863e",
+      "upstream": "https://github.com/nesdev-org/MesenCE",
+      "version": "2.2.1 pinned Starter oracle source"
+    },
+    "nesdev": {
+      "cartridge_connector": "https://www.nesdev.org/wiki/Cartridge_connector",
+      "mmc3": "https://www.nesdev.org/wiki/MMC3",
+      "mmc3_pinout": "https://www.nesdev.org/wiki/MMC3_pinout"
+    },
+    "retrieved_date": "2026-08-18",
+    "selection": "standard TLROM mapping plus Sharp/new MMC3 IRQ behavior; no guessed NES 2.0 submapper"
+  },
+  "v03_disassembly_reference": {
+    "linux_windows_source_match": true,
+    "mesence_nes_disutils_path": "Core/NES/Debugger/NesDisUtils.cpp",
+    "mesence_nes_disutils_sha256": "6b4a4897e3f834667d8f7dcd5e51bba20afc69d9528ac0e3a9f12d90b20bff24",
+    "opcode_entry_count": 256,
+    "opcode_metadata_path": "config/2a03-opcodes.json",
+    "opcode_metadata_sha256": "ab73d3f6efe8a7152a6a359bba67a18499c1e44928f9de6732771527a39cb87a",
+    "policy": "opcode names/addressing modes/unofficial flags are pinned metadata only; Mesen is not used to discover the game code map"
+  }
+}

@@ -1,0 +1,3 @@
+V02 full-tree manifest is generated only after this receipt and all milestone artifacts are final.
+Post-generation verifier command: python3 tools/verify_source_manifest.py <project-root> receipts/V02-SOURCE-MANIFEST.json
+Expected final result: PASS: package matches manifest

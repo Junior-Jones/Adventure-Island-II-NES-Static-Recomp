@@ -1,0 +1,1 @@
+PASS exact accepted; altered/malformed/truncated/trailing images rejected

@@ -1,0 +1,1 @@
+PASS: V04 static control-flow construction tests; checks=272518; instructions=16544; instruction_bytes=35423; indirect_targets=404; unresolved=0; gameplay_seeds=0

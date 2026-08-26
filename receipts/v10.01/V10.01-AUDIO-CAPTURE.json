@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "result": "PASS",
+  "wav": "receipts/v10.01/final-clean/audio/Adventure-Island-II-V10.01-90s.wav",
+  "sha256": "f3451523fae7a8077ed639ffa38631fd30e671e6647dff36f565af6f3955510c",
+  "channels": 1,
+  "sample_width_bytes": 2,
+  "sample_rate_hz": 44100,
+  "samples": 3969016,
+  "duration_seconds": 90.00036281179138,
+  "peak_absolute": 18324,
+  "rms": 6132.829177808353,
+  "zero_sample_fraction": 0.16720214783714654,
+  "clipped_sample_count": 0,
+  "non_silent": true,
+  "determinism_note": "SHA-256 is identical to the earlier 90-second capture from the pre-clean build."
+}

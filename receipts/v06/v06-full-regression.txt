@@ -1,0 +1,46 @@
+Adventure Island II NES Static Recomp - V06 full construction regression
+
+===== Active Starter NES(4) =====
+PASS: package matches manifest
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_SELF_TEST schema=1 result=pass
+
+===== V01 =====
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+
+===== V02 =====
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration
+
+===== V03 =====
+PASS: V03 inventory construction tests; checks=563; instructions=10; PRG bytes=131072; banks=16
+
+===== V04 =====
+PASS: V04 static control-flow construction tests; checks=272518; instructions=16544; instruction_bytes=35423; indirect_targets=404; unresolved=0; gameplay_seeds=0
+
+===== V05 =====
+V05_GENERATOR_TEST PASS checks=35542
+V05_DISPATCH_CONTRACT PASS checks=16
+
+===== V06 primary runtime =====
+GCC: V06 runtime construction: PASS (4459662 checks)
+Clang: V06 runtime construction: PASS (4459662 checks)
+
+===== V06 static/contract/all-form gates =====
+V06 static-source audit: PASS (99 fixed official forms; required unofficial forms=0; admitted BRK contexts=0; runtime opcode fetch/decode absent)
+V06 runtime contract: PASS (39 checks)
+GCC: V06 all fixed opcode forms: PASS (297 checks, 99 forms)
+Clang: V06 all fixed opcode forms: PASS (297 checks, 99 forms)
+V06 all-forms source/compile gate: PASS (99 forms; compilers=gcc,clang)
+
+===== V06 deterministic static reset frontier =====
+{"schema":1,"mode":"static-reset-frontier-no-input","steps_completed":4,"current_bank":15,"current_pc":57364,"cpu_cycles":19,"ppu_cycles":57,"apu_cycles":19,"trap_code":5,"trap_source_pc":57364,"trap_address":8192,"trap_is_write":1,"trap_value":0}
+V06 deterministic static-reset frontier: PASS (2 identical no-input runs; no gameplay)
+
+===== V06 sanitizer =====
+Clang ASan+UBSan smoke: V06 runtime construction: PASS (141 checks)
+
+RESULT: PASS
+Gameplay/controller-input construction evidence used: NO
+Runtime opcode fetch/decode/interpreter fallback: ABSENT by static-source audit
+Cold-boot closure claimed: NO; first V07 PPU frontier is 15:E014 STX $2000

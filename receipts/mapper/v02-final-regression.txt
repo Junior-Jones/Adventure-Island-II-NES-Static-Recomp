@@ -1,0 +1,3 @@
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+PASS: exact Adventure Island II ROM identity accepted

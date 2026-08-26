@@ -1,0 +1,2 @@
+Final manifest verification is performed after this receipt is present so the receipt itself is covered by the manifest.
+Expected final result: PASS: package matches manifest

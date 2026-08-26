@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "milestone": "V09",
+  "result": "PASS",
+  "sealed_predecessor": "V08",
+  "v08_source_manifest_aggregate_sha256": "b968c9f6d182942dad2d1b5609a57c80eab71ceea3b0d34b5824e7ddf1100a71",
+  "inherited_source_hash_checks": {
+    "src/apu/ai2_v08_apu.c": {
+      "expected_sha256": "82aa15f8d11adeeb7b7e07076dbb5ab510324bb6bee0c40b6f13c77e773c0253",
+      "actual_sha256": "82aa15f8d11adeeb7b7e07076dbb5ab510324bb6bee0c40b6f13c77e773c0253",
+      "match": true
+    },
+    "src/apu/ai2_v08_apu.h": {
+      "expected_sha256": "7899f46071bec181cc856a6974bb4b7440ac5aa7627fcc66c50f1b257a0f43e1",
+      "actual_sha256": "7899f46071bec181cc856a6974bb4b7440ac5aa7627fcc66c50f1b257a0f43e1",
+      "match": true
+    },
+    "src/runtime/ai2_v06_runtime.c": {
+      "expected_sha256": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037",
+      "actual_sha256": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037",
+      "match": true
+    },
+    "src/runtime/ai2_v06_runtime.h": {
+      "expected_sha256": "d6eb699c3b43c254b5d7da46691a1152009f4a57df163d7ca070cbf5f4bcf9dc",
+      "actual_sha256": "d6eb699c3b43c254b5d7da46691a1152009f4a57df163d7ca070cbf5f4bcf9dc",
+      "match": true
+    },
+    "src/ppu/ai2_v07_ppu.c": {
+      "expected_sha256": "c7a3ce204ffa565ed2fcd70ba3e2ef4800ab461b28a2d421ea9dfc1b3ecd29d9",
+      "actual_sha256": "c7a3ce204ffa565ed2fcd70ba3e2ef4800ab461b28a2d421ea9dfc1b3ecd29d9",
+      "match": true
+    },
+    "src/ppu/ai2_v07_ppu.h": {
+      "expected_sha256": "ff496d1a898be15bcde90e6ba92f7adf84c99d1b301120538dcdcf0c48b14129",
+      "actual_sha256": "ff496d1a898be15bcde90e6ba92f7adf84c99d1b301120538dcdcf0c48b14129",
+      "match": true
+    }
+  },
+  "rerun": "V08 static demand/source/machine-contract plus APU/DMA/controller 8,573-check GCC/Clang/ASan+UBSan gate",
+  "rerun_receipt_sha256": "7e1798ee688c1aaf2318e1dd91a8fcb6756fce671bc0b480ccc70e1441b82d7a",
+  "gameplay_used": false
+}

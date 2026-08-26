@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "result": "PASS",
+  "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "prg_bytes": 131072,
+  "instruction_contexts": 16544,
+  "edge_records": 19833,
+  "byte_ownership": {
+    "code": 35423,
+    "inline_data": 244,
+    "metadata": 22,
+    "excluded_immutable_data": 95383,
+    "unresolved": 0
+  },
+  "executable_physical_banks": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "excluded_physical_banks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r7_executable_values": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r6_executable_targets": 0,
+  "executable_ram_epochs": 0,
+  "self_modifying_code_epochs": 0
+}

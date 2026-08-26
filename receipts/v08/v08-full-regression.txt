@@ -1,0 +1,51 @@
+Adventure Island II NES Static Recomp - V08 final construction regression
+Date: 2026-08-18
+Construction policy: static ROM/mapper/proof driven; gameplay/controller input not used for code discovery or admission.
+
+===== Active Starter NES(4) =====
+PASS: package matches manifest
+MesenCE oracle self-test only: PASS
+
+===== V01 =====
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+
+===== V02 =====
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration
+
+===== V03 =====
+PASS: V03 inventory construction tests; checks=563; instructions=10; PRG bytes=131072; banks=16
+
+===== V04 =====
+PASS: V04 static control-flow construction tests; checks=272518; instructions=16544; instruction_bytes=35423; indirect_targets=404; unresolved=0; gameplay_seeds=0
+
+===== V05 =====
+V05_GENERATOR_TEST PASS checks=35542
+V05_DISPATCH_CONTRACT PASS checks=16
+
+===== V06 current-tree functional regression =====
+GCC: V06 runtime construction: PASS (4459662 checks)
+Clang: V06 runtime construction: PASS (4459662 checks)
+Current V08 tree preserves the V06 generated/static runtime authority; see receipts/v08/v06-runtime-gcc.txt and v06-runtime-clang.txt.
+
+===== V07 current-tree functional regression =====
+gcc: V07 PPU construction tests: PASS (357433 checks)
+clang: V07 PPU construction tests: PASS (357433 checks)
+clang-asan-ubsan: V07 PPU construction tests: PASS (357433 checks)
+See receipts/v08/v07-ppu-regression.txt.
+
+===== V08 =====
+V08 static APU/DMA/input demand audit: PASS (contexts=17; indexed audio=10; gameplay seeds=0)
+V08 static-source audit: PASS (native APU/DMA/controller machine; no runtime opcode or gameplay-derived lane)
+V08 machine contract: PASS (12 source pins; cold-boot claim kept separate)
+gcc: V08 APU/DMA/input construction: PASS (8573 checks)
+clang: V08 APU/DMA/input construction: PASS (8573 checks)
+clang-asan-ubsan: V08 APU/DMA/input construction: PASS (8573 checks)
+V08 deterministic no-input cold-boot endurance: PASS (2 identical runs; 2,000,000 generated steps; 206 frames; trap=0; no gameplay; cold-boot closure NOT claimed without bounded oracle checkpoint agreement)
+
+RESULT: PASS - COMPLETE_FOR_DEFINED_V08_SCOPE
+Overall STATIC_CORE_COMPLETE: NO
+Cold-boot closure: NOT CLOSED; bounded oracle checkpoint agreement remains open.
+CPU graph closure: current V04 accepted graph closed; V10 ROM-wide fixed point not yet claimed.
+Machine closure: CPU/mapper/PPU/APU/DMA/controller construction present; V09 public API/persistence remains.
+Qualification closure: NOT AUTHORIZED before V10 STATIC_CORE_COMPLETE.

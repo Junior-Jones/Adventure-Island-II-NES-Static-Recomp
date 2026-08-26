@@ -1,0 +1,5 @@
+source_identity,source_flow_kind,edge_kind,target_cpu_pc,target_physical_prg_bank_if_fixed,target_bank_offset_if_fixed,v04_status,reason
+PRG15:1FAE@FFAE,direct_jump,jump_target,0xE010,15,0x0010,pending,direct control-flow following begins in V04
+PRG15:00D8@E0D8,conditional_branch,branch_taken,0xE0E1,15,0x00E1,pending,direct control-flow following begins in V04
+PRG15:00D8@E0D8,conditional_branch,branch_fallthrough,0xE0DA,15,0x00DA,pending,direct control-flow following begins in V04
+PRG15:0152@E152,interrupt_return,dynamic_or_implicit,,,,pending,return/interrupt/indirect target requires V04 proof

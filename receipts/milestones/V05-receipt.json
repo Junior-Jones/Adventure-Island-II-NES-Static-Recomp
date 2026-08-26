@@ -1,0 +1,182 @@
+{
+  "artifacts": [
+    {
+      "bytes": 5142,
+      "path": "config/source-pins.json",
+      "sha256": "8db02759484d728aa3efa08d9bdb567f05a6c9a6bd3cb5ddc920a36dc5ea7dbe"
+    },
+    {
+      "bytes": 28647,
+      "path": "tools/generate_static_core.py",
+      "sha256": "294a621438713625377065abf1903d23f003d26324397ea2f0bb12b6b87e3495"
+    },
+    {
+      "bytes": 9759,
+      "path": "tests/construction/test_v05_generator.py",
+      "sha256": "5840b903e06f6e32f1090f45180508f0b80d369fba095ba5a2ef38a1468710ec"
+    },
+    {
+      "bytes": 5034,
+      "path": "tests/construction/test_v05_dispatch_contract.py",
+      "sha256": "d4053ba998ea05c3f7cfe097facd64a1fcaccef6e19387486936b323cb120344"
+    },
+    {
+      "bytes": 711,
+      "path": "generated/v05/generated-identity.json",
+      "sha256": "e348cfa04f20635cfefed824e659c51f657de8420f88eb11303ee3633ab6c580"
+    },
+    {
+      "bytes": 2501,
+      "path": "generated/v05/generation-receipt.json",
+      "sha256": "39e711085b4f56db45b3186d1193dcd589bc66097d108058910e100399d24d58"
+    },
+    {
+      "bytes": 3891,
+      "path": "generated/v05/generated-tree-manifest.json",
+      "sha256": "b3ac0600eaf844b1e35f400f9fab2b962e327791c17e70ea0045cc26b95e794d"
+    },
+    {
+      "bytes": 31553,
+      "path": "generated/v05/opcode-form-contracts.json",
+      "sha256": "30d89fadc39745463683045d4a85bf546fb89c489cf68e5e661996b2854a14d3"
+    },
+    {
+      "bytes": 2987,
+      "path": "docs/V05-TRANSLATION-GENERATOR.md",
+      "sha256": "c6b47b37ae15804d707a64438bb6b81acd243bd53c5b0fb1b488bf7c8e2ba3af"
+    },
+    {
+      "bytes": 2106,
+      "path": "docs/V05-REPORT.md",
+      "sha256": "8881af8960660f83e8b58b9b2238011ca1321f7227ef24ab782190735b941457"
+    },
+    {
+      "bytes": 3564,
+      "path": "docs/STATIC-CORE-STATUS.md",
+      "sha256": "4a0a9083d37049658260bae1040f808ecde6a956195437f73c018a5747353292"
+    },
+    {
+      "bytes": 1295,
+      "path": "docs/UNRESOLVED-BOUNDARIES.csv",
+      "sha256": "34fcda821197728295641cd6e3e1c9f9dd0029c32f14657174b5de8419cdac72"
+    },
+    {
+      "bytes": 77,
+      "path": "receipts/v05/v05-generator-test.txt",
+      "sha256": "8b0a0ae89aafe0eed9e45a63d0f1cf8024d51e8a9ca8ed136a8ee744bb667c07"
+    },
+    {
+      "bytes": 202,
+      "path": "receipts/v05/v05-dispatch-contract.txt",
+      "sha256": "ac291f3b297680a7ff3754f3afb499d2650f34f2615651c2c733a2c6f31339e1"
+    },
+    {
+      "bytes": 1265,
+      "path": "receipts/v05/v05-full-regression.txt",
+      "sha256": "5b631cb6adc900399e3304ae02bb974d4d1f677dfbfc7ae34e7b4768655f0e81"
+    },
+    {
+      "bytes": 1634,
+      "path": "receipts/v05/v05-final-static-audit.json",
+      "sha256": "27e60a4bc5b517aa2ef4ebbff6593beeb6b8957b524cb2ca23e0624e9ddae466"
+    }
+  ],
+  "closure_claims": {
+    "cold_boot": false,
+    "cpu_current_graph": true,
+    "cpu_rom_wide_fixed_point": false,
+    "gameplay_authorized": false,
+    "machine": false,
+    "qualification": false
+  },
+  "completed_date": "2026-08-18",
+  "construction_method": "offline exact-ROM/V04-proof translation only; no gameplay, controller route, save state, screenshot, oracle-observed PC allowlist or trace-to-code generation",
+  "generated_authority": {
+    "accepted_instruction_contexts": 16544,
+    "generator": {
+      "name": "ai2-static-generator",
+      "version": "0.5.0-v05"
+    },
+    "milestone": "V05",
+    "opcode_form_count": 99,
+    "per_physical_prg_bank": {
+      "0": 0,
+      "1": 0,
+      "10": 2072,
+      "11": 2691,
+      "12": 2925,
+      "13": 2935,
+      "14": 2609,
+      "15": 3312,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    "policy": "fixed physical-bank/PC dispatch; fixed opcode-form calls; no runtime opcode fetch/decode/interpreter/fallback",
+    "proven_indirect_entries": 404,
+    "return_continuation_rows": 1133,
+    "rom_wide_closure_claimed": false,
+    "schema": 1,
+    "unique_return_identities": 1133
+  },
+  "generated_tree": {
+    "aggregate_sha256": "9b1950e88ff17b36cd47ed5dd1f599cb720b03739cd277aff61d5c0bdf5bd89e",
+    "content_aggregate_sha256": "837b843dd64b39a1f7cdb6d77e45b2e092628f725aef6098be76772c258c6f72",
+    "manifest_hashed_files": 25,
+    "manifest_total_bytes": 6230057
+  },
+  "generator": {
+    "name": "ai2-static-generator",
+    "normalized_arguments": [
+      "--rom",
+      "<EXTERNAL_ROM>",
+      "--output",
+      "<OUTPUT>",
+      "--root",
+      "<PROJECT_ROOT>"
+    ],
+    "sha256": "294a621438713625377065abf1903d23f003d26324397ea2f0bb12b6b87e3495",
+    "version": "0.5.0-v05"
+  },
+  "milestone": "V05",
+  "next_milestone": "V06 CPU/bus/scheduler/mapper runtime and exact implementations of the 99 generated semantic helper forms; static construction only",
+  "project": "Adventure Island II NES Static Recomp",
+  "result": "complete",
+  "schema": 1,
+  "starter_authority": {
+    "active_package": "Starter NES(4).zip",
+    "cold_boot_chapter_required": true,
+    "manifest_aggregate_sha256": "c0153945da4fda6a19e16556c97dd77c07f5d5ddb8bc034fc0cb967dd5b41a46",
+    "package_sha256": "a895ce1d21ce41d10ef9393b47bdb2f315db42e1a6af2477f9b79a03a1923703"
+  },
+  "v05_exit_criteria": {
+    "bus_order_contracts": true,
+    "dispatch_misses_trap": true,
+    "fixed_translation_for_each_accepted_instruction": true,
+    "physical_bank_shards": true,
+    "runtime_opcode_fetch_decode": false,
+    "small_bank_pc_dispatcher": true,
+    "source_tool_config_hashes_and_arguments": true,
+    "two_clean_generations_byte_identical": true
+  },
+  "validation": {
+    "altered_rom_rejected": true,
+    "checked_in_generation_matches_clean": true,
+    "clang_strict_c11": "PASS",
+    "gcc_strict_c11": "PASS",
+    "oracle_self_test": "PASS self-test only; no gameplay run",
+    "rom_absent_from_project": true,
+    "two_clean_generations_identical": true,
+    "v01_regression": "PASS",
+    "v02_mapper_checks": 1869243,
+    "v03_inventory_checks": 563,
+    "v04_static_checks": 272518,
+    "v05_dispatch_checks": 16,
+    "v05_generator_checks": 35542
+  }
+}

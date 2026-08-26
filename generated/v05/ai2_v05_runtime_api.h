@@ -1,0 +1,115 @@
+#ifndef AI2_V05_RUNTIME_API_H
+#define AI2_V05_RUNTIME_API_H
+#include <stdint.h>
+
+typedef struct Ai2V05Runtime Ai2V05Runtime;
+typedef struct Ai2V05SemanticResult { uint16_t dynamic_pc; uint8_t branch_taken; } Ai2V05SemanticResult;
+
+/* V06 must implement these mapper/runtime helpers. They never fetch an opcode. */
+int ai2_v05_runtime_map_prg_identity(Ai2V05Runtime *rt, uint16_t pc, uint8_t *physical_bank);
+int ai2_v05_runtime_note_stack_dispatch_origin(Ai2V05Runtime *rt, uint8_t bank, uint16_t pc);
+int ai2_v05_runtime_get_stack_dispatch_origin(Ai2V05Runtime *rt, uint8_t *bank, uint16_t *pc);
+void ai2_v05_runtime_clear_stack_dispatch_origin(Ai2V05Runtime *rt);
+
+/* Each symbol is one fixed 2A03 opcode form selected at generation time. */
+int ai2_v05_op_05_ORA_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_06_ASL_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_08_PHP_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_09_ORA_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_0A_ASL_Acc(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_10_BPL_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_18_CLC_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_1D_ORA_AbsX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_20_JSR_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_24_BIT_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_25_AND_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_26_ROL_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_28_PLP_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_29_AND_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_2A_ROL_Acc(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_30_BMI_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_35_AND_ZeroX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_38_SEC_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_40_RTI_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_46_LSR_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_48_PHA_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_49_EOR_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_4A_LSR_Acc(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_4C_JMP_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_50_BVC_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_55_EOR_ZeroX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_60_RTS_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_65_ADC_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_66_ROR_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_68_PLA_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_69_ADC_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_6A_ROR_Acc(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_6C_JMP_Ind(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_6D_ADC_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_70_BVS_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_78_SEI_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_79_ADC_AbsY(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_7D_ADC_AbsX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_84_STY_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_85_STA_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_86_STX_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_88_DEY_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_8A_TXA_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_8C_STY_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_8D_STA_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_8E_STX_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_90_BCC_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_91_STA_IndYW(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_94_STY_ZeroX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_95_STA_ZeroX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_98_TYA_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_99_STA_AbsYW(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_9A_TXS_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_9D_STA_AbsXW(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_A0_LDY_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_A2_LDX_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_A4_LDY_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_A5_LDA_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_A6_LDX_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_A8_TAY_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_A9_LDA_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_AA_TAX_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_AC_LDY_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_AD_LDA_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_AE_LDX_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_B0_BCS_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_B1_LDA_IndY(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_B5_LDA_ZeroX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_B9_LDA_AbsY(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_BA_TSX_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_BC_LDY_AbsX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_BD_LDA_AbsX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_C0_CPY_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_C4_CPY_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_C5_CMP_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_C6_DEC_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_C8_INY_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_C9_CMP_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_CA_DEX_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_CE_DEC_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_D0_BNE_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_D1_CMP_IndY(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_D6_DEC_ZeroX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_D8_CLD_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_DD_CMP_AbsX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_DE_DEC_AbsXW(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_E0_CPX_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_E4_CPX_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_E5_SBC_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_E6_INC_Zero(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_E8_INX_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_E9_SBC_Imm(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_EA_NOP_Imp(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_EE_INC_Abs(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_F0_BEQ_Rel(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_F6_INC_ZeroX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_F9_SBC_AbsY(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_FD_SBC_AbsX(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+int ai2_v05_op_FE_INC_AbsXW(Ai2V05Runtime *rt, uint16_t source_pc, uint16_t operand, Ai2V05SemanticResult *result);
+
+#endif

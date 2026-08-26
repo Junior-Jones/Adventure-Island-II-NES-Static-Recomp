@@ -1,0 +1,78 @@
+{
+  "active_starter": "Starter NES(4).zip",
+  "bus": {
+    "apu_controllers": "0x4000-0x4017; V08 device hook required, with 0x4014 separated for OAM DMA",
+    "cartridge_4020_7fff": "TLROM-03 unpopulated/open bus; no PRG RAM",
+    "cpu_test_registers": "0x4018-0x401F open bus / write ignored by device",
+    "internal_ram": "0x0000-0x07FF mirrored through 0x1FFF",
+    "mapped_prg_rom": "0x8000-0xFFFF reads through the same mapper state used by generated identity dispatch",
+    "mapper_registers": "0x8000-0xFFFF writes share V02 Sharp MMC3B state",
+    "ppu_registers": "0x2000-0x2007 mirrored through 0x3FFF; V07 device hook required"
+  },
+  "closure_claims": {
+    "cold_boot": "NOT CLOSED; V07 PPU is first explicit frontier",
+    "cpu_graph": "current V04 accepted graph remains statically closed; ROM-wide fixed point not claimed",
+    "machine": "PARTIAL; V06 CPU/bus/scheduler/mapper runtime complete, V07 PPU and V08 APU/DMA/input pending",
+    "qualification": "NOT AUTHORIZED before V10"
+  },
+  "construction_policy": {
+    "gameplay_used_for_static_construction": false,
+    "interpreter_or_emulator_fallback": false,
+    "runtime_opcode_decode": false,
+    "runtime_opcode_fetch": false,
+    "unconstructed_ppu_apu_dma_device_semantics": "fatal diagnostic trap",
+    "unknown_generated_identity": "fatal diagnostic trap"
+  },
+  "cpu": {
+    "accepted_v04_instruction_contexts": 16544,
+    "admitted_brk_contexts": 0,
+    "decimal_arithmetic_active": false,
+    "fixed_opcode_forms": 99,
+    "interrupt_priority": "NMI before maskable IRQ at instruction boundary",
+    "jmp_indirect_page_wrap": true,
+    "required_unofficial_forms": 0,
+    "rmw_order": [
+      "read",
+      "write-old",
+      "write-new"
+    ],
+    "stack_page": "0x0100-0x01FF with uint8 wrap"
+  },
+  "milestone": "V06",
+  "scheduler": {
+    "apu_ticks_per_cpu_cycle": 1,
+    "cpu_ticks_per_cpu_cycle": 1,
+    "dma_ticks_per_cpu_cycle": 1,
+    "frontend_owns_timing": false,
+    "mapper_m2_falling_edges_per_cpu_cycle": 1,
+    "ppu_ticks_per_cpu_cycle": 3
+  },
+  "schema": 1,
+  "source_hashes": {
+    "src/runtime/ai2_v06_runtime.c": "5059d1081dc16e2cac45bb0d14be9260a4eb6e99159fa24020bcd5687de2cb1d",
+    "src/runtime/ai2_v06_runtime.h": "82b68cea59931c76599cf1db9cf377d07d698456021d1bb030186cdae5fdf1b8",
+    "src/runtime/ai2_v06_semantics.c": "d6cdbf0073a2c6d2417200e4830e0f8207e673cd31b2f52a9d8e9b8521b73842",
+    "tests/construction/test_v06_all_forms.py": "290838cdbc49e8149a86d7f4b28e7ce43a0e8eb2bc3a39b0a97376ad0727f811",
+    "tests/construction/test_v06_reset_frontier.py": "c02f7b32eaa42ac9f1a04648793cfe7d9d8a8aa3fbd341a745bad03672f2bdaf",
+    "tests/construction/test_v06_runtime.c": "444f596201c93b3b998ecb14574363bcab826c78cac225b9a65cbc93072350cc",
+    "tests/construction/test_v06_static_source.py": "59388446c5ee5f4f92d897d489bed78feba95efbe3e9637355a462f4d79a6c49",
+    "tools/v06_static_reset_frontier.c": "dced7c6e5986c92517f51fd0d588dc351bf9e295a495ac9f7ce4468fcbcf4f4a"
+  },
+  "static_reset_frontier": {
+    "apu_cycles_at_trap": 19,
+    "cold_boot_closure_claimed": false,
+    "cpu_cycles_at_trap": 19,
+    "first_unconstructed_machine_operation": "15:E014 STX $2000",
+    "mode": "static-reset-frontier-no-input",
+    "ppu_cycles_at_trap": 57,
+    "sequence": [
+      "15:FFAE JMP $E010",
+      "15:E010 SEI",
+      "15:E011 CLD",
+      "15:E012 LDX #$00"
+    ],
+    "successful_generated_steps": 4,
+    "trap": "PPU_NOT_CONSTRUCTED"
+  },
+  "status": "complete"
+}

@@ -1,0 +1,5 @@
+===== V05 linked dispatch contract =====
+V05_DISPATCH_CONTRACT PASS checks=16
+===== V05 strict GCC generated syntax =====
+===== V05 strict Clang generated syntax =====
+ALL V01-V05 REGRESSION GATES PASS

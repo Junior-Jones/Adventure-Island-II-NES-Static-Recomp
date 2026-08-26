@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "result": "PASS",
+  "external_test_rom": {
+    "path": "external; never packaged",
+    "sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc"
+  },
+  "starter_nes4": {
+    "sha256": "a895ce1d21ce41d10ef9393b47bdb2f315db42e1a6af2477f9b79a03a1923703"
+  },
+  "mesen_oracle": {
+    "role": "independent bounded comparison only",
+    "sha256": "1554b443d2486fd25f3dcfa41e43e8ce579f9d8927d93d8cdb37d0ac2c4a9276",
+    "linked_into_production": false
+  },
+  "construction_tools": [
+    "python3",
+    "exact ROM",
+    "sealed generated/source pins"
+  ],
+  "compiler_invoked_by_nonbuild_gate": false,
+  "prompt_build_incident_receipt": "receipts/v10/V10-PROMPT-BUILD-INCIDENT.json"
+}

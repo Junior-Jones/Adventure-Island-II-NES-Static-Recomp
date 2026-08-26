@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "title": "Adventure Island II (USA)",
+  "format": "iNES",
+  "file_bytes": 262160,
+  "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+  "payload_sha1": "d30741f41f76b34c08032fc61579dc5963f1443d",
+  "payload_crc32": "771c8855",
+  "header_hex": "4e45531a081040000000000000000000",
+  "mapper": 4,
+  "trainer": false,
+  "battery": false,
+  "mirroring_header": "horizontal",
+  "prg_rom_bytes": 131072,
+  "chr_rom_bytes": 131072
+}

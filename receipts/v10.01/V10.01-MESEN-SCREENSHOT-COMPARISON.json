@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "result": "PASS",
+  "comparison": "phase-aligned completed-frame pixel differential",
+  "mesen_core_sha256": "060c4a4111d0770a65f88aaecbca7faa8c9ea8edcc081dd141d2fe9b8792a0e7",
+  "mesen_core_modified": false,
+  "oracle_launcher_note": "The stripped launcher was corrected to seed Mesen's canonical default 2C02 palette instead of overwriting UserPalette with zeroes; the Mesen core shared library stayed byte-identical.",
+  "pairs": [
+    {
+      "native_completed_frame": 299,
+      "mesen_endFrame_callback": 300,
+      "alignment_reason": "Mesen endFrame screenshot presents the just-finished buffer one callback later than the native frontend copy point.",
+      "pixels_total": 61440,
+      "pixels_exact": 61395,
+      "pixels_different": 45,
+      "exact_percent": 99.9267578125,
+      "mean_absolute_channel_error": 0.08349066840277777,
+      "max_channel_error": 255,
+      "native_bmp": "receipts/v10.01/final-clean/native-phase-screenshots/ai2-frame-000299.bmp",
+      "native_sha256": "7aadd5ad0ede854755f5a7aaedd658ca5ac34c5ed2c87ddbdb86e92f8c379f45",
+      "mesen_png": "receipts/v10.01/mesen-screenshots/mesen-frame-000300.png",
+      "mesen_sha256": "af3e012f0a4ab1093129384abe8c6e2efa836f347faaf4722d00c018ac3234f6"
+    },
+    {
+      "native_completed_frame": 901,
+      "mesen_endFrame_callback": 902,
+      "alignment_reason": "Mesen endFrame screenshot presents the just-finished buffer one callback later than the native frontend copy point.",
+      "pixels_total": 61440,
+      "pixels_exact": 61410,
+      "pixels_different": 30,
+      "exact_percent": 99.951171875,
+      "mean_absolute_channel_error": 0.04993489583333333,
+      "max_channel_error": 255,
+      "native_bmp": "receipts/v10.01/final-clean/native-phase-screenshots/ai2-frame-000901.bmp",
+      "native_sha256": "2af3af1b76f86ee867d8a0b23b6252df987bf6029d78d787ff37b96a30748c42",
+      "mesen_png": "receipts/v10.01/mesen-screenshots/mesen-frame-000902.png",
+      "mesen_sha256": "9aea9a247554b3904134addf60fc1c29d0da425eaec5662aa44d69d42df7e295"
+    },
+    {
+      "native_completed_frame": 5408,
+      "mesen_endFrame_callback": 5409,
+      "alignment_reason": "Mesen endFrame screenshot presents the just-finished buffer one callback later than the native frontend copy point.",
+      "pixels_total": 61440,
+      "pixels_exact": 61435,
+      "pixels_different": 5,
+      "exact_percent": 99.99186197916666,
+      "mean_absolute_channel_error": 0.003716362847222222,
+      "max_channel_error": 147,
+      "native_bmp": "receipts/v10.01/final-clean/native-phase-screenshots/ai2-frame-005408.bmp",
+      "native_sha256": "94a21e7bfd048d3e9691c996e987c84b4c71b72a8fd69710ebe68cd8aa2a5959",
+      "mesen_png": "receipts/v10.01/mesen-screenshots/mesen-frame-005409.png",
+      "mesen_sha256": "b60d9f4ab64565ead8e980f2cc6bc49c756ef25cec4e02b6560cbeddd1681dff"
+    }
+  ],
+  "minimum_exact_percent": 99.9267578125
+}

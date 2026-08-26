@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "milestone": "V03",
+  "tool": {
+    "name": "ai2-static-disassembler",
+    "version": "0.3.0-v03"
+  },
+  "rom_file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+  "prg_sha256": "e021cedf0b7700b3eee7e5b76b2e23000075e06f4d7c13a4b556452952d3aec0",
+  "physical_prg_banks": 16,
+  "prg_bytes_covered_exactly_once_by_primary_classification": 131072,
+  "primary_classification_counts": {
+    "code": 16,
+    "text": 16,
+    "unclassified": 131034,
+    "vector": 6
+  },
+  "padding_classification_count": 0,
+  "accepted_instruction_count": 10,
+  "accepted_instruction_bytes": 16,
+  "roots": {
+    "reset": 1,
+    "nmi": 8,
+    "irq": 1
+  },
+  "control_flow_seed_count": 4,
+  "decode_conflict_count": 0,
+  "overlap_conflict_count": 0,
+  "proven_data_categories": {
+    "table_records": 1,
+    "pointer_records": 3,
+    "vector_primary_bytes": 6,
+    "text_records": 1,
+    "graphics_reference_records": 0
+  },
+  "graphics_reference_status": "none proven in V03; unresolved bytes remain unclassified rather than guessed",
+  "v04_not_performed": true,
+  "production_lowering_performed": false,
+  "gameplay_used": false,
+  "generated_file_sha256_excluding_summary": {
+    "classification-ranges.csv": "9f5792dc5c04551a11162f9a1276a31991c2af010f6ddfda05739bca67b85f81",
+    "control-flow-seeds.csv": "10f94dd90ac9bdd0399cc23935e93e21e6d25752d28b5813970606eeafe63607",
+    "data-evidence.csv": "cf3e9daa33a5cca01f1e87b26ac3bdc4cc802b9e9dea704bde5899ce8c66ae26",
+    "decode-conflicts.csv": "8ee00e1ea0771966b1af71d0f0f103b8fe08052a3b2b221126bff3c6befe726b",
+    "instruction-ledger.csv": "43a7311c0ed367edd8537b0fd0dcbcdbeb9adbade77b95422365b104dc19a572",
+    "overlap-conflicts.csv": "da67941955cff7ded7468b83afed9346bf8cd123c709eb8f9cd4df7e9ae6243e",
+    "prg-bank-inventory.json": "0c18cd0e9d8f0b75e70dd6ac151924fe376d6bdf8f3a2837c2ba03a7045b2b91",
+    "roots.csv": "8f2a1d6d7f5dcd2d1883d10771356d318974456706292b1ad41b60effdc130e0"
+  }
+}

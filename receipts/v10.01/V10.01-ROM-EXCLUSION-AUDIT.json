@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "result": "PASS",
+  "files_scanned": 307,
+  "forbidden_extension_hits": [],
+  "exact_target_rom_sha256_hits": [],
+  "target_rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc"
+}

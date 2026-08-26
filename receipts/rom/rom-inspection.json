@@ -1,0 +1,16 @@
+{
+  "file": "/mnt/data/Adventure_Island_II_NES_Static_Recomp/ROM/Adventure Island II (USA).nes",
+  "format": "iNES",
+  "console": "NES/Famicom",
+  "mapper": 4,
+  "submapper": null,
+  "timing": "NTSC (header default)",
+  "mirroring": "horizontal",
+  "battery": false,
+  "trainer": false,
+  "prg_rom_bytes": 131072,
+  "chr_rom_bytes": 131072,
+  "file_bytes": 262160,
+  "sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39"
+}

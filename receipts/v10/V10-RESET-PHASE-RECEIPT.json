@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "result": "PASS_BOUNDED_QUALIFICATION",
+  "construction_authority": "source scheduler/reset proof",
+  "source_proof": {
+    "ppu_power_on_scanline": 0,
+    "ppu_power_on_dot": 4,
+    "reset_cpu_cycles": 7,
+    "ppu_dots_per_cpu_cycle": 3,
+    "derived_reset_entry_dot": 25,
+    "ppu_source_sha256": "1b9f8eadcf3840ddd444a1f06a8150b99bfbd00d9b704b2a2c95798c059dc264",
+    "runtime_source_sha256": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037"
+  },
+  "oracle_observation": {
+    "receipt_sha256": "4f6d16ebe52eb15431eaf37943d0b5c70fbb4183af0f93d1f663b2fc5025649e",
+    "reset_entry": "FFAE cpuCycle=7 scanline=0 ppuCycle=25",
+    "game_entry": "E010 cpuCycle=10 scanline=0 ppuCycle=34"
+  },
+  "oracle_used_as_static_authority": false,
+  "note": "Oracle qualifies an already source-derived phase; it did not supply executable PCs or generated targets."
+}

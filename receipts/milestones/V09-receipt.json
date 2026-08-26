@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "project": "Adventure Island II NES Static Recomp",
+  "version": "V09",
+  "active_starter": "Starter NES(4).zip",
+  "result": "COMPLETE_FOR_DEFINED_V09_SCOPE",
+  "overall_static_core_complete": false,
+  "gameplay_qualification_authorized": false,
+  "construction": {
+    "gameplay_used": false,
+    "controller_input_used_for_static_construction": false,
+    "trace_to_code_generation_used": false,
+    "screenshots_used_as_coverage_proof": false,
+    "runtime_opcode_fetch": false,
+    "runtime_opcode_decode": false,
+    "interpreter_or_emulator_fallback": false,
+    "oracle_used_for_static_discovery": false
+  },
+  "public_boundary": {
+    "opaque_core_handle": true,
+    "one_shared_advance_frame": true,
+    "copied_video": true,
+    "bounded_copied_audio": true,
+    "controller_path": "pending host masks -> existing V08 $4016/$4017 latching/serial reads",
+    "fail_closed_status_trap": true,
+    "headed_headless_common_adapter": true
+  },
+  "snapshots": {
+    "magic": "AI2SNAP1",
+    "file_version": 1,
+    "canonical_state_version": 1,
+    "raw_struct_dump": false,
+    "rom_bound": true,
+    "core_identity_bound": true,
+    "validate_before_mutation": true,
+    "failed_load_atomic": true,
+    "atomic_save": "temp -> flush/sync -> close -> reread/validate -> atomic replace"
+  },
+  "hooks": {
+    "filtered": true,
+    "synchronous": true,
+    "non_reentrant": true,
+    "observe_or_stop_only": true,
+    "execution_fallback": false
+  },
+  "compatibility_sha256": "75194b92171c596c8925e41691916e516e94c07d856c24eca71dc5457759bf52",
+  "tests": {
+    "v09_checks_per_compiler": 65,
+    "v09_compilers": [
+      "gcc",
+      "clang",
+      "clang-asan-ubsan"
+    ],
+    "headed_headless_three_frame_equivalence": "PASS",
+    "equivalence_result": {
+      "pc": "E0B5",
+      "physical_bank": 15,
+      "instructions": 25059,
+      "frame_hash": "4c5576c12943c383",
+      "audio_available": 2142
+    },
+    "v09_contract_pinned_inputs": 17,
+    "v09_contract_static_source": "PASS",
+    "inherited_v08_static_demand": "PASS",
+    "inherited_v08_static_source": "PASS",
+    "inherited_v08_machine_contract": "PASS",
+    "inherited_v08_checks_per_compiler": 8573,
+    "inherited_v08_compilers": [
+      "gcc",
+      "clang",
+      "clang-asan-ubsan"
+    ],
+    "prepackage_rom_exclusion": "PASS"
+  },
+  "receipt_sha256": {
+    "gcc_api_state": "700da380166557c8430624744b1345e143f993a1614eb45625ac0dad97fcc8e2",
+    "clang_api_state": "f866425e9afe1bd5ca6b4a3a6c98641638c9aace63117e9b7936024659273a18",
+    "sanitizer_api_state": "a37f45acdc0995df814e3a5a7e611ae323d33e30d5f3be163b7c73c8b9a69146",
+    "contract_static_source": "b8c41c4c119a5131da1c6bc2793f9c786b4dcb0fdc0b91ddc0cf830e52011af8",
+    "inherited_v08_regression": "7e1798ee688c1aaf2318e1dd91a8fcb6756fce671bc0b480ccc70e1441b82d7a",
+    "inherited_authority": "b5f9e0f95109bc9712bd3356a99a4f91d17029ce119fb40a56a5e0d2d9016b40",
+    "prepackage_rom_exclusion": "4ae6637ff80ebde42ae1ecc3eeb966ffe2506689c27b3598fb582eef1bfb9396"
+  },
+  "source_hashes": {
+    "public_header": "e7a96f4dae3e0539cd53fed57aa2799574c24ccdcee97d0fd1c79d28673a539e",
+    "private_core": "9aa112a287670ecaaab05cf3ab7db0e54aebbba7f75194f86a5103f92f831606",
+    "sha256_c": "f99eda2ada88d4691bb0c7adc0ff66f29fca86b88d62d81ac3320bbe28718427",
+    "sha256_h": "c516250770655882c288856c1154138bb7e1a89ee0b11a56e3eadc300ecdacc2",
+    "identity_generator": "a6ea714d962b9059e8ffd80b9fc786754cbc41ad2d62f792b62896812a1c8af4",
+    "core_contract": "fbab2cf6e2733a6b20a411887ecb513fe6235f3df95e375b59edbdb18e0e568d",
+    "generated_identity_header": "b2dc2c96024ba8704cffe51438298244d7c619d18115c803662deeb9d1d1edb9",
+    "common_frontend": "6811b8096e5329c48b579f48cb8097afebddfea1c8209c39d98d4460b40d2cc4",
+    "api_test": "917bf065847e1ce6d0d1152edb4cddbe93b5444315590c0e22be24956e56010d",
+    "api_test_driver": "b77634ab8e382eb87b4242469df7a0dcf59f3fee1a6eee9b0d42a7566fa49de8",
+    "contract_test": "134318012d1d7f8fd4b05f4a53264c0923d96cb30e89fd0ab07f1a0b5153f8ca",
+    "v09_design_doc": "85837bef607e867b2afaa64062f0363cce00af447aab1bfb31237c1a7b727a81",
+    "v09_report": "d5460fd5e484dac0d8db141233614b327efcc408a7ddc63c47922a05b7e2e737"
+  },
+  "rom": {
+    "external_only": true,
+    "included_in_project": false,
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39"
+  },
+  "closure_claims": {
+    "cold_boot": "not closed; bounded oracle checkpoint agreement remains V10 responsibility",
+    "cpu_graph": "current V04 accepted graph closed; ROM-wide V10 fixed-point construction not yet claimed",
+    "machine": "V09 public API/snapshot/hook/frontend boundary complete; V10 final construction audit remains",
+    "qualification": "not authorized before V10 STATIC_CORE_COMPLETE"
+  },
+  "next_milestone": "V10 ROM-wide fixed-point closure, bounded cold-boot oracle agreement, final construction/reproducibility gate",
+  "source_manifest_note": "sealed separately by receipts/V09-SOURCE-MANIFEST.json to avoid circular hashing"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "inputs": {
+    "generated/v04/closure-summary.json": "907ea77323db411235985fa8dc938308be48dca9f6dcdb05b24f52b4fd23a6ea",
+    "generated/v04/instructions.csv": "2fd63d88f7fd52509756e70d462c387b1faf8bbf9ecfb9f42369d1b77da04d80",
+    "generated/v04/edges.csv": "dfc52fa1770fe9d53129f7ede2d177828aeff7fad14ae731b5a2280f098340ac",
+    "generated/v04/unresolved-edges.csv": "ca8f8f77b9a450de3be4d25c6c44e638f1993df777b8393ce3e4e617e3bc23bf",
+    "generated/v04/inline-data.csv": "be1d59faa65cef2558ec9b6efa4a24b0a8c9de361464a2275122ffc707a794e8",
+    "generated/v04/indirect-targets.csv": "3359dff719230dc9282b3cab8d292ac74840ae857bea4eb8935413631fb3fe8a",
+    "generated/v04/return-continuations.csv": "05e3f79b1e8811047f6454d290679766f00c254d4406493d0e2aa1664b86131f",
+    "generated/v04/executable-ram-epochs.json": "b409d07ab0f3e84a72c42f24bc7a702979085033b8dd4a6f50533ab941a9486a",
+    "config/v04-static-proofs.json": "ffec9fa0c97ae06e6affddc83fe25143457919d6fcc44eeeca76958b12562746",
+    "config/mapper-contract.json": "e2435b18696a6451a2a5db65545f4f87decad0e6e838d126ad5eda522c394fcb",
+    "generated/v03/data-evidence.csv": "cf3e9daa33a5cca01f1e87b26ac3bdc4cc802b9e9dea704bde5899ce8c66ae26"
+  },
+  "outputs": {
+    "romwide-byte-ownership.csv": "c142f53b6e48f4fd010741fed390a749c8054565d0850be6ed44181369c164bd",
+    "mapper-execution-domain.json": "5de0b06f821d82e4955a4dc488cb476d2a9476caf82e2310480dc2d4959ac52e",
+    "fixed-point-summary.json": "64fcc7b2e48b125701cb762ea6d66ecd4bed54b50d53567a54c172f5fd82d67a"
+  }
+}

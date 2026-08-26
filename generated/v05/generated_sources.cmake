@@ -1,0 +1,22 @@
+# Generated explicit V05 source list; no globbing.
+set(AI2_V05_GENERATED_SOURCES
+    ${CMAKE_CURRENT_LIST_DIR}/bank_dispatch.c
+    ${CMAKE_CURRENT_LIST_DIR}/indirect_domains.c
+    ${CMAKE_CURRENT_LIST_DIR}/return_domains.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_00.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_01.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_02.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_03.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_04.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_05.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_06.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_07.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_08.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_09.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_10.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_11.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_12.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_13.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_14.c
+    ${CMAKE_CURRENT_LIST_DIR}/bank_15.c
+)

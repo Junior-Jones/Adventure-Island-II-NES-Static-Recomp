@@ -1,0 +1,43 @@
+{
+  "canonical_snapshot_state_version": 1,
+  "compatibility_contract": "Adventure Island II NES opaque public core API v1",
+  "core_compatibility_sha256": "68d14e75a0e70bf5439a755cf8ccb02617c5c2d8e3a37bba984a4e7f5842c7e2",
+  "executable_ram_epoch_count": 0,
+  "mapper": "NES-TLROM-03 / Sharp MMC3B",
+  "milestone": "V09",
+  "policy": {
+    "bounded_copied_audio": true,
+    "controller_path": "host pending masks -> emulated $4016/$4017 live/latch/serial path",
+    "copied_video": true,
+    "gameplay_used_as_static_authority": false,
+    "hooks": "filtered synchronous observation/control only; non-reentrant; no execution fallback",
+    "one_shared_advance_frame": true,
+    "opaque_machine_layout": true,
+    "snapshot": "canonical little-endian fields; ROM/core-bound; validate temporary state before atomic commit"
+  },
+  "region": "NTSC",
+  "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "schema": 1,
+  "snapshot_file_version": 1,
+  "source_sha256": {
+    "config/target-profile.json": "6b9d978c86b0d9acef279e25cb1d59f87d79ba50278c528d4941c7afc20202bf",
+    "config/v08-machine-contract.json": "a58686687ddda2b4f56196c0a64d598fba3dc308fe0d6a93b76d206f215bb8e3",
+    "generated/v05/generated-identity.json": "8c75b8ff65cc350e59ad9f235db37f8deb24205868c84b4b3926b470990088f5",
+    "generated/v05/generated-tree-manifest.json": "98f309e88a9c6275d6b075ba6f74cec8ae9db6150d3b86bc4a016275f61e524e",
+    "include/ai2_static_core.h": "e7a96f4dae3e0539cd53fed57aa2799574c24ccdcee97d0fd1c79d28673a539e",
+    "src/api/ai2_sha256.c": "f99eda2ada88d4691bb0c7adc0ff66f29fca86b88d62d81ac3320bbe28718427",
+    "src/api/ai2_sha256.h": "66bed19203ad744ca500f4f56bec108b3588b3cf88ea3f716a62deca187ae70b",
+    "src/api/ai2_v09_core.c": "e5d0bce08d8d23c853fc9a07f4c04abcba7bab76f75cd2a6491cf298727bb87c",
+    "src/apu/ai2_v08_apu.c": "82aa15f8d11adeeb7b7e07076dbb5ab510324bb6bee0c40b6f13c77e773c0253",
+    "src/apu/ai2_v08_apu.h": "7899f46071bec181cc856a6974bb4b7440ac5aa7627fcc66c50f1b257a0f43e1",
+    "src/mapper/ai2_mmc3_mapper.c": "898c7e4bebf5ec68b4af069beef0e4390e6497bf8deb4e204f32a86107d1cbd2",
+    "src/mapper/ai2_mmc3_mapper.h": "9542d4d7489cbb0db2fb1d1123bbbd2f61f7bc809ad7bd7bc6e031f10e1b6b72",
+    "src/ppu/ai2_v07_ppu.c": "1b9f8eadcf3840ddd444a1f06a8150b99bfbd00d9b704b2a2c95798c059dc264",
+    "src/ppu/ai2_v07_ppu.h": "ff496d1a898be15bcde90e6ba92f7adf84c99d1b301120538dcdcf0c48b14129",
+    "src/runtime/ai2_v06_runtime.c": "4d11eb57cb7de81ce089f59934ab423fa51dad95f7352b2c3be9290b20d45037",
+    "src/runtime/ai2_v06_runtime.h": "d6eb699c3b43c254b5d7da46691a1152009f4a57df163d7ca070cbf5f4bcf9dc",
+    "src/runtime/ai2_v06_semantics.c": "d6cdbf0073a2c6d2417200e4830e0f8207e673cd31b2f52a9d8e9b8521b73842"
+  },
+  "starter_nes4_zip_sha256": "a895ce1d21ce41d10ef9393b47bdb2f315db42e1a6af2477f9b79a03a1923703",
+  "v08_source_manifest_aggregate_sha256": "b968c9f6d182942dad2d1b5609a57c80eab71ceea3b0d34b5824e7ddf1100a71"
+}

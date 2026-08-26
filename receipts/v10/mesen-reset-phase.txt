@@ -1,0 +1,5 @@
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_ROM schema=1 console=nes format=ines cpuCount=1
+RESET_PHASE pc=FFAE cpuCycle=7 scanline=0 ppuCycle=25 ppuMaster=104 frame=1
+RESET_PHASE pc=E010 cpuCycle=10 scanline=0 ppuCycle=34 ppuMaster=140 frame=1
+ORACLE_EXIT schema=1 code=0

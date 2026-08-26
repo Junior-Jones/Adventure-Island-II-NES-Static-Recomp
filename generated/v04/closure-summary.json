@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "milestone": "V04",
+  "construction_method": "offline static exact-ROM analysis only; no gameplay trace inputs",
+  "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39",
+  "prg_sha256": "e021cedf0b7700b3eee7e5b76b2e23000075e06f4d7c13a4b556452952d3aec0",
+  "accepted_instruction_contexts": 16544,
+  "accepted_instruction_bytes": 35423,
+  "edge_records": 19833,
+  "return_continuations": 1133,
+  "proven_indirect_targets": 404,
+  "stack_dispatch_callsites": 12,
+  "stack_dispatch_entries": 119,
+  "executable_r7_values": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "unresolved_current_graph_edges": 0,
+  "decode_or_inline_overlaps": 0,
+  "current_graph_executable_ram_epochs": 0,
+  "current_graph_rom_to_ram_executable_copies": 0,
+  "current_graph_self_modifying_code": 0,
+  "rom_wide_closure_claimed": false,
+  "rom_wide_statement": "V04 closes every accepted current-graph edge. Bytes not admitted by the current static graph remain subject to later ROM-wide closure; V04 does not convert absence of current reachability into a whole-ROM impossibility claim."
+}

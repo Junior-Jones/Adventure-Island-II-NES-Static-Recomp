@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "default": "deny-build",
+  "policy": "Do not compile or build the static core unless the user explicitly requests it.",
+  "safe_nonbuild_entrypoint": "tools/run_v10_nonbuild_gate.sh",
+  "safe_nonbuild_tools": [
+    "tools/analyze_v04_control_flow.py",
+    "tools/generate_static_core.py",
+    "tools/analyze_v10_romwide_closure.py",
+    "tools/generate_v09_core_identity.py",
+    "tools/write_v10_receipts.py",
+    "tests/construction/test_v10_nonbuild_gate.py"
+  ],
+  "known_build_capable_legacy_tests": [
+    "tests/construction/test_v05_dispatch_contract.py",
+    "tests/construction/test_v05_generator.py",
+    "tests/construction/test_v06_all_forms.py",
+    "tests/construction/test_v06_reset_frontier.py",
+    "tests/construction/test_v07_ppu_build.py",
+    "tests/construction/test_v07_reset_frontier.py",
+    "tests/construction/test_v08_apu_dma_input_build.py",
+    "tests/construction/test_v08_cold_boot.py",
+    "tests/construction/test_v09_api_state.py"
+  ],
+  "warning": "Do not invoke legacy build-capable tests for --help or discovery. Some execute compilation at module top level before parsing arguments. Read their source instead."
+}

@@ -1,0 +1,13 @@
+Boundary_ID,Physical_PRG_Bank,CPU_Address,Mapper_State,Origin,Reason,Owner_Milestone,Status
+V03-CF-0001,15,$FFAE,fixed PRG bank 15,RESET root,Direct JMP target $E010 traversed and closed by V04,V04,resolved
+V03-CF-0002,15,$E0D8,fixed PRG bank 15,NMI root,BEQ taken target $E0E1 traversed and closed by V04,V04,resolved
+V03-CF-0003,15,$E0D8,fixed PRG bank 15,NMI root,BEQ fallthrough $E0DA traversed and closed by V04,V04,resolved
+V03-CF-0004,15,$E152,fixed PRG bank 15,IRQ root,RTI retained as interrupt-context return semantics rather than a trace-derived PC allowlist,V04,resolved
+V04-ROMWIDE-0001,all,not-applicable,all mapper states,PRG bytes outside current accepted graph,V10 exact-ROM fixed-point owns all 131072 PRG bytes and proves executable banks 10-15 with banks 0-9 formally excluded,V10,resolved
+V05-RUNTIME-0001,all generated identities,all accepted PCs,proved V04 physical-bank identities,V05 generated fixed opcode-form calls,V06 implements all 99 fixed semantic forms plus CPU/bus/scheduler/mapper runtime; unsupported device operations trap,V06,resolved
+V05-COLDBOOT-0001,15,$FFAE,power/reset mapping,V05 milestone boundary,V06 deterministically reaches first PPU operation at $E014 STX $2000 without gameplay; continuation transfers to V07,V06,resolved
+V06-PPU-0001,15,$E014,fixed PRG bank 15,static no-input reset frontier,V07 constructs PPU and deterministically continues through both vblank waits to the V08 APU frontier,V07,resolved
+V06-APU-DMA-INPUT-0001,all,device regions $4000-$4017,all proved mapper states,V06 bus routing,V08 constructs APU/controller/OAM-DMA/DMC semantics behind the common scheduler and passes static/machine/endurance gates,V08,resolved
+V07-APU-0001,15,$E15D,fixed PRG bank 15,V07 static no-input cold-reset continuation,V08 implements $4015 and the full target APU/DMA/input surface; no-input cold boot continues trap-free beyond 200 frames,V08,resolved
+V08-COLDBOOT-ORACLE-0001,15,$E127 stable no-input area,proved runtime states,"V08 predecessor endurance plus V10 reset-phase correction","V10.01 rebuilt and naturally qualified the corrected core through 90 seconds with screenshot/audio evidence; formal bounded CPU/RAM/mapper/PPU-event/audio-timing cold-boot state differential still remains",V10.01,pending-full-differential
+V08-V09-API-0001,all,public boundary,all serialized state,V08 machine construction,"V09 opaque handle, canonical atomic ROM/core-bound snapshots, non-reentrant filtered hooks and unified headed/headless frame path constructed and certified",V09,resolved

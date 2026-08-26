@@ -1,0 +1,223 @@
+{
+  "aggregate_sha256": "c4c8a65290756dd3d08e3d83c0be421e2e40358a42d811214698896c9ca7e6a4",
+  "file_count": 43,
+  "files": [
+    {
+      "bytes": 905,
+      "path": "config/board-evidence.json",
+      "sha256": "06f616c1dc80e4dd9a3581e3e405f4b7ad8691cd0466ca9f654b9bab5b4f0ce3"
+    },
+    {
+      "bytes": 565,
+      "path": "config/expected-rom.json",
+      "sha256": "24723fbfae7331c440b0b8b2fbdd63b6c2abf79a8f8a859293b83204798a8069"
+    },
+    {
+      "bytes": 2071,
+      "path": "config/source-pins.json",
+      "sha256": "e19701d2900769edd953ecd1dcd50c7310825278ad6dd4f6ea42c317e46b856b"
+    },
+    {
+      "bytes": 2099,
+      "path": "config/target-profile.json",
+      "sha256": "cabfbe3290e84771840eff648624416c2a8d0e62ef5c1c21e5fb5540c3c39583"
+    },
+    {
+      "bytes": 638,
+      "path": "docs/IDENTITY-UNRESOLVED.md",
+      "sha256": "a82031e441c7b4a7f0792fd820e11124c6feeff81da84d2d885eab1dc4d66d1b"
+    },
+    {
+      "bytes": 1705,
+      "path": "docs/STARTER-FILE-INVENTORY.md",
+      "sha256": "48e02977b0eca82837dba50fc89be2dd8055537c5de7e33b86014862653eb6d2"
+    },
+    {
+      "bytes": 1956,
+      "path": "docs/STATIC-CORE-STATUS.md",
+      "sha256": "c858402ccd6a433836d3c3476da5f9f374ba9300e1e1a6591920669515069a4d"
+    },
+    {
+      "bytes": 92,
+      "path": "docs/UNRESOLVED-BOUNDARIES.csv",
+      "sha256": "0b1b75ef814e96b21208d5db9a50c8be089c701464fb4368fbb69565665ecff9"
+    },
+    {
+      "bytes": 1430,
+      "path": "docs/V01-REPORT.md",
+      "sha256": "042694ba06867686c884f32d0c3fcacf3d09182398e0ccdbc290282a5c771aab"
+    },
+    {
+      "bytes": 0,
+      "path": "generated/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 463,
+      "path": "README.md",
+      "sha256": "0d52c3702d56f2d4791a077bbb7d5e74650362e7affcdf5513397cc3911be069"
+    },
+    {
+      "bytes": 4549,
+      "path": "receipts/milestones/V01-receipt.json",
+      "sha256": "ec19d563aecdb71bdb6ad33b6101b21f09e36e677554279717126cd2ab63b70e"
+    },
+    {
+      "bytes": 133,
+      "path": "receipts/oracle/mesen-self-test.txt",
+      "sha256": "4364b28960ab892df963635a5a90117922e4fc00d29ecceaa012ecaa05e4cd8a"
+    },
+    {
+      "bytes": 590,
+      "path": "receipts/rom/exact-validation.json",
+      "sha256": "2f306c0ec02781bfc60ff7303e993bc62e7a92d1297073e9115f3dbb68e88cf3"
+    },
+    {
+      "bytes": 534,
+      "path": "receipts/rom/independent-inspector.json",
+      "sha256": "c9456e605db1d2c3cd026d5914b78234ff8adb37437c3e1e4727e153f4275704"
+    },
+    {
+      "bytes": 50,
+      "path": "receipts/rom/no-rom-in-source.txt",
+      "sha256": "6f8ba394c5710d8e423d54ac3b83cfb61939fff7c997d3aeee7097795a770fee"
+    },
+    {
+      "bytes": 534,
+      "path": "receipts/rom/rom-inspection.json",
+      "sha256": "c9456e605db1d2c3cd026d5914b78234ff8adb37437c3e1e4727e153f4275704"
+    },
+    {
+      "bytes": 74,
+      "path": "receipts/rom/v01-negative-tests.txt",
+      "sha256": "98451189f26e5f42535166130351bea04ab36d86213430a4d7c1e47e011a464e"
+    },
+    {
+      "bytes": 153,
+      "path": "receipts/rom/vector-proof.txt",
+      "sha256": "3cf8e3cfb8aab2f89751baa07eddddfdaf6db2fcabe72273b75b4c635128f9a7"
+    },
+    {
+      "bytes": 0,
+      "path": "receipts/tools/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 87,
+      "path": "receipts/tools/disassembler-v01-refusal.txt",
+      "sha256": "3ab3b023c470c9e5ba59121b24f194e8a7a1c08b49064338da0e71a618929cd4"
+    },
+    {
+      "bytes": 33,
+      "path": "receipts/tools/future-tool-gates.txt",
+      "sha256": "7473b59ca22cea7964b5c28ac5253efea597bd25f0dc8bad5c9a6d431699b6ac"
+    },
+    {
+      "bytes": 84,
+      "path": "receipts/tools/generator-v01-refusal.txt",
+      "sha256": "e6ebf9eba268e58af8da7ea38f7bb782431c8f4d10d59740e7f0f47ab6912f43"
+    },
+    {
+      "bytes": 85,
+      "path": "receipts/tools/host-toolchain.txt",
+      "sha256": "9c50f77a2eef94795310a78609d7ea10f05919f3330c2d49a3497c8957f89d6f"
+    },
+    {
+      "bytes": 129,
+      "path": "receipts/tools/reference-unpack-counts.txt",
+      "sha256": "b551aaa25eae04a4e500c81e88068ea610296c9f2d123a26ea5b4410893d911d"
+    },
+    {
+      "bytes": 31,
+      "path": "receipts/tools/starter-manifest-verification.txt",
+      "sha256": "d9deba2e060c9608e6f8794442fb21dbdc89ed5a700d52fceea9fad80cb11e1e"
+    },
+    {
+      "bytes": 15736,
+      "path": "receipts/tools/starter-review-receipt.json",
+      "sha256": "ff9910cb209e0ae9aede5ba49bb3f7c335e6842bcacb8fb66aab44f7114a859d"
+    },
+    {
+      "bytes": 175,
+      "path": "receipts/V01-SOURCE-MANIFEST-VERIFY.txt",
+      "sha256": "35a9b95a09ec774c23cc8939b0019777195c3c9631305d291d38283e7b98e1dd"
+    },
+    {
+      "bytes": 504,
+      "path": "ROM-REQUIREMENTS.txt",
+      "sha256": "08288e928eeaac7fc681a827fa0fe186293c83f94268c0876f48d48fc0aa1e58"
+    },
+    {
+      "bytes": 240,
+      "path": "Rom/Readme.txt",
+      "sha256": "24905baafaeaa271488b753ad6a75297e39cbebd56c1050e61c0a08780789b41"
+    },
+    {
+      "bytes": 0,
+      "path": "src/common/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "src/gui/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "src/headless/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "src/mapper/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "src/runtime/internal/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1553,
+      "path": "tests/construction/test_v01_rom_validation.py",
+      "sha256": "79a528a1011401a9d7e3c62b369750142fb3ed2452af3b7b9817afe44a83cf2c"
+    },
+    {
+      "bytes": 0,
+      "path": "tests/post-core/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "third_party/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 377,
+      "path": "tools/disassemble_program_map.py",
+      "sha256": "d6f08117aafdf23b85c7798e2cd4ada9c34c66f5bdf0f76bceab70622bcad497"
+    },
+    {
+      "bytes": 371,
+      "path": "tools/generate_static_core.py",
+      "sha256": "717d160cec82a00345099d19ce4e19d7dd4017a79b8b314dd8dcc1ee81520273"
+    },
+    {
+      "bytes": 2747,
+      "path": "tools/inspect_nes_rom.py",
+      "sha256": "4669c93a5e8d2c81f61fc97b2f9ae9beed7f239cf981877b8724ef74348c287f"
+    },
+    {
+      "bytes": 3000,
+      "path": "tools/validate_target_rom.py",
+      "sha256": "5bce7273e755b8d0af0d7df35d4bf434c1286719c1b728e00d4d8ce7f9a63fba"
+    },
+    {
+      "bytes": 11,
+      "path": "VERSION.txt",
+      "sha256": "1c7cbfc4576fe0c5c028caac25ffa22e80c3f3f5971ebadaf0f0f093bef93aa4"
+    }
+  ],
+  "schema": 1,
+  "total_bytes": 43704
+}

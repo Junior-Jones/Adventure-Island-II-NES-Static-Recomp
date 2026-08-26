@@ -1,0 +1,6 @@
+Starter package files including manifest: 67
+Linux oracle source files: 900
+Windows oracle source files: 900
+Normalized common oracle source paths: 900
+Byte-identical common files: 899
+Platform-specific changed common files: 1

@@ -1,0 +1,13 @@
+V03 FINAL CLOSURE REGRESSION
+utc=2026-08-18T05:13:05Z
+PASS: ai2-static-disassembler 0.3.0-v03; banks=16 bytes=131072 instructions=10 flow_seeds=4 decode_conflicts=0 overlaps=0
+PASS: V03 inventory construction tests; checks=563; instructions=10; PRG bytes=131072; banks=16
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_SELF_TEST schema=1 result=pass
+ai2-static-generator 0.1.0-v01-pin: disabled; V05 has not been authorized/completed
+v05_generator_exit_code=2
+project_rom_image_count=0
+RESULT=PASS

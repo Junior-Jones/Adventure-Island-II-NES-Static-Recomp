@@ -1,0 +1,8 @@
+V02 mapper evidence sources, retrieved/rechecked 2026-08-18
+Exact board: NES Cart Database profile 269; PRG CRC 6FA0E650; CHR CRC 1DDB1C0E; combined CRC 771C8855; NES-TLROM-03; U4 Sharp MMC3B; 0 KiB WRAM; 0 KiB VRAM.
+MMC3 behavior reference: https://www.nesdev.org/wiki/MMC3
+MMC3 pinout reference: https://www.nesdev.org/wiki/MMC3_pinout
+NES cartridge connector reference: https://www.nesdev.org/wiki/Cartridge_connector
+Pinned local MesenCE 2.2.1 reference: Core/NES/Mappers/Nintendo/MMC3.h
+Pinned local MMC3.h SHA-256: 1d4bec75f3d30d6c5fe1f400e33750619551418f9034cf8dbbf02ea85a3f863e
+Production rule: these are evidence/oracle sources only; src/mapper/ai2_mmc3_mapper.c is the target mapping authority.

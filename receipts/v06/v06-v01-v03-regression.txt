@@ -1,0 +1,8 @@
+===== V01 =====
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+===== V02 contract =====
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+===== V02 mapper =====
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration
+===== V03 =====
+PASS: V03 inventory construction tests; checks=563; instructions=10; PRG bytes=131072; banks=16

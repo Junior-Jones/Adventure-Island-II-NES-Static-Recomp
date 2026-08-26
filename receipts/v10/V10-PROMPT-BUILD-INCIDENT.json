@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "date_local": "2026-08-19",
+  "incident": "Legacy test_v08_cold_boot.py was invoked with --help during inspection. The script has no argparse help path and compiled its temporary harness before attempting to execute it with --help as the ROM argument.",
+  "compile_was_requested_by_user": false,
+  "native_run_with_target_rom": false,
+  "result_used_as_evidence": false,
+  "project_files_promoted_from_incident": false,
+  "remediation": "Added v10-build-policy.json and run_v10_nonbuild_gate.sh. Build-capable legacy tests are now explicitly inventoried and must not be invoked during ordinary non-build work, including for help/discovery.",
+  "standing_policy": "No compilation/build unless explicitly requested by the user."
+}

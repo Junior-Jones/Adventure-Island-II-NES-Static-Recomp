@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "milestone": "V02",
+  "target": {
+    "title": "Adventure Island II (USA)",
+    "mapper": 4,
+    "pcb": "NES-TLROM-03",
+    "pcb_class": "NES-TLROM",
+    "hardware": "Sharp MMC3B",
+    "catalog_id": "NES-V7-USA",
+    "payload_crc32": "771c8855"
+  },
+  "selection_evidence": {
+    "header": "legacy iNES mapper 4",
+    "physical_board": "NES Cart Database profile 269 matches PRG CRC 6FA0E650 and CHR CRC 1DDB1C0E and identifies U4 as Sharp MMC3B",
+    "oracle_reference": "MesenCE 2.2.1 Core/NES/Mappers/Nintendo/MMC3.h",
+    "reference_urls": [
+      "https://nescartdb.com/profile/view/269/adventure-island-ii",
+      "https://www.nesdev.org/wiki/MMC3",
+      "https://www.nesdev.org/wiki/MMC3_pinout",
+      "https://www.nesdev.org/wiki/Cartridge_connector"
+    ]
+  },
+  "submapper": {
+    "encoded_value": null,
+    "status": "legacy iNES has no NES 2.0 submapper; exact physical board evidence selects standard TLROM/Sharp MMC3B behavior",
+    "excluded_variants": [
+      "MMC6/HKROM",
+      "TKSROM/TLSROM mapper 118",
+      "TQROM mapper 119",
+      "MC-ACC and other MMC3 clones"
+    ]
+  },
+  "geometry": {
+    "prg_rom_bytes": 131072,
+    "prg_bank_bytes": 8192,
+    "prg_bank_count_8k": 16,
+    "chr_rom_bytes": 131072,
+    "chr_bank_bytes": 1024,
+    "chr_bank_count_1k": 128,
+    "fixed_second_last_prg_bank": 14,
+    "fixed_last_prg_bank": 15,
+    "prg_register_hardware_bits": 6,
+    "prg_board_bank_mask": "0x0F",
+    "chr_board_bank_mask": "0x7F"
+  },
+  "physical_bank_numbering": {
+    "prg": "bank N is PRG-ROM byte range N*0x2000 through N*0x2000+0x1FFF, N=0..15",
+    "chr": "bank N is CHR-ROM byte range N*0x0400 through N*0x0400+0x03FF, N=0..127",
+    "cpu_rom_offset": "physical_prg_bank*0x2000 + (cpu_address & 0x1FFF)",
+    "ppu_chr_offset": "physical_chr_bank*0x0400 + (ppu_address & 0x03FF)"
+  },
+  "power_on": {
+    "fixed_prg_e000_ffff_bank": 15,
+    "reset_vector_location": "$FFFC-$FFFD in physical PRG bank 15",
+    "switchable_state": "unspecified; represented explicitly as unknown",
+    "unknown_fields": [
+      "$8000 bank select/mode",
+      "R0-R7 bank registers",
+      "$A000 mirroring latch",
+      "$A001 PRG-RAM control latch",
+      "IRQ latch/counter/reload/enable/pending state",
+      "initial PPU A12 filter state"
+    ],
+    "policy": "never invent deterministic defaults; fixed mappings resolve, dependent mappings return unresolved-power-state until writes establish them"
+  },
+  "reset": {
+    "kind": "NES CPU reset / reset button",
+    "mapper_state": "preserved",
+    "reason": "standard NES cartridge connector exposes no dedicated /RESET signal and the MMC3 pinout has no reset input",
+    "fixed_vector_access": "CPU $E000-$FFFF remains physical PRG bank 15 independent of bank mode"
+  },
+  "cpu_address_map": [
+    {"range": "$0000-$401F", "owner": "console", "mapper_result": "not cartridge"},
+    {"range": "$4020-$5FFF", "owner": "unpopulated cartridge expansion", "mapper_result": "open bus"},
+    {"range": "$6000-$7FFF", "owner": "unpopulated PRG-RAM window", "mapper_result": "open bus regardless of $A001"},
+    {"range": "$8000-$9FFF", "read": "R6 when $8000.D6=0, fixed bank 14 when D6=1", "write": "$8000 even / $8001 odd"},
+    {"range": "$A000-$BFFF", "read": "R7", "write": "$A000 even / $A001 odd"},
+    {"range": "$C000-$DFFF", "read": "fixed bank 14 when $8000.D6=0, R6 when D6=1", "write": "$C000 even / $C001 odd"},
+    {"range": "$E000-$FFFF", "read": "fixed bank 15", "write": "$E000 even / $E001 odd"}
+  ],
+  "ppu_chr_map": {
+    "mode_0": ["R0 even", "R0+1", "R1 even", "R1+1", "R2", "R3", "R4", "R5"],
+    "mode_1": ["R2", "R3", "R4", "R5", "R0 even", "R0+1", "R1 even", "R1+1"],
+    "slot_size": 1024,
+    "slots": ["$0000-$03FF", "$0400-$07FF", "$0800-$0BFF", "$0C00-$0FFF", "$1000-$13FF", "$1400-$17FF", "$1800-$1BFF", "$1C00-$1FFF"],
+    "r0_r1_low_bit": "ignored/forced even for 2 KiB pairs"
+  },
+  "mirroring": {
+    "controlled_by": "$A000 bit 0",
+    "four_screen": false,
+    "a000_bit0_0": "vertical mirroring; CIRAM A10 <- PPU A10",
+    "a000_bit0_1": "horizontal mirroring; CIRAM A10 <- PPU A11",
+    "ppu_3000_3eff": "mirror of $2000-$2EFF",
+    "ppu_3f00_3fff": "PPU palette RAM, not cartridge-owned",
+    "header_value": "horizontal",
+    "header_note": "legacy header metadata is not used to invent a guaranteed MMC3 power-on latch value"
+  },
+  "ram": {
+    "prg_ram_bytes": 0,
+    "prg_nvram_bytes": 0,
+    "chr_ram_bytes": 0,
+    "chr_nvram_bytes": 0,
+    "a001_behavior": "MMC3 control bits are latched for state/debugging but no RAM chip exists, so $6000-$7FFF remains open bus",
+    "write_protect_bit": 6,
+    "chip_enable_bit": 7
+  },
+  "bus_conflicts": false,
+  "expansion_audio": "none",
+  "register_decode": "address & 0xE001",
+  "registers": [
+    {"canonical": "$8000", "aliases": "$8000-$9FFE even", "name": "bank select", "transition": "select R0-R7 with D0-D2; D6 immediately selects PRG mode; D7 immediately selects CHR inversion; D3-D5 ignored on MMC3"},
+    {"canonical": "$8001", "aliases": "$8001-$9FFF odd", "name": "bank data", "transition": "write selected bank register; R0/R1 ignore D0; R6/R7 ignore D7-D6; board masks select installed ROM capacity"},
+    {"canonical": "$A000", "aliases": "$A000-$BFFE even", "name": "nametable arrangement", "transition": "D0=0 vertical mirroring, D0=1 horizontal mirroring; other bits ignored"},
+    {"canonical": "$A001", "aliases": "$A001-$BFFF odd", "name": "PRG-RAM protect", "transition": "D7 chip enable and D6 write protect are electrically meaningful MMC3 outputs, but exact board has no PRG-RAM chip"},
+    {"canonical": "$C000", "aliases": "$C000-$DFFE even", "name": "IRQ latch", "transition": "replace IRQ reload value; does not immediately replace counter"},
+    {"canonical": "$C001", "aliases": "$C001-$DFFF odd", "name": "IRQ reload", "transition": "clear counter immediately and request reload on next qualified PPU A12 rise"},
+    {"canonical": "$E000", "aliases": "$E000-$FFFE even", "name": "IRQ disable/ack", "transition": "disable IRQ generation and clear pending external mapper IRQ; counter keeps running"},
+    {"canonical": "$E001", "aliases": "$E001-$FFFF odd", "name": "IRQ enable", "transition": "enable IRQ generation without changing counter"}
+  ],
+  "irq": {
+    "chip_maker": "Sharp",
+    "revision": "Sharp/new behavior",
+    "a12_low_filter_m2_falling_edges": 3,
+    "clock_source": "qualified PPU A12 low-to-high transitions, not host scanlines",
+    "clock_rule": "if counter is zero or reload pending, load latch; otherwise decrement; then Sharp behavior asserts IRQ whenever resulting counter is zero and IRQ enable is set",
+    "latch_zero": "can assert on every qualified A12 rise while enabled",
+    "c000": "updates latch only",
+    "c001": "clears counter and sets reload pending",
+    "e000": "disables and acknowledges pending IRQ",
+    "e001": "enables only"
+  },
+  "production_policy": {
+    "single_mapping_authority": "src/mapper/ai2_mmc3_mapper.c",
+    "unknown_power_state": "fail closed when an operation depends on a latch not yet established",
+    "interpreter_fallback": "forbidden",
+    "oracle": "observation/reference only"
+  },
+  "unresolved_hardware_blockers": []
+}

@@ -1,0 +1,7 @@
+category,subkind,physical_prg_bank,start_bank_offset,end_bank_offset_inclusive,length,content_sha256,evidence
+table,interrupt_vector_table,15,0x1FFA,0x1FFF,6,0117b2bb3fc4591bc0b39b7ebc0dc7efcc8b86c328c5a1483b78d64a8b780cda,architecturally fixed NMI/RESET/IRQ vector table
+pointer,nmi_vector_pointer,15,0x1FFA,0x1FFB,2,0385e6d18e474ae5b1f85e71a3a08aa31e9d5339c2366e269fa0c1b20ea62086,architectural NMI vector points to 0xE0CE
+pointer,reset_vector_pointer,15,0x1FFC,0x1FFD,2,59e7202cac6ec7158b945801df8091b252e484b35eb3b78b01bed618d9802ad7,architectural RESET vector points to 0xFFAE
+pointer,irq_vector_pointer,15,0x1FFE,0x1FFF,2,bf856c6f264dcbffdc1bb8d296ea389526bb26e6b34c3785d9f208b131600a6b,architectural IRQ vector points to 0xE152
+text,embedded_title_signature,15,0x1FE0,0x1FEF,16,b5bc5165a88194e71dd45e6628789dbc8720a3b538cb37323c0c1ee564cb6db6,unique contiguous uppercase ASCII title signature; content not copied to generated ledger
+graphics_reference,none_proven_in_v03,,,,0,,not guessed: graphics-reference use requires later control/data-flow proof

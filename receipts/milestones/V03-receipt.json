@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "project": "Adventure Island II NES Static Recomp",
+  "milestone": "V03",
+  "completed_date": "2026-08-18",
+  "result": "complete",
+  "authority": "Starter NES Revision 3 V03 ROM-wide disassembly inventory",
+  "rom_external_only": true,
+  "rom_identity": {
+    "file_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+    "payload_sha256": "5ee479ef04d80366a75dd144cbeb47d0347ee82025d1b65dd358e1f6498c9a39"
+  },
+  "inventory": {
+    "prg_bytes": 131072,
+    "physical_prg_banks_8k": 16,
+    "accepted_instructions": 10,
+    "accepted_instruction_bytes": 16,
+    "vector_bytes": 6,
+    "text_bytes": 16,
+    "unclassified_bytes": 131034,
+    "padding_bytes": 0,
+    "decode_conflicts": 0,
+    "overlap_conflicts": 0,
+    "roots": {
+      "reset": 1,
+      "nmi": 8,
+      "irq": 1
+    },
+    "control_flow_seeds_for_v04": 4,
+    "proven_table_records": 1,
+    "proven_pointer_records": 3,
+    "proven_text_records": 1,
+    "proven_graphics_reference_records": 0,
+    "graphics_reference_policy": "none guessed; uncertain bytes stay unclassified until static use-site proof"
+  },
+  "decoder": {
+    "tool_name": "ai2-static-disassembler",
+    "version": "0.3.0-v03",
+    "tool_sha256": "8a9333720913e620ba35a234fe874d346a51d0efd4cfa8f53125c81ab3588a95",
+    "opcode_metadata_sha256": "ab73d3f6efe8a7152a6a359bba67a18499c1e44928f9de6732771527a39cb87a",
+    "opcode_entry_count": 256,
+    "mesence_nesdisutils_sha256": "6b4a4897e3f834667d8f7dcd5e51bba20afc69d9528ac0e3a9f12d90b20bff24",
+    "policy": "root RESET/NMI/IRQ in fixed bank 15; decode straight-line through first control transfer; V04 edges not followed"
+  },
+  "validation": {
+    "v03_inventory_checks": 563,
+    "clean_generation_reproducibility": "PASS byte-identical",
+    "generated_tree_sha256": "47aaa2bfd4bc6daf2b84cc5d537c8d161713d3ce1fce12f2aebaef19de920e0a",
+    "all_256_opcode_metadata_entries_match_pinned_source": true,
+    "altered_rom_rejected": true,
+    "v01_regression": "PASS",
+    "v02_mapper_checks": 1869243,
+    "v02_regression": "PASS",
+    "mesence_oracle_self_test": "PASS",
+    "v05_generator_gate": "PASS refusal rc=2",
+    "rom_absent_from_project": true,
+    "gameplay_test": "NOT RUN - forbidden before V10 construction completion"
+  },
+  "v03_exit_criteria": {
+    "every_physical_prg_bank_inventoried_as_data_initially": true,
+    "reset_nmi_irq_rooted_in_physical_reset_mapping": true,
+    "every_accepted_instruction_has_physical_bank_offset_cpu_pc": true,
+    "tables_pointers_vectors_text_classified_when_proven": true,
+    "graphics_references_not_guessed": true,
+    "remaining_bytes_explicitly_unclassified_not_padding": true,
+    "deterministic_bank_inventory_and_reproducible_instruction_ledger": true,
+    "overlaps_and_decode_conflicts_explicitly_ledgered": true
+  },
+  "open_v04_boundaries": [
+    "RESET JMP $FFAE->$E010",
+    "NMI BEQ taken $E0D8->$E0E1",
+    "NMI BEQ fallthrough $E0D8->$E0DA",
+    "IRQ RTI return target from $E152"
+  ],
+  "artifacts": [
+    {
+      "path": "config/2a03-opcodes.json",
+      "bytes": 31780,
+      "sha256": "ab73d3f6efe8a7152a6a359bba67a18499c1e44928f9de6732771527a39cb87a"
+    },
+    {
+      "path": "config/source-pins.json",
+      "bytes": 3708,
+      "sha256": "e3fb106d7eed9c8176f82abe4edd840284d1f91cde400f53457f4781b8c389b4"
+    },
+    {
+      "path": "tools/disassemble_program_map.py",
+      "bytes": 23954,
+      "sha256": "8a9333720913e620ba35a234fe874d346a51d0efd4cfa8f53125c81ab3588a95"
+    },
+    {
+      "path": "tests/construction/test_v03_inventory.py",
+      "bytes": 8646,
+      "sha256": "cfd34f90d209f820a8e257b650ac9c3ff6f76391788a8a27bc7071fc6a59c3a5"
+    },
+    {
+      "path": "generated/v03/summary.json",
+      "bytes": 2064,
+      "sha256": "40cab9014c4dea8d15433ecc0707302bcbe5e93b6c23d8f2ef84462e6f22c6fa"
+    },
+    {
+      "path": "generated/v03/prg-bank-inventory.json",
+      "bytes": 6828,
+      "sha256": "0c18cd0e9d8f0b75e70dd6ac151924fe376d6bdf8f3a2837c2ba03a7045b2b91"
+    },
+    {
+      "path": "generated/v03/instruction-ledger.csv",
+      "bytes": 1462,
+      "sha256": "43a7311c0ed367edd8537b0fd0dcbcdbeb9adbade77b95422365b104dc19a572"
+    },
+    {
+      "path": "generated/v03/classification-ranges.csv",
+      "bytes": 1828,
+      "sha256": "9f5792dc5c04551a11162f9a1276a31991c2af010f6ddfda05739bca67b85f81"
+    },
+    {
+      "path": "generated/v03/data-evidence.csv",
+      "bytes": 1059,
+      "sha256": "cf3e9daa33a5cca01f1e87b26ac3bdc4cc802b9e9dea704bde5899ce8c66ae26"
+    },
+    {
+      "path": "generated/v03/control-flow-seeds.csv",
+      "bytes": 602,
+      "sha256": "10f94dd90ac9bdd0399cc23935e93e21e6d25752d28b5813970606eeafe63607"
+    },
+    {
+      "path": "generated/v03/decode-conflicts.csv",
+      "bytes": 54,
+      "sha256": "8ee00e1ea0771966b1af71d0f0f103b8fe08052a3b2b221126bff3c6befe726b"
+    },
+    {
+      "path": "generated/v03/overlap-conflicts.csv",
+      "bytes": 74,
+      "sha256": "da67941955cff7ded7468b83afed9346bf8cd123c709eb8f9cd4df7e9ae6243e"
+    },
+    {
+      "path": "docs/V03-DISASSEMBLY-INVENTORY.md",
+      "bytes": 3455,
+      "sha256": "b4b7568e31432a4dd902deedec1b7099ad1098db990866232d13ba96b3b19a62"
+    },
+    {
+      "path": "docs/V03-REPORT.md",
+      "bytes": 1924,
+      "sha256": "7f0c1e31a05b3a8cf45d1dad32f33355078d009cc59dcbe048d46f335888a452"
+    },
+    {
+      "path": "docs/STATIC-CORE-STATUS.md",
+      "bytes": 2872,
+      "sha256": "560b4833c8649f35af1f4230f6158300373a996526630bd8d6e22ba12d013185"
+    },
+    {
+      "path": "docs/UNRESOLVED-BOUNDARIES.csv",
+      "bytes": 640,
+      "sha256": "b591bf49de6ecc8cf0f62475a10d670a7bc8e94ee4bda67a5f41aaeec1a36ba6"
+    },
+    {
+      "path": "receipts/disassembly/v03-generation.txt",
+      "bytes": 162,
+      "sha256": "16b66586ff28fe71a0fd69cf8f99570e20890d5436a7e21849b130672ebd4afa"
+    },
+    {
+      "path": "receipts/disassembly/v03-inventory-tests.txt",
+      "bytes": 143,
+      "sha256": "d22daf60ef70e39a9bffe74d55e855fe65b38e2c7712cf816bedc0e7e4d9348a"
+    },
+    {
+      "path": "receipts/disassembly/v03-reproducibility.txt",
+      "bytes": 350,
+      "sha256": "11421badf5bf1cffb198feb198fb56e5f2d65db8904f8f84e991cea97a316ac0"
+    },
+    {
+      "path": "receipts/disassembly/v03-opcode-source-verification.txt",
+      "bytes": 420,
+      "sha256": "bddbc6643c48ce8a1a28d522e5e44c7e1801e9b9f3dd1322f72c78befb0ed77a"
+    },
+    {
+      "path": "receipts/disassembly/v03-v01-v02-regression.txt",
+      "bytes": 284,
+      "sha256": "ea938b323c26c1fbb56f9a3230b911410f3243ce29354b54a1d4f35673ae587a"
+    },
+    {
+      "path": "receipts/disassembly/v03-generator-gate.txt",
+      "bytes": 134,
+      "sha256": "159514db31957dced0631ad164f233420897c92b945128b3dd29539152830a4f"
+    },
+    {
+      "path": "receipts/disassembly/v03-oracle-self-test.txt",
+      "bytes": 201,
+      "sha256": "e7d9c9aaa6315cf7595a0233e2b95db2db7c191a793dfaf17a27b8666cbb997b"
+    },
+    {
+      "path": "receipts/disassembly/v03-no-rom-in-source.txt",
+      "bytes": 41,
+      "sha256": "5324be7ee3cc4fe06e9eee83b561148339557740cefd5cc9a021ea48eb6344b3"
+    }
+  ],
+  "next_milestone": "V04 - control-flow and executable-RAM closure"
+}

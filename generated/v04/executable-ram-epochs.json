@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "milestone": "V04",
+  "current_graph_epochs": [],
+  "current_graph_executable_ram_targets": 0,
+  "current_graph_rom_to_ram_executable_copies": 0,
+  "current_graph_self_modifying_code": 0,
+  "rom_wide_exclusion_claimed": false,
+  "policy": "No current-graph target below $8000 is admitted. Any later RAM execution requires an explicit epoch/signature/invalidation proof and otherwise traps."
+}

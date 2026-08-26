@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "result": "PASS",
+  "policy": "Reference projects were used only for frontend architecture/integration patterns. Adventure Island II remains the sole static-core authority.",
+  "uploaded_archives": [
+    {
+      "name": "Megaman 6 - Source code.zip",
+      "sha256": "ba01588a086125f820e1eaf5bfed499bf11ce3b62c076697b7c303ce145720d0",
+      "role": "NES core-to-frontend connection reference"
+    },
+    {
+      "name": "Battletech (c64) Source.zip",
+      "sha256": "7da8bfa0200b16bba3be7bf1e6a856985256fbc2a860b02988514f8e6956972f",
+      "role": "frontend/application/headless organization reference"
+    }
+  ],
+  "selected_reference_files": [
+    {
+      "project": "Mega Man 6",
+      "path": "runtime/core/apps/mm6_headless_app.cpp",
+      "sha256": "f2fb7986a3cdca271f8bee2d69ec4327402ac6fae77694e03cab8c34833287f6"
+    },
+    {
+      "project": "Mega Man 6",
+      "path": "src/gui/mm6_audio_output_sdl3.cpp",
+      "sha256": "f458daf8ea49ea75182e6b42d9524bafa8f905ed94c1d2d526e6c233de31bfaa"
+    },
+    {
+      "project": "Mega Man 6",
+      "path": "src/gui/mm6_windows_launcher.cpp",
+      "sha256": "57a9b0d6271b7793900d66af5ab06fb6ae7fa2724c1ae3e0598915b5e3bfa335"
+    },
+    {
+      "project": "Battletech C64",
+      "path": "Frontend/common/battletech_frontend_input.c",
+      "sha256": "4038cfb7deaba82f1c30b51d1e4d9bc3ecf9780b43903ea808cf5556089bff11"
+    },
+    {
+      "project": "Battletech C64",
+      "path": "Frontend/Windows/battletech_frontend_sdl2.c",
+      "sha256": "d9395fe49f714133cf9b0b60fd562bc9bf8717a89ce7f2fba5d36f6f40648978"
+    },
+    {
+      "project": "Battletech C64",
+      "path": "Frontend/Windows/battletech_windows_launcher.c",
+      "sha256": "e0068d73222230887f850f5843540ef87eac1a88561fe103846e63ea6f7f69ed"
+    }
+  ],
+  "production_imported_game_specific_reference_core_code": false,
+  "reference_archives_packaged_in_ai2_release": false
+}

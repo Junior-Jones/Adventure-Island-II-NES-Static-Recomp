@@ -1,0 +1,52 @@
+===== Starter NES(4) manifest =====
+PASS: package matches manifest
+===== MesenCE oracle self-test only =====
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_SELF_TEST schema=1 result=pass
+===== V07 final gates =====
+===== V07 PPU GCC/Clang/Sanitizer =====
+gcc: V07 PPU construction tests: PASS (357433 checks)
+clang: V07 PPU construction tests: PASS (357433 checks)
+clang-asan-ubsan: V07 PPU construction tests: PASS (357433 checks)
+V07 PPU compiler/sanitizer gate: PASS (GCC + Clang + ASan/UBSan)
+===== V07 static demand =====
+V07 static PPU demand audit: PASS (PPU direct contexts=56; V08 direct I/O contexts=17; gameplay traces=0)
+===== V07 static source =====
+V07 static-source audit: PASS (PPU is native hardware state; no interpreter/gameplay-derived construction lane)
+===== V07 contract =====
+V07 PPU contract: PASS (12 source hashes; cold frontier=15:E15D STA $4015)
+===== V07 reset frontier =====
+{"schema":1,"mode":"v07-static-reset-frontier-no-input","steps_completed":22974,"current_bank":15,"current_pc":57693,"cpu_cycles":80701,"ppu_cycles":242103,"apu_cycles":80701,"ppu_scanline":184,"ppu_dot":334,"frame_generation":2,"ppu_memory_reads":0,"ppu_memory_writes":0,"a12_clocks":0,"a12_ambiguous_disabled":7,"ppu_error":0,"trap_code":6,"trap_source_pc":57693,"trap_address":16405,"trap_is_write":1,"trap_value":15}
+V07 deterministic static-reset frontier: PASS (2 identical no-input runs; no gameplay)
+===== Predecessor static regressions =====
+===== Active Starter NES(4) =====
+PASS: package matches manifest
+ORACLE schema=1 mesenVersion=131585 buildDate="Aug 17 2026, 08:59:44" mode=headless-nes-native
+ORACLE_SELF_TEST schema=1 result=pass
+===== V01 =====
+PASS exact accepted; altered/malformed/truncated/trailing images rejected
+===== V02 contract =====
+PASS: V02 mapper-contract.json required fields and exact-board assertions
+===== V02 mapper =====
+PASS: V02 TLROM-03/Sharp MMC3B mapper contract (1869243 checks) with exact-ROM vector integration
+===== V03 =====
+PASS: V03 inventory construction tests; checks=563; instructions=10; PRG bytes=131072; banks=16
+===== V04 =====
+PASS: V04 static control-flow construction tests; checks=272518; instructions=16544; instruction_bytes=35423; indirect_targets=404; unresolved=0; gameplay_seeds=0
+===== V05 =====
+V05_GENERATOR_TEST PASS checks=35542
+===== V05 dispatch standalone =====
+V05_DISPATCH_CONTRACT PASS checks=16
+===== V06 GCC runtime exhaustive =====
+V06 runtime construction: PASS (4459662 checks)
+===== V06 Clang runtime exhaustive =====
+V06 runtime construction: PASS (4459662 checks)
+===== V06 static source =====
+V06 static-source audit: PASS (99 fixed official forms; required unofficial forms=0; admitted BRK contexts=0; runtime opcode fetch/decode absent)
+===== V06 all fixed forms =====
+V06 all fixed opcode forms: PASS (297 checks, 99 forms)
+V06 all fixed opcode forms: PASS (297 checks, 99 forms)
+V06 all-forms source/compile gate: PASS (99 forms; compilers=gcc,clang)
+===== V06 reset frontier =====
+{"schema":1,"mode":"static-reset-frontier-no-input","steps_completed":4,"current_bank":15,"current_pc":57364,"cpu_cycles":19,"ppu_cycles":57,"apu_cycles":19,"trap_code":5,"trap_source_pc":57364,"trap_address":8192,"trap_is_write":1,"trap_value":0}
+V06 deterministic static-reset frontier: PASS (2 identical no-input runs; no gameplay)

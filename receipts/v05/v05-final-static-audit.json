@@ -1,0 +1,50 @@
+{
+  "active_starter": {
+    "old_active_starter_matches": [],
+    "package": "Starter NES(4).zip",
+    "package_manifest_aggregate_sha256": "c0153945da4fda6a19e16556c97dd77c07f5d5ddb8bc034fc0cb967dd5b41a46",
+    "package_sha256": "a895ce1d21ce41d10ef9393b47bdb2f315db42e1a6af2477f9b79a03a1923703",
+    "unpacked_file_count": 67
+  },
+  "closure_claims": {
+    "cold_boot": false,
+    "cpu_current_graph": true,
+    "cpu_rom_wide_fixed_point": false,
+    "gameplay_authorized": false,
+    "machine": false,
+    "qualification": false
+  },
+  "construction_method": "static ROM/mapper/proof only; no gameplay route or trace-derived code admission",
+  "external_rom": {
+    "path_role": "external test input only",
+    "sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc"
+  },
+  "generated_v05": {
+    "accepted_instruction_contexts": 16544,
+    "indirect_entries": 404,
+    "manifest_aggregate_sha256": "9b1950e88ff17b36cd47ed5dd1f599cb720b03739cd277aff61d5c0bdf5bd89e",
+    "manifest_hashed_files": 25,
+    "opcode_form_count": 99,
+    "return_continuations": 1133,
+    "runtime_opcode_fetch_decode": false
+  },
+  "milestone": "V05",
+  "project": "Adventure Island II NES Static Recomp",
+  "project_scan": {
+    "cache_files": [],
+    "rom_like_files": []
+  },
+  "regression": {
+    "clang_strict_c11": "PASS",
+    "gcc_strict_c11": "PASS",
+    "oracle": "self-test only PASS",
+    "v02_mapper_checks": 1869243,
+    "v03_inventory_checks": 563,
+    "v04_gameplay_seeds": 0,
+    "v04_static_checks": 272518,
+    "v05_dispatch_checks": 16,
+    "v05_generator_checks": 35542
+  },
+  "result": "PASS",
+  "schema": 1
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "milestone": "V10",
+  "rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "prg_bytes": 131072,
+  "expected_fixed_point": {
+    "accepted_instruction_contexts": 16544,
+    "code_bytes": 35423,
+    "inline_data_bytes": 244,
+    "metadata_bytes": 22,
+    "excluded_immutable_data_bytes": 95383,
+    "unresolved_prg_bytes": 0,
+    "executable_physical_banks": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "formally_excluded_physical_banks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "executable_r7_values": [
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "v09_hash_gated_inheritance": {
+    "source_manifest_aggregate_sha256": "c73131b6115748f4c85a864c8394d7c42e05344981eae969e15a5b5471655454",
+    "allowed_changed_files": [
+      "README.md",
+      "VERSION.txt",
+      "src/ppu/ai2_v07_ppu.c",
+      "config/v09-core-contract.json",
+      "generated/v09/ai2_v09_identity.h",
+      "docs/STATIC-CORE-STATUS.md",
+      "docs/UNRESOLVED-BOUNDARIES.csv"
+    ],
+    "reason": "V10 changes only milestone/status documentation plus the PPU reset-phase source and its compatibility identity outputs. All other inherited V09 files remain hash-pinned."
+  },
+  "production_requirements": {
+    "runtime_opcode_fetch": false,
+    "runtime_opcode_decode": false,
+    "interpreter_fallback": false,
+    "emulator_fallback": false,
+    "unknown_identity_fails_closed": true,
+    "unknown_bank_fails_closed": true,
+    "gameplay_used_as_static_authority": false,
+    "oracle_used_as_static_authority": false
+  },
+  "workflow": {
+    "compile_static_core": false,
+    "compile_policy": "Do not compile/build unless the user explicitly requests it. Construction closure uses exact-source pins, deterministic regeneration, static ledgers and non-build gates.",
+    "ancestor_validation": "hash-gated reuse when sealed source pins are unchanged",
+    "current_generation": "regenerate V04, V05 and V10 into temporary clean directories and compare complete hashes"
+  }
+}

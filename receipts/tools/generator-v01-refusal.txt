@@ -1,0 +1,1 @@
+ai2-static-generator 0.1.0-v01-pin: disabled; V05 has not been authorized/completed

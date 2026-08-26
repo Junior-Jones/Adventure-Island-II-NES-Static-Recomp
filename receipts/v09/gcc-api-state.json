@@ -1,0 +1,8 @@
+{
+  "compiler": "gcc",
+  "frontend_equivalence": true,
+  "functional_pass": true,
+  "functional_stdout": "V09 opaque API/snapshot/hook construction: PASS (65 checks)",
+  "mode": "gcc",
+  "schema": 1
+}

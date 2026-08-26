@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "version": "10.01",
+  "result": "PASS",
+  "build_system": "CMake + Ninja, Release",
+  "warning_policy": "-Wall -Wextra -Wpedantic",
+  "targets": {
+    "ai2-headless": {
+      "sha256": "f3e00b6b3781134b4e7a20c2566bc1690ca27ad078faf6de94090e764c823a74"
+    },
+    "ai2-linux": {
+      "sha256": "47b995a66d1c6240a63fed2901d6edcb70450f71c5520f97e796ad5263c5b9ea"
+    }
+  },
+  "headed_smoke": {
+    "receipt": "receipts/v10.01/headed/xvfb-60-frames.txt",
+    "result": "PASS",
+    "frames": 60,
+    "status": "ok"
+  },
+  "mesen_oracle_launcher": {
+    "sha256": "e9f79d0d8f50d78c1d30f58447f382729f784ac8820f89e9b459bd02c5e99256"
+  },
+  "mesen_core": {
+    "sha256": "060c4a4111d0770a65f88aaecbca7faa8c9ea8edcc081dd141d2fe9b8792a0e7",
+    "modified": false
+  }
+}

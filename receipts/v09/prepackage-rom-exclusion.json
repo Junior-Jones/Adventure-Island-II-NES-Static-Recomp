@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "milestone": "V09",
+  "result": "PASS",
+  "project_files_seen": 235,
+  "zip_layers_seen": 0,
+  "zip_entries_seen": 0,
+  "target_rom_sha256": "10dd53fd62c95e77856b09c693b3bdd14b62a89988902eea111257cafe9b8acc",
+  "rom_format_or_hash_problems": []
+}

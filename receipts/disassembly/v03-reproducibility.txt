@@ -1,0 +1,7 @@
+V03 CLEAN REPRODUCIBILITY
+run_a_rc=0
+run_b_rc=0
+run_a_tree_sha256=47aaa2bfd4bc6daf2b84cc5d537c8d161713d3ce1fce12f2aebaef19de920e0a
+run_b_tree_sha256=47aaa2bfd4bc6daf2b84cc5d537c8d161713d3ce1fce12f2aebaef19de920e0a
+checked_in_tree_sha256=47aaa2bfd4bc6daf2b84cc5d537c8d161713d3ce1fce12f2aebaef19de920e0a
+result=PASS byte-identical file set and content

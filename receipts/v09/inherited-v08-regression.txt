@@ -1,0 +1,7 @@
+V08 static APU/DMA/input demand audit: PASS (contexts=17; indexed audio=10; gameplay seeds=0)
+V08 static-source audit: PASS (native APU/DMA/controller machine; no runtime opcode or gameplay-derived lane)
+V08 machine contract: PASS (12 source pins; cold-boot claim kept separate)
+gcc: V08 APU/DMA/input construction: PASS (8573 checks)
+clang: V08 APU/DMA/input construction: PASS (8573 checks)
+clang-asan-ubsan: V08 APU/DMA/input construction: PASS (8573 checks)
+V08 APU/DMA/input compiler/sanitizer gate: PASS

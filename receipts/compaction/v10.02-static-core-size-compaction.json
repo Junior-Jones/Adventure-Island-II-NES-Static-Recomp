@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "milestone": "V10.02",
+  "result": "PASS",
+  "method": "exact per-identity descriptor tables with one shared executor and statically selected semantic function pointers",
+  "authority_preserved": {
+    "admitted_instruction_contexts_before": 16544,
+    "admitted_instruction_contexts_after": 16544,
+    "runtime_opcode_fetch": false,
+    "runtime_opcode_decode": false,
+    "interpreter_or_emulator_fallback": false,
+    "missing_identity_fails_closed": true,
+    "dynamic_target_validation_preserved": true
+  },
+  "deterministic_generation": {
+    "clean_generations_compared": 2,
+    "byte_identical": true,
+    "generated_tree_aggregate_sha256": "cd09bf3c2b035d6ef40b2c7a15ca2bd083a20463f29537769af56f97a1f8f2f0",
+    "generator_version": "0.5.1-v05-compact"
+  },
+  "sizes": {
+    "generated_c": {"before": 6177630, "after": 2977386, "reduction_percent": 51.80},
+    "msvc_release_static_library": {"before": 2130020, "after": 917122, "reduction_percent": 56.94},
+    "windows_launcher_exe": {"before": 3970560, "after": 3532288, "reduction_percent": 11.04},
+    "equivalent_release_zip": {"before": 2320282, "after": 1805125, "reduction_percent": 22.20}
+  },
+  "verification": {
+    "v05_dispatch_contract_checks": 16,
+    "v06_static_source_audit": "PASS",
+    "old_new_two_million_instruction_state_equal": true,
+    "compact_two_run_determinism": "PASS",
+    "compact_frames": 206,
+    "compact_trap_code": 0,
+    "compact_ppu_error": 0,
+    "v09_public_api_snapshot_hook_checks": 65,
+    "fresh_msvc_x64_release_build": "PASS"
+  },
+  "artifacts": {
+    "core_compatibility_sha256": "1e3e374a618dfc1e04357b56f86813c4ca5be94130d7acb4e4c39d81897b5597",
+    "launcher_sha256": "C6AF14F2C5BFC0653584A6BD9581C5FE891EFB4610303B380B80166D5858A4C4",
+    "release_zip_sha256": "1B85FF36A4A1F5F1DC4B3C474DF8673E7C76F2879E9D8985BF0E3683C3C3D09A"
+  },
+  "remaining_gate": "Starter-required bounded native/oracle cold-boot state differential remains open"
+}

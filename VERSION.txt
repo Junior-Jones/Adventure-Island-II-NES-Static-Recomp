@@ -1,0 +1,2 @@
+Product release 1.0.0
+Static-core construction status is tracked separately in docs/STATIC-CORE-STATUS.md.

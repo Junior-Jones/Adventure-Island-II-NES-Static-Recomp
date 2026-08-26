@@ -1,0 +1,1 @@
+PASS: no .nes files exist anywhere in the unpacked project source tree
