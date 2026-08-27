@@ -91,6 +91,12 @@ if(WIN32)
             "${CMAKE_SOURCE_DIR}/third_party/gamecontrollerdb.txt"
             "$<TARGET_FILE_DIR:adventure-island-ii-launcher>/gamecontrollerdb.txt"
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different
+            "${CMAKE_SOURCE_DIR}/third_party/SDL_GameControllerDB-LICENSE.txt"
+            "$<TARGET_FILE_DIR:adventure-island-ii-launcher>/SDL_GameControllerDB-LICENSE.txt"
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different
+            "${CMAKE_SOURCE_DIR}/THIRD-PARTY-NOTICES.txt"
+            "$<TARGET_FILE_DIR:adventure-island-ii-launcher>/THIRD-PARTY-NOTICES.txt"
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different
             "${CMAKE_SOURCE_DIR}/README.md"
             "$<TARGET_FILE_DIR:adventure-island-ii-launcher>/README.txt"
         COMMAND "${CMAKE_COMMAND}" -E make_directory
